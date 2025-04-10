@@ -1,7 +1,9 @@
 import pandas as pd
 import re
 import matplotlib.pyplot as plt
+import sys
 
+path = sys.argv[1]
 
 train_stats = {
     "epoch": [],
@@ -15,7 +17,7 @@ eval_stats = {
     "pre": []
 }
 
-with open('training.txt') as train_file:
+with open(path) as train_file:
     lines = train_file.readlines()
     for line in lines:
         g = re.search(r"epoch (\d+), train_loss = (\d+\.\d+)", line)
@@ -34,6 +36,7 @@ print(eval_stats["ndcg"])
 
 fig, axes = plt.subplots(2,2, sharex=True)
 
+fig.tight_layout(pad=2)
 axes[0][0].plot(train_stats["epoch"], train_stats["loss"])
 axes[0][0].set_title("Loss")
 
