@@ -1,0 +1,989 @@
+seed: 12345
+Using cuda:0
+Model Setting
+    hidden dim: 64
+    Using 1 layers GCN.
+      gcn left = 1.000000
+      gcn right = 0.000000
+      Z = Z(1)
+    Using 4 layers Rankformer:
+      rankformer alpha = 2.000000
+      rankformer tau = 0.400000
+      rankformer clamp value = 0.000000
+Train Setting
+    learning rate: 0.100000
+    reg_lambda: 0.000100
+    loss batch size: 0
+    max epochs: 2000
+Test Setting
+    topks:  [20]
+    test batch size: 1000
+    valid interval: 20
+    stopping step: 10
+Data Setting
+    train: data/Epinions/train.txt
+    valid: data/Epinions/valid.txt
+    test: data/Epinions/test.txt
+Experiment Setting
+    |                   Ablation Study Setting                 |
+    | Negative pairs | Benchmark | Offset | Normalize of Omega |
+    |        Y       |     Y     |   Y    |          Y         |
+---------------------------
+17894 users, 17660 items.
+train: 210967, valid: 30137, test: 60274.
+[0/2000] Valid Result: ndcg@20 = 0.000240, recall@20 = 0.000559, pre@20 = 0.000091.
+===== Test Result(at 0 epoch) =====
+ndcg@20 = 0.000468, recall@20 = 0.000863, pre@20 = 0.000183
+epoch 1, train_loss = 0.692837.
+epoch 2, train_loss = 0.688028.
+epoch 3, train_loss = 0.656657.
+epoch 4, train_loss = 0.587613.
+epoch 5, train_loss = 0.508221.
+epoch 6, train_loss = 0.474074.
+epoch 7, train_loss = 0.489768.
+epoch 8, train_loss = 0.504840.
+epoch 9, train_loss = 0.491843.
+epoch 10, train_loss = 0.465896.
+epoch 11, train_loss = 0.435907.
+epoch 12, train_loss = 0.408625.
+epoch 13, train_loss = 0.389630.
+epoch 14, train_loss = 0.377295.
+epoch 15, train_loss = 0.367591.
+epoch 16, train_loss = 0.357375.
+epoch 17, train_loss = 0.347820.
+epoch 18, train_loss = 0.340457.
+epoch 19, train_loss = 0.331685.
+epoch 20, train_loss = 0.322828.
+[20/2000] Valid Result: ndcg@20 = 0.016918, recall@20 = 0.036155, pre@20 = 0.004205.
+===== Test Result(at 20 epoch) =====
+ndcg@20 = 0.019220, recall@20 = 0.036423, pre@20 = 0.006679
+epoch 21, train_loss = 0.314536.
+epoch 22, train_loss = 0.308768.
+epoch 23, train_loss = 0.303435.
+epoch 24, train_loss = 0.299242.
+epoch 25, train_loss = 0.293645.
+epoch 26, train_loss = 0.291236.
+epoch 27, train_loss = 0.285325.
+epoch 28, train_loss = 0.277875.
+epoch 29, train_loss = 0.272776.
+epoch 30, train_loss = 0.264256.
+epoch 31, train_loss = 0.255696.
+epoch 32, train_loss = 0.247128.
+epoch 33, train_loss = 0.242188.
+epoch 34, train_loss = 0.237013.
+epoch 35, train_loss = 0.234321.
+epoch 36, train_loss = 0.231584.
+epoch 37, train_loss = 0.228858.
+epoch 38, train_loss = 0.226728.
+epoch 39, train_loss = 0.225597.
+epoch 40, train_loss = 0.220562.
+[40/2000] Valid Result: ndcg@20 = 0.026284, recall@20 = 0.053127, pre@20 = 0.006456.
+===== Test Result(at 40 epoch) =====
+ndcg@20 = 0.030511, recall@20 = 0.054190, pre@20 = 0.010222
+epoch 41, train_loss = 0.217443.
+epoch 42, train_loss = 0.215440.
+epoch 43, train_loss = 0.212418.
+epoch 44, train_loss = 0.206501.
+epoch 45, train_loss = 0.202576.
+epoch 46, train_loss = 0.200841.
+epoch 47, train_loss = 0.198866.
+epoch 48, train_loss = 0.195603.
+epoch 49, train_loss = 0.192990.
+epoch 50, train_loss = 0.190740.
+epoch 51, train_loss = 0.188578.
+epoch 52, train_loss = 0.186515.
+epoch 53, train_loss = 0.183526.
+epoch 54, train_loss = 0.182411.
+epoch 55, train_loss = 0.177196.
+epoch 56, train_loss = 0.177558.
+epoch 57, train_loss = 0.175794.
+epoch 58, train_loss = 0.174340.
+epoch 59, train_loss = 0.171387.
+epoch 60, train_loss = 0.168434.
+[60/2000] Valid Result: ndcg@20 = 0.033101, recall@20 = 0.066025, pre@20 = 0.007817.
+===== Test Result(at 60 epoch) =====
+ndcg@20 = 0.038930, recall@20 = 0.068120, pre@20 = 0.012690
+epoch 61, train_loss = 0.167033.
+epoch 62, train_loss = 0.165371.
+epoch 63, train_loss = 0.162577.
+epoch 64, train_loss = 0.160905.
+epoch 65, train_loss = 0.158697.
+epoch 66, train_loss = 0.156766.
+epoch 67, train_loss = 0.155161.
+epoch 68, train_loss = 0.153003.
+epoch 69, train_loss = 0.150898.
+epoch 70, train_loss = 0.150151.
+epoch 71, train_loss = 0.146935.
+epoch 72, train_loss = 0.146597.
+epoch 73, train_loss = 0.144536.
+epoch 74, train_loss = 0.143032.
+epoch 75, train_loss = 0.142855.
+epoch 76, train_loss = 0.139231.
+epoch 77, train_loss = 0.138198.
+epoch 78, train_loss = 0.137052.
+epoch 79, train_loss = 0.136624.
+epoch 80, train_loss = 0.134579.
+[80/2000] Valid Result: ndcg@20 = 0.037369, recall@20 = 0.074288, pre@20 = 0.008935.
+===== Test Result(at 80 epoch) =====
+ndcg@20 = 0.043695, recall@20 = 0.074092, pre@20 = 0.014184
+epoch 81, train_loss = 0.133394.
+epoch 82, train_loss = 0.131345.
+epoch 83, train_loss = 0.131727.
+epoch 84, train_loss = 0.129782.
+epoch 85, train_loss = 0.128878.
+epoch 86, train_loss = 0.126675.
+epoch 87, train_loss = 0.126272.
+epoch 88, train_loss = 0.124021.
+epoch 89, train_loss = 0.123557.
+epoch 90, train_loss = 0.121528.
+epoch 91, train_loss = 0.121503.
+epoch 92, train_loss = 0.121189.
+epoch 93, train_loss = 0.119831.
+epoch 94, train_loss = 0.118666.
+epoch 95, train_loss = 0.118337.
+epoch 96, train_loss = 0.116637.
+epoch 97, train_loss = 0.116344.
+epoch 98, train_loss = 0.115186.
+epoch 99, train_loss = 0.115182.
+epoch 100, train_loss = 0.114410.
+[100/2000] Valid Result: ndcg@20 = 0.039333, recall@20 = 0.078899, pre@20 = 0.009436.
+===== Test Result(at 100 epoch) =====
+ndcg@20 = 0.046232, recall@20 = 0.078421, pre@20 = 0.014949
+epoch 101, train_loss = 0.114315.
+epoch 102, train_loss = 0.113232.
+epoch 103, train_loss = 0.111943.
+epoch 104, train_loss = 0.111544.
+epoch 105, train_loss = 0.110646.
+epoch 106, train_loss = 0.109999.
+epoch 107, train_loss = 0.110158.
+epoch 108, train_loss = 0.108611.
+epoch 109, train_loss = 0.107975.
+epoch 110, train_loss = 0.108166.
+epoch 111, train_loss = 0.106824.
+epoch 112, train_loss = 0.105765.
+epoch 113, train_loss = 0.105463.
+epoch 114, train_loss = 0.105710.
+epoch 115, train_loss = 0.104805.
+epoch 116, train_loss = 0.104411.
+epoch 117, train_loss = 0.104998.
+epoch 118, train_loss = 0.103795.
+epoch 119, train_loss = 0.102375.
+epoch 120, train_loss = 0.102713.
+[120/2000] Valid Result: ndcg@20 = 0.040925, recall@20 = 0.081450, pre@20 = 0.009721.
+===== Test Result(at 120 epoch) =====
+ndcg@20 = 0.047515, recall@20 = 0.079592, pre@20 = 0.015355
+epoch 121, train_loss = 0.102002.
+epoch 122, train_loss = 0.101739.
+epoch 123, train_loss = 0.101092.
+epoch 124, train_loss = 0.101003.
+epoch 125, train_loss = 0.100594.
+epoch 126, train_loss = 0.100432.
+epoch 127, train_loss = 0.099466.
+epoch 128, train_loss = 0.099156.
+epoch 129, train_loss = 0.099343.
+epoch 130, train_loss = 0.098103.
+epoch 131, train_loss = 0.098524.
+epoch 132, train_loss = 0.097958.
+epoch 133, train_loss = 0.097539.
+epoch 134, train_loss = 0.097935.
+epoch 135, train_loss = 0.096635.
+epoch 136, train_loss = 0.096869.
+epoch 137, train_loss = 0.095828.
+epoch 138, train_loss = 0.096130.
+epoch 139, train_loss = 0.095647.
+epoch 140, train_loss = 0.095075.
+[140/2000] Valid Result: ndcg@20 = 0.042175, recall@20 = 0.082774, pre@20 = 0.009986.
+===== Test Result(at 140 epoch) =====
+ndcg@20 = 0.048794, recall@20 = 0.081653, pre@20 = 0.015760
+epoch 141, train_loss = 0.095348.
+epoch 142, train_loss = 0.094769.
+epoch 143, train_loss = 0.094880.
+epoch 144, train_loss = 0.094648.
+epoch 145, train_loss = 0.094451.
+epoch 146, train_loss = 0.093930.
+epoch 147, train_loss = 0.093586.
+epoch 148, train_loss = 0.093842.
+epoch 149, train_loss = 0.092838.
+epoch 150, train_loss = 0.092483.
+epoch 151, train_loss = 0.093173.
+epoch 152, train_loss = 0.092592.
+epoch 153, train_loss = 0.092668.
+epoch 154, train_loss = 0.091990.
+epoch 155, train_loss = 0.091639.
+epoch 156, train_loss = 0.092455.
+epoch 157, train_loss = 0.091566.
+epoch 158, train_loss = 0.091739.
+epoch 159, train_loss = 0.091037.
+epoch 160, train_loss = 0.090597.
+[160/2000] Valid Result: ndcg@20 = 0.043143, recall@20 = 0.084077, pre@20 = 0.010122.
+===== Test Result(at 160 epoch) =====
+ndcg@20 = 0.049726, recall@20 = 0.082714, pre@20 = 0.015950
+epoch 161, train_loss = 0.091192.
+epoch 162, train_loss = 0.090188.
+epoch 163, train_loss = 0.090474.
+epoch 164, train_loss = 0.090863.
+epoch 165, train_loss = 0.090340.
+epoch 166, train_loss = 0.089297.
+epoch 167, train_loss = 0.088947.
+epoch 168, train_loss = 0.089172.
+epoch 169, train_loss = 0.089403.
+epoch 170, train_loss = 0.089821.
+epoch 171, train_loss = 0.088428.
+epoch 172, train_loss = 0.088482.
+epoch 173, train_loss = 0.088626.
+epoch 174, train_loss = 0.087646.
+epoch 175, train_loss = 0.088514.
+epoch 176, train_loss = 0.088615.
+epoch 177, train_loss = 0.088137.
+epoch 178, train_loss = 0.087641.
+epoch 179, train_loss = 0.087887.
+epoch 180, train_loss = 0.087732.
+[180/2000] Valid Result: ndcg@20 = 0.043871, recall@20 = 0.083919, pre@20 = 0.010209.
+===== Test Result(at 180 epoch) =====
+ndcg@20 = 0.050436, recall@20 = 0.083484, pre@20 = 0.016165
+epoch 181, train_loss = 0.087689.
+epoch 182, train_loss = 0.087478.
+epoch 183, train_loss = 0.087323.
+epoch 184, train_loss = 0.086840.
+epoch 185, train_loss = 0.087090.
+epoch 186, train_loss = 0.086761.
+epoch 187, train_loss = 0.086806.
+epoch 188, train_loss = 0.086308.
+epoch 189, train_loss = 0.086128.
+epoch 190, train_loss = 0.086597.
+epoch 191, train_loss = 0.085912.
+epoch 192, train_loss = 0.085598.
+epoch 193, train_loss = 0.086187.
+epoch 194, train_loss = 0.085656.
+epoch 195, train_loss = 0.085894.
+epoch 196, train_loss = 0.085950.
+epoch 197, train_loss = 0.085819.
+epoch 198, train_loss = 0.086072.
+epoch 199, train_loss = 0.085403.
+epoch 200, train_loss = 0.085261.
+[200/2000] Valid Result: ndcg@20 = 0.044335, recall@20 = 0.084847, pre@20 = 0.010309.
+===== Test Result(at 200 epoch) =====
+ndcg@20 = 0.050918, recall@20 = 0.084654, pre@20 = 0.016450
+epoch 201, train_loss = 0.084940.
+epoch 202, train_loss = 0.085712.
+epoch 203, train_loss = 0.084765.
+epoch 204, train_loss = 0.084760.
+epoch 205, train_loss = 0.085109.
+epoch 206, train_loss = 0.084330.
+epoch 207, train_loss = 0.085033.
+epoch 208, train_loss = 0.084706.
+epoch 209, train_loss = 0.083967.
+epoch 210, train_loss = 0.084349.
+epoch 211, train_loss = 0.084179.
+epoch 212, train_loss = 0.084000.
+epoch 213, train_loss = 0.083696.
+epoch 214, train_loss = 0.084680.
+epoch 215, train_loss = 0.084084.
+epoch 216, train_loss = 0.084335.
+epoch 217, train_loss = 0.083614.
+epoch 218, train_loss = 0.083630.
+epoch 219, train_loss = 0.084047.
+epoch 220, train_loss = 0.082948.
+[220/2000] Valid Result: ndcg@20 = 0.044679, recall@20 = 0.084855, pre@20 = 0.010379.
+===== Test Result(at 220 epoch) =====
+ndcg@20 = 0.051268, recall@20 = 0.084982, pre@20 = 0.016502
+epoch 221, train_loss = 0.083593.
+epoch 222, train_loss = 0.083990.
+epoch 223, train_loss = 0.083632.
+epoch 224, train_loss = 0.083231.
+epoch 225, train_loss = 0.083106.
+epoch 226, train_loss = 0.083465.
+epoch 227, train_loss = 0.082866.
+epoch 228, train_loss = 0.082859.
+epoch 229, train_loss = 0.082297.
+epoch 230, train_loss = 0.082822.
+epoch 231, train_loss = 0.083281.
+epoch 232, train_loss = 0.082751.
+epoch 233, train_loss = 0.082510.
+epoch 234, train_loss = 0.082962.
+epoch 235, train_loss = 0.082227.
+epoch 236, train_loss = 0.082399.
+epoch 237, train_loss = 0.082688.
+epoch 238, train_loss = 0.082681.
+epoch 239, train_loss = 0.082065.
+epoch 240, train_loss = 0.082553.
+[240/2000] Valid Result: ndcg@20 = 0.045191, recall@20 = 0.086176, pre@20 = 0.010474.
+===== Test Result(at 240 epoch) =====
+ndcg@20 = 0.051589, recall@20 = 0.085792, pre@20 = 0.016669
+epoch 241, train_loss = 0.082168.
+epoch 242, train_loss = 0.082111.
+epoch 243, train_loss = 0.081530.
+epoch 244, train_loss = 0.081853.
+epoch 245, train_loss = 0.082169.
+epoch 246, train_loss = 0.081641.
+epoch 247, train_loss = 0.081711.
+epoch 248, train_loss = 0.082022.
+epoch 249, train_loss = 0.081377.
+epoch 250, train_loss = 0.081290.
+epoch 251, train_loss = 0.082147.
+epoch 252, train_loss = 0.081149.
+epoch 253, train_loss = 0.081592.
+epoch 254, train_loss = 0.081162.
+epoch 255, train_loss = 0.080917.
+epoch 256, train_loss = 0.081141.
+epoch 257, train_loss = 0.080852.
+epoch 258, train_loss = 0.081107.
+epoch 259, train_loss = 0.080994.
+epoch 260, train_loss = 0.080714.
+[260/2000] Valid Result: ndcg@20 = 0.045105, recall@20 = 0.086296, pre@20 = 0.010507.
+epoch 261, train_loss = 0.080635.
+epoch 262, train_loss = 0.080846.
+epoch 263, train_loss = 0.080773.
+epoch 264, train_loss = 0.080905.
+epoch 265, train_loss = 0.080940.
+epoch 266, train_loss = 0.080766.
+epoch 267, train_loss = 0.080624.
+epoch 268, train_loss = 0.080596.
+epoch 269, train_loss = 0.080496.
+epoch 270, train_loss = 0.080110.
+epoch 271, train_loss = 0.080428.
+epoch 272, train_loss = 0.080453.
+epoch 273, train_loss = 0.080646.
+epoch 274, train_loss = 0.080763.
+epoch 275, train_loss = 0.080245.
+epoch 276, train_loss = 0.080335.
+epoch 277, train_loss = 0.080321.
+epoch 278, train_loss = 0.080172.
+epoch 279, train_loss = 0.080310.
+epoch 280, train_loss = 0.080274.
+[280/2000] Valid Result: ndcg@20 = 0.045135, recall@20 = 0.086022, pre@20 = 0.010540.
+epoch 281, train_loss = 0.079657.
+epoch 282, train_loss = 0.080441.
+epoch 283, train_loss = 0.079773.
+epoch 284, train_loss = 0.079855.
+epoch 285, train_loss = 0.080035.
+epoch 286, train_loss = 0.080250.
+epoch 287, train_loss = 0.080087.
+epoch 288, train_loss = 0.079963.
+epoch 289, train_loss = 0.079800.
+epoch 290, train_loss = 0.079972.
+epoch 291, train_loss = 0.079327.
+epoch 292, train_loss = 0.079851.
+epoch 293, train_loss = 0.079694.
+epoch 294, train_loss = 0.079403.
+epoch 295, train_loss = 0.080032.
+epoch 296, train_loss = 0.079430.
+epoch 297, train_loss = 0.079336.
+epoch 298, train_loss = 0.079800.
+epoch 299, train_loss = 0.078974.
+epoch 300, train_loss = 0.079094.
+[300/2000] Valid Result: ndcg@20 = 0.045390, recall@20 = 0.085947, pre@20 = 0.010536.
+===== Test Result(at 300 epoch) =====
+ndcg@20 = 0.052786, recall@20 = 0.087199, pre@20 = 0.016999
+epoch 301, train_loss = 0.079040.
+epoch 302, train_loss = 0.079181.
+epoch 303, train_loss = 0.079642.
+epoch 304, train_loss = 0.079275.
+epoch 305, train_loss = 0.079120.
+epoch 306, train_loss = 0.079428.
+epoch 307, train_loss = 0.079145.
+epoch 308, train_loss = 0.078910.
+epoch 309, train_loss = 0.079265.
+epoch 310, train_loss = 0.079236.
+epoch 311, train_loss = 0.078894.
+epoch 312, train_loss = 0.079213.
+epoch 313, train_loss = 0.078755.
+epoch 314, train_loss = 0.078612.
+epoch 315, train_loss = 0.079323.
+epoch 316, train_loss = 0.079092.
+epoch 317, train_loss = 0.078803.
+epoch 318, train_loss = 0.078941.
+epoch 319, train_loss = 0.078587.
+epoch 320, train_loss = 0.078771.
+[320/2000] Valid Result: ndcg@20 = 0.045453, recall@20 = 0.085751, pre@20 = 0.010549.
+===== Test Result(at 320 epoch) =====
+ndcg@20 = 0.052919, recall@20 = 0.087242, pre@20 = 0.017042
+epoch 321, train_loss = 0.078558.
+epoch 322, train_loss = 0.078665.
+epoch 323, train_loss = 0.079072.
+epoch 324, train_loss = 0.079060.
+epoch 325, train_loss = 0.078003.
+epoch 326, train_loss = 0.078385.
+epoch 327, train_loss = 0.078459.
+epoch 328, train_loss = 0.078592.
+epoch 329, train_loss = 0.078334.
+epoch 330, train_loss = 0.077942.
+epoch 331, train_loss = 0.078716.
+epoch 332, train_loss = 0.078446.
+epoch 333, train_loss = 0.078345.
+epoch 334, train_loss = 0.078420.
+epoch 335, train_loss = 0.078141.
+epoch 336, train_loss = 0.077859.
+epoch 337, train_loss = 0.077895.
+epoch 338, train_loss = 0.078011.
+epoch 339, train_loss = 0.077905.
+epoch 340, train_loss = 0.078192.
+[340/2000] Valid Result: ndcg@20 = 0.045852, recall@20 = 0.087058, pre@20 = 0.010677.
+===== Test Result(at 340 epoch) =====
+ndcg@20 = 0.053226, recall@20 = 0.087579, pre@20 = 0.017107
+epoch 341, train_loss = 0.078144.
+epoch 342, train_loss = 0.078202.
+epoch 343, train_loss = 0.077903.
+epoch 344, train_loss = 0.078083.
+epoch 345, train_loss = 0.078179.
+epoch 346, train_loss = 0.078670.
+epoch 347, train_loss = 0.077917.
+epoch 348, train_loss = 0.078144.
+epoch 349, train_loss = 0.078217.
+epoch 350, train_loss = 0.077959.
+epoch 351, train_loss = 0.077957.
+epoch 352, train_loss = 0.077790.
+epoch 353, train_loss = 0.077910.
+epoch 354, train_loss = 0.077651.
+epoch 355, train_loss = 0.077703.
+epoch 356, train_loss = 0.078088.
+epoch 357, train_loss = 0.078217.
+epoch 358, train_loss = 0.077463.
+epoch 359, train_loss = 0.077849.
+epoch 360, train_loss = 0.077181.
+[360/2000] Valid Result: ndcg@20 = 0.046085, recall@20 = 0.087433, pre@20 = 0.010698.
+===== Test Result(at 360 epoch) =====
+ndcg@20 = 0.053140, recall@20 = 0.087690, pre@20 = 0.017113
+epoch 361, train_loss = 0.077720.
+epoch 362, train_loss = 0.077933.
+epoch 363, train_loss = 0.077317.
+epoch 364, train_loss = 0.077686.
+epoch 365, train_loss = 0.077793.
+epoch 366, train_loss = 0.077671.
+epoch 367, train_loss = 0.077737.
+epoch 368, train_loss = 0.077335.
+epoch 369, train_loss = 0.077108.
+epoch 370, train_loss = 0.077563.
+epoch 371, train_loss = 0.077581.
+epoch 372, train_loss = 0.077669.
+epoch 373, train_loss = 0.077576.
+epoch 374, train_loss = 0.077408.
+epoch 375, train_loss = 0.077487.
+epoch 376, train_loss = 0.077661.
+epoch 377, train_loss = 0.077060.
+epoch 378, train_loss = 0.077308.
+epoch 379, train_loss = 0.077432.
+epoch 380, train_loss = 0.077141.
+[380/2000] Valid Result: ndcg@20 = 0.046020, recall@20 = 0.086879, pre@20 = 0.010689.
+epoch 381, train_loss = 0.076879.
+epoch 382, train_loss = 0.077490.
+epoch 383, train_loss = 0.077373.
+epoch 384, train_loss = 0.077196.
+epoch 385, train_loss = 0.077380.
+epoch 386, train_loss = 0.077175.
+epoch 387, train_loss = 0.076687.
+epoch 388, train_loss = 0.077030.
+epoch 389, train_loss = 0.077221.
+epoch 390, train_loss = 0.077634.
+epoch 391, train_loss = 0.077379.
+epoch 392, train_loss = 0.077208.
+epoch 393, train_loss = 0.077323.
+epoch 394, train_loss = 0.076938.
+epoch 395, train_loss = 0.076900.
+epoch 396, train_loss = 0.076791.
+epoch 397, train_loss = 0.077225.
+epoch 398, train_loss = 0.076634.
+epoch 399, train_loss = 0.076917.
+epoch 400, train_loss = 0.076912.
+[400/2000] Valid Result: ndcg@20 = 0.046355, recall@20 = 0.087805, pre@20 = 0.010760.
+===== Test Result(at 400 epoch) =====
+ndcg@20 = 0.053545, recall@20 = 0.087351, pre@20 = 0.017081
+epoch 401, train_loss = 0.077659.
+epoch 402, train_loss = 0.077167.
+epoch 403, train_loss = 0.077077.
+epoch 404, train_loss = 0.076889.
+epoch 405, train_loss = 0.076898.
+epoch 406, train_loss = 0.076734.
+epoch 407, train_loss = 0.076687.
+epoch 408, train_loss = 0.076827.
+epoch 409, train_loss = 0.077004.
+epoch 410, train_loss = 0.077143.
+epoch 411, train_loss = 0.076476.
+epoch 412, train_loss = 0.076480.
+epoch 413, train_loss = 0.076566.
+epoch 414, train_loss = 0.077114.
+epoch 415, train_loss = 0.077117.
+epoch 416, train_loss = 0.076707.
+epoch 417, train_loss = 0.076957.
+epoch 418, train_loss = 0.076562.
+epoch 419, train_loss = 0.076565.
+epoch 420, train_loss = 0.076897.
+[420/2000] Valid Result: ndcg@20 = 0.046568, recall@20 = 0.088220, pre@20 = 0.010772.
+===== Test Result(at 420 epoch) =====
+ndcg@20 = 0.053753, recall@20 = 0.087677, pre@20 = 0.017087
+epoch 421, train_loss = 0.076671.
+epoch 422, train_loss = 0.076830.
+epoch 423, train_loss = 0.076908.
+epoch 424, train_loss = 0.076804.
+epoch 425, train_loss = 0.076570.
+epoch 426, train_loss = 0.076587.
+epoch 427, train_loss = 0.076427.
+epoch 428, train_loss = 0.076539.
+epoch 429, train_loss = 0.076368.
+epoch 430, train_loss = 0.076534.
+epoch 431, train_loss = 0.076576.
+epoch 432, train_loss = 0.076224.
+epoch 433, train_loss = 0.076695.
+epoch 434, train_loss = 0.076289.
+epoch 435, train_loss = 0.076790.
+epoch 436, train_loss = 0.076736.
+epoch 437, train_loss = 0.076275.
+epoch 438, train_loss = 0.076195.
+epoch 439, train_loss = 0.076100.
+epoch 440, train_loss = 0.075959.
+[440/2000] Valid Result: ndcg@20 = 0.046765, recall@20 = 0.088311, pre@20 = 0.010780.
+===== Test Result(at 440 epoch) =====
+ndcg@20 = 0.053789, recall@20 = 0.087757, pre@20 = 0.017182
+epoch 441, train_loss = 0.076161.
+epoch 442, train_loss = 0.076706.
+epoch 443, train_loss = 0.076188.
+epoch 444, train_loss = 0.076370.
+epoch 445, train_loss = 0.076709.
+epoch 446, train_loss = 0.076276.
+epoch 447, train_loss = 0.076315.
+epoch 448, train_loss = 0.075971.
+epoch 449, train_loss = 0.075877.
+epoch 450, train_loss = 0.075837.
+epoch 451, train_loss = 0.076495.
+epoch 452, train_loss = 0.076540.
+epoch 453, train_loss = 0.075918.
+epoch 454, train_loss = 0.075974.
+epoch 455, train_loss = 0.076260.
+epoch 456, train_loss = 0.076188.
+epoch 457, train_loss = 0.076368.
+epoch 458, train_loss = 0.076014.
+epoch 459, train_loss = 0.075963.
+epoch 460, train_loss = 0.076374.
+[460/2000] Valid Result: ndcg@20 = 0.046384, recall@20 = 0.088085, pre@20 = 0.010756.
+epoch 461, train_loss = 0.075944.
+epoch 462, train_loss = 0.076173.
+epoch 463, train_loss = 0.075839.
+epoch 464, train_loss = 0.075904.
+epoch 465, train_loss = 0.076107.
+epoch 466, train_loss = 0.075995.
+epoch 467, train_loss = 0.075811.
+epoch 468, train_loss = 0.075640.
+epoch 469, train_loss = 0.076453.
+epoch 470, train_loss = 0.076093.
+epoch 471, train_loss = 0.075784.
+epoch 472, train_loss = 0.075906.
+epoch 473, train_loss = 0.076193.
+epoch 474, train_loss = 0.076136.
+epoch 475, train_loss = 0.075740.
+epoch 476, train_loss = 0.075503.
+epoch 477, train_loss = 0.075580.
+epoch 478, train_loss = 0.076182.
+epoch 479, train_loss = 0.075456.
+epoch 480, train_loss = 0.075379.
+[480/2000] Valid Result: ndcg@20 = 0.046858, recall@20 = 0.088213, pre@20 = 0.010772.
+===== Test Result(at 480 epoch) =====
+ndcg@20 = 0.053751, recall@20 = 0.087709, pre@20 = 0.017202
+epoch 481, train_loss = 0.075687.
+epoch 482, train_loss = 0.075685.
+epoch 483, train_loss = 0.075834.
+epoch 484, train_loss = 0.075937.
+epoch 485, train_loss = 0.075591.
+epoch 486, train_loss = 0.075753.
+epoch 487, train_loss = 0.075998.
+epoch 488, train_loss = 0.076035.
+epoch 489, train_loss = 0.075606.
+epoch 490, train_loss = 0.075514.
+epoch 491, train_loss = 0.075568.
+epoch 492, train_loss = 0.075737.
+epoch 493, train_loss = 0.075848.
+epoch 494, train_loss = 0.075748.
+epoch 495, train_loss = 0.075401.
+epoch 496, train_loss = 0.076237.
+epoch 497, train_loss = 0.075741.
+epoch 498, train_loss = 0.075671.
+epoch 499, train_loss = 0.075793.
+epoch 500, train_loss = 0.075564.
+[500/2000] Valid Result: ndcg@20 = 0.046998, recall@20 = 0.088944, pre@20 = 0.010847.
+===== Test Result(at 500 epoch) =====
+ndcg@20 = 0.054029, recall@20 = 0.088214, pre@20 = 0.017218
+epoch 501, train_loss = 0.075878.
+epoch 502, train_loss = 0.075425.
+epoch 503, train_loss = 0.075443.
+epoch 504, train_loss = 0.075886.
+epoch 505, train_loss = 0.075677.
+epoch 506, train_loss = 0.075377.
+epoch 507, train_loss = 0.075484.
+epoch 508, train_loss = 0.075671.
+epoch 509, train_loss = 0.075444.
+epoch 510, train_loss = 0.075447.
+epoch 511, train_loss = 0.075645.
+epoch 512, train_loss = 0.075447.
+epoch 513, train_loss = 0.075400.
+epoch 514, train_loss = 0.075551.
+epoch 515, train_loss = 0.075180.
+epoch 516, train_loss = 0.075296.
+epoch 517, train_loss = 0.075366.
+epoch 518, train_loss = 0.075406.
+epoch 519, train_loss = 0.075154.
+epoch 520, train_loss = 0.075546.
+[520/2000] Valid Result: ndcg@20 = 0.046827, recall@20 = 0.088977, pre@20 = 0.010867.
+epoch 521, train_loss = 0.075434.
+epoch 522, train_loss = 0.075333.
+epoch 523, train_loss = 0.075581.
+epoch 524, train_loss = 0.075682.
+epoch 525, train_loss = 0.075559.
+epoch 526, train_loss = 0.075419.
+epoch 527, train_loss = 0.075670.
+epoch 528, train_loss = 0.075518.
+epoch 529, train_loss = 0.075530.
+epoch 530, train_loss = 0.075283.
+epoch 531, train_loss = 0.075663.
+epoch 532, train_loss = 0.075373.
+epoch 533, train_loss = 0.075323.
+epoch 534, train_loss = 0.075202.
+epoch 535, train_loss = 0.075868.
+epoch 536, train_loss = 0.075660.
+epoch 537, train_loss = 0.075004.
+epoch 538, train_loss = 0.075016.
+epoch 539, train_loss = 0.075199.
+epoch 540, train_loss = 0.075695.
+[540/2000] Valid Result: ndcg@20 = 0.047086, recall@20 = 0.088799, pre@20 = 0.010818.
+===== Test Result(at 540 epoch) =====
+ndcg@20 = 0.054057, recall@20 = 0.088237, pre@20 = 0.017267
+epoch 541, train_loss = 0.075175.
+epoch 542, train_loss = 0.075540.
+epoch 543, train_loss = 0.075580.
+epoch 544, train_loss = 0.075087.
+epoch 545, train_loss = 0.075649.
+epoch 546, train_loss = 0.075209.
+epoch 547, train_loss = 0.075335.
+epoch 548, train_loss = 0.074895.
+epoch 549, train_loss = 0.075153.
+epoch 550, train_loss = 0.075352.
+epoch 551, train_loss = 0.075016.
+epoch 552, train_loss = 0.075470.
+epoch 553, train_loss = 0.075232.
+epoch 554, train_loss = 0.075671.
+epoch 555, train_loss = 0.074817.
+epoch 556, train_loss = 0.074985.
+epoch 557, train_loss = 0.075555.
+epoch 558, train_loss = 0.075457.
+epoch 559, train_loss = 0.075432.
+epoch 560, train_loss = 0.075177.
+[560/2000] Valid Result: ndcg@20 = 0.046829, recall@20 = 0.088495, pre@20 = 0.010880.
+epoch 561, train_loss = 0.075199.
+epoch 562, train_loss = 0.075431.
+epoch 563, train_loss = 0.075038.
+epoch 564, train_loss = 0.075058.
+epoch 565, train_loss = 0.075285.
+epoch 566, train_loss = 0.075262.
+epoch 567, train_loss = 0.075040.
+epoch 568, train_loss = 0.075166.
+epoch 569, train_loss = 0.075036.
+epoch 570, train_loss = 0.075136.
+epoch 571, train_loss = 0.075578.
+epoch 572, train_loss = 0.075282.
+epoch 573, train_loss = 0.074912.
+epoch 574, train_loss = 0.075318.
+epoch 575, train_loss = 0.075258.
+epoch 576, train_loss = 0.075141.
+epoch 577, train_loss = 0.074960.
+epoch 578, train_loss = 0.074833.
+epoch 579, train_loss = 0.075192.
+epoch 580, train_loss = 0.075059.
+[580/2000] Valid Result: ndcg@20 = 0.046772, recall@20 = 0.088528, pre@20 = 0.010892.
+epoch 581, train_loss = 0.074835.
+epoch 582, train_loss = 0.075116.
+epoch 583, train_loss = 0.075347.
+epoch 584, train_loss = 0.075177.
+epoch 585, train_loss = 0.074580.
+epoch 586, train_loss = 0.075007.
+epoch 587, train_loss = 0.074741.
+epoch 588, train_loss = 0.075037.
+epoch 589, train_loss = 0.074991.
+epoch 590, train_loss = 0.074881.
+epoch 591, train_loss = 0.074784.
+epoch 592, train_loss = 0.075141.
+epoch 593, train_loss = 0.075156.
+epoch 594, train_loss = 0.074837.
+epoch 595, train_loss = 0.074976.
+epoch 596, train_loss = 0.075161.
+epoch 597, train_loss = 0.074832.
+epoch 598, train_loss = 0.074794.
+epoch 599, train_loss = 0.075204.
+epoch 600, train_loss = 0.074815.
+[600/2000] Valid Result: ndcg@20 = 0.047059, recall@20 = 0.089035, pre@20 = 0.010942.
+epoch 601, train_loss = 0.074953.
+epoch 602, train_loss = 0.074924.
+epoch 603, train_loss = 0.074728.
+epoch 604, train_loss = 0.074841.
+epoch 605, train_loss = 0.075086.
+epoch 606, train_loss = 0.074794.
+epoch 607, train_loss = 0.074632.
+epoch 608, train_loss = 0.074964.
+epoch 609, train_loss = 0.074943.
+epoch 610, train_loss = 0.074596.
+epoch 611, train_loss = 0.075109.
+epoch 612, train_loss = 0.074436.
+epoch 613, train_loss = 0.074976.
+epoch 614, train_loss = 0.074706.
+epoch 615, train_loss = 0.075063.
+epoch 616, train_loss = 0.074702.
+epoch 617, train_loss = 0.074518.
+epoch 618, train_loss = 0.074953.
+epoch 619, train_loss = 0.075231.
+epoch 620, train_loss = 0.074739.
+[620/2000] Valid Result: ndcg@20 = 0.046967, recall@20 = 0.087836, pre@20 = 0.010772.
+epoch 621, train_loss = 0.074706.
+epoch 622, train_loss = 0.074876.
+epoch 623, train_loss = 0.074671.
+epoch 624, train_loss = 0.074537.
+epoch 625, train_loss = 0.074730.
+epoch 626, train_loss = 0.074915.
+epoch 627, train_loss = 0.074438.
+epoch 628, train_loss = 0.074553.
+epoch 629, train_loss = 0.074798.
+epoch 630, train_loss = 0.074662.
+epoch 631, train_loss = 0.074884.
+epoch 632, train_loss = 0.074388.
+epoch 633, train_loss = 0.074835.
+epoch 634, train_loss = 0.074645.
+epoch 635, train_loss = 0.074671.
+epoch 636, train_loss = 0.074376.
+epoch 637, train_loss = 0.074940.
+epoch 638, train_loss = 0.074479.
+epoch 639, train_loss = 0.074956.
+epoch 640, train_loss = 0.074561.
+[640/2000] Valid Result: ndcg@20 = 0.047052, recall@20 = 0.088559, pre@20 = 0.010851.
+epoch 641, train_loss = 0.074543.
+epoch 642, train_loss = 0.074478.
+epoch 643, train_loss = 0.074440.
+epoch 644, train_loss = 0.075046.
+epoch 645, train_loss = 0.074449.
+epoch 646, train_loss = 0.074681.
+epoch 647, train_loss = 0.074442.
+epoch 648, train_loss = 0.074935.
+epoch 649, train_loss = 0.074477.
+epoch 650, train_loss = 0.074844.
+epoch 651, train_loss = 0.074471.
+epoch 652, train_loss = 0.074511.
+epoch 653, train_loss = 0.074367.
+epoch 654, train_loss = 0.074449.
+epoch 655, train_loss = 0.074733.
+epoch 656, train_loss = 0.074846.
+epoch 657, train_loss = 0.074861.
+epoch 658, train_loss = 0.074492.
+epoch 659, train_loss = 0.074476.
+epoch 660, train_loss = 0.074509.
+[660/2000] Valid Result: ndcg@20 = 0.047507, recall@20 = 0.089520, pre@20 = 0.010954.
+===== Test Result(at 660 epoch) =====
+ndcg@20 = 0.054724, recall@20 = 0.089123, pre@20 = 0.017427
+epoch 661, train_loss = 0.074835.
+epoch 662, train_loss = 0.074172.
+epoch 663, train_loss = 0.074333.
+epoch 664, train_loss = 0.074663.
+epoch 665, train_loss = 0.074889.
+epoch 666, train_loss = 0.074353.
+epoch 667, train_loss = 0.074140.
+epoch 668, train_loss = 0.074500.
+epoch 669, train_loss = 0.074676.
+epoch 670, train_loss = 0.074540.
+epoch 671, train_loss = 0.074513.
+epoch 672, train_loss = 0.074627.
+epoch 673, train_loss = 0.074444.
+epoch 674, train_loss = 0.074341.
+epoch 675, train_loss = 0.074513.
+epoch 676, train_loss = 0.074687.
+epoch 677, train_loss = 0.074765.
+epoch 678, train_loss = 0.074557.
+epoch 679, train_loss = 0.074257.
+epoch 680, train_loss = 0.074492.
+[680/2000] Valid Result: ndcg@20 = 0.047321, recall@20 = 0.089149, pre@20 = 0.010896.
+epoch 681, train_loss = 0.074272.
+epoch 682, train_loss = 0.074496.
+epoch 683, train_loss = 0.074167.
+epoch 684, train_loss = 0.074515.
+epoch 685, train_loss = 0.074399.
+epoch 686, train_loss = 0.074707.
+epoch 687, train_loss = 0.074490.
+epoch 688, train_loss = 0.074872.
+epoch 689, train_loss = 0.074681.
+epoch 690, train_loss = 0.074413.
+epoch 691, train_loss = 0.074517.
+epoch 692, train_loss = 0.074167.
+epoch 693, train_loss = 0.074252.
+epoch 694, train_loss = 0.074240.
+epoch 695, train_loss = 0.074177.
+epoch 696, train_loss = 0.074398.
+epoch 697, train_loss = 0.074172.
+epoch 698, train_loss = 0.074400.
+epoch 699, train_loss = 0.074346.
+epoch 700, train_loss = 0.073995.
+[700/2000] Valid Result: ndcg@20 = 0.046874, recall@20 = 0.088412, pre@20 = 0.010855.
+epoch 701, train_loss = 0.074191.
+epoch 702, train_loss = 0.074198.
+epoch 703, train_loss = 0.074719.
+epoch 704, train_loss = 0.074371.
+epoch 705, train_loss = 0.074280.
+epoch 706, train_loss = 0.074368.
+epoch 707, train_loss = 0.074359.
+epoch 708, train_loss = 0.074131.
+epoch 709, train_loss = 0.074518.
+epoch 710, train_loss = 0.074183.
+epoch 711, train_loss = 0.074126.
+epoch 712, train_loss = 0.074114.
+epoch 713, train_loss = 0.074497.
+epoch 714, train_loss = 0.074714.
+epoch 715, train_loss = 0.074740.
+epoch 716, train_loss = 0.074119.
+epoch 717, train_loss = 0.074220.
+epoch 718, train_loss = 0.074478.
+epoch 719, train_loss = 0.074298.
+epoch 720, train_loss = 0.074199.
+[720/2000] Valid Result: ndcg@20 = 0.047070, recall@20 = 0.088374, pre@20 = 0.010851.
+epoch 721, train_loss = 0.074317.
+epoch 722, train_loss = 0.074199.
+epoch 723, train_loss = 0.074363.
+epoch 724, train_loss = 0.074309.
+epoch 725, train_loss = 0.074281.
+epoch 726, train_loss = 0.074487.
+epoch 727, train_loss = 0.074346.
+epoch 728, train_loss = 0.074218.
+epoch 729, train_loss = 0.074372.
+epoch 730, train_loss = 0.074122.
+epoch 731, train_loss = 0.074420.
+epoch 732, train_loss = 0.074086.
+epoch 733, train_loss = 0.074540.
+epoch 734, train_loss = 0.073848.
+epoch 735, train_loss = 0.074103.
+epoch 736, train_loss = 0.074278.
+epoch 737, train_loss = 0.074199.
+epoch 738, train_loss = 0.073894.
+epoch 739, train_loss = 0.074126.
+epoch 740, train_loss = 0.074138.
+[740/2000] Valid Result: ndcg@20 = 0.047080, recall@20 = 0.088190, pre@20 = 0.010855.
+epoch 741, train_loss = 0.074167.
+epoch 742, train_loss = 0.074276.
+epoch 743, train_loss = 0.074271.
+epoch 744, train_loss = 0.074500.
+epoch 745, train_loss = 0.074488.
+epoch 746, train_loss = 0.074094.
+epoch 747, train_loss = 0.073901.
+epoch 748, train_loss = 0.073960.
+epoch 749, train_loss = 0.074341.
+epoch 750, train_loss = 0.074208.
+epoch 751, train_loss = 0.073875.
+epoch 752, train_loss = 0.074657.
+epoch 753, train_loss = 0.074634.
+epoch 754, train_loss = 0.074046.
+epoch 755, train_loss = 0.074156.
+epoch 756, train_loss = 0.074193.
+epoch 757, train_loss = 0.074315.
+epoch 758, train_loss = 0.074414.
+epoch 759, train_loss = 0.074277.
+epoch 760, train_loss = 0.074154.
+[760/2000] Valid Result: ndcg@20 = 0.047221, recall@20 = 0.088758, pre@20 = 0.010938.
+epoch 761, train_loss = 0.074241.
+epoch 762, train_loss = 0.074151.
+epoch 763, train_loss = 0.074272.
+epoch 764, train_loss = 0.074191.
+epoch 765, train_loss = 0.074199.
+epoch 766, train_loss = 0.073751.
+epoch 767, train_loss = 0.073986.
+epoch 768, train_loss = 0.073656.
+epoch 769, train_loss = 0.074377.
+epoch 770, train_loss = 0.074246.
+epoch 771, train_loss = 0.074313.
+epoch 772, train_loss = 0.074160.
+epoch 773, train_loss = 0.074023.
+epoch 774, train_loss = 0.074168.
+epoch 775, train_loss = 0.074291.
+epoch 776, train_loss = 0.074043.
+epoch 777, train_loss = 0.073388.
+epoch 778, train_loss = 0.074173.
+epoch 779, train_loss = 0.074035.
+epoch 780, train_loss = 0.074199.
+[780/2000] Valid Result: ndcg@20 = 0.047286, recall@20 = 0.088350, pre@20 = 0.010867.
+epoch 781, train_loss = 0.074183.
+epoch 782, train_loss = 0.074166.
+epoch 783, train_loss = 0.074026.
+epoch 784, train_loss = 0.074112.
+epoch 785, train_loss = 0.074328.
+epoch 786, train_loss = 0.074153.
+epoch 787, train_loss = 0.073609.
+epoch 788, train_loss = 0.074160.
+epoch 789, train_loss = 0.073890.
+epoch 790, train_loss = 0.074057.
+epoch 791, train_loss = 0.073626.
+epoch 792, train_loss = 0.073985.
+epoch 793, train_loss = 0.073720.
+epoch 794, train_loss = 0.074145.
+epoch 795, train_loss = 0.073700.
+epoch 796, train_loss = 0.073936.
+epoch 797, train_loss = 0.074031.
+epoch 798, train_loss = 0.074241.
+epoch 799, train_loss = 0.073909.
+epoch 800, train_loss = 0.074381.
+[800/2000] Valid Result: ndcg@20 = 0.047394, recall@20 = 0.088178, pre@20 = 0.010838.
+epoch 801, train_loss = 0.074235.
+epoch 802, train_loss = 0.073935.
+epoch 803, train_loss = 0.073924.
+epoch 804, train_loss = 0.074035.
+epoch 805, train_loss = 0.074092.
+epoch 806, train_loss = 0.074139.
+epoch 807, train_loss = 0.073952.
+epoch 808, train_loss = 0.073742.
+epoch 809, train_loss = 0.073502.
+epoch 810, train_loss = 0.074212.
+epoch 811, train_loss = 0.073691.
+epoch 812, train_loss = 0.073520.
+epoch 813, train_loss = 0.074254.
+epoch 814, train_loss = 0.074044.
+epoch 815, train_loss = 0.074242.
+epoch 816, train_loss = 0.074046.
+epoch 817, train_loss = 0.073501.
+epoch 818, train_loss = 0.073634.
+epoch 819, train_loss = 0.073401.
+epoch 820, train_loss = 0.074383.
+[820/2000] Valid Result: ndcg@20 = 0.047247, recall@20 = 0.088402, pre@20 = 0.010859.
+epoch 821, train_loss = 0.074196.
+epoch 822, train_loss = 0.074056.
+epoch 823, train_loss = 0.074185.
+epoch 824, train_loss = 0.074275.
+epoch 825, train_loss = 0.074101.
+epoch 826, train_loss = 0.073882.
+epoch 827, train_loss = 0.074047.
+epoch 828, train_loss = 0.073862.
+epoch 829, train_loss = 0.073628.
+epoch 830, train_loss = 0.073971.
+epoch 831, train_loss = 0.074077.
+epoch 832, train_loss = 0.074083.
+epoch 833, train_loss = 0.073881.
+epoch 834, train_loss = 0.074056.
+epoch 835, train_loss = 0.074210.
+epoch 836, train_loss = 0.073687.
+epoch 837, train_loss = 0.073890.
+epoch 838, train_loss = 0.073560.
+epoch 839, train_loss = 0.073957.
+epoch 840, train_loss = 0.074099.
+[840/2000] Valid Result: ndcg@20 = 0.047366, recall@20 = 0.088417, pre@20 = 0.010880.
+epoch 841, train_loss = 0.073923.
+epoch 842, train_loss = 0.073942.
+epoch 843, train_loss = 0.073930.
+epoch 844, train_loss = 0.073990.
+epoch 845, train_loss = 0.074014.
+epoch 846, train_loss = 0.073803.
+epoch 847, train_loss = 0.073959.
+epoch 848, train_loss = 0.073771.
+epoch 849, train_loss = 0.073796.
+epoch 850, train_loss = 0.073752.
+epoch 851, train_loss = 0.074118.
+epoch 852, train_loss = 0.073840.
+epoch 853, train_loss = 0.073893.
+epoch 854, train_loss = 0.073847.
+epoch 855, train_loss = 0.073911.
+epoch 856, train_loss = 0.073545.
+epoch 857, train_loss = 0.074005.
+epoch 858, train_loss = 0.073925.
+epoch 859, train_loss = 0.073374.
+epoch 860, train_loss = 0.073792.
+[860/2000] Valid Result: ndcg@20 = 0.047476, recall@20 = 0.088442, pre@20 = 0.010909.
+---------------------------
+done.
+===== Test Result(at 660 epoch) =====
+ndcg@20 = 0.054724, recall@20 = 0.089123, pre@20 = 0.017427
