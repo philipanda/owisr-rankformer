@@ -95,7 +95,10 @@ class Model(nn.Module):
         self.optimizer = torch.optim.Adam(
             self.my_parameters,
             lr=args.learning_rate)
-        self.loss_func = self.loss_bpr
+        if args.softmax:
+            self.loss_func = self.loss_softmax
+        else:
+            self.loss_func = self.loss_bpr
 
     def computer(self):
         u, i = self.dataset.train_user, self.dataset.train_item
@@ -186,9 +189,9 @@ class Model(nn.Module):
 
     def loss_softmax(self, u, i):
         j = negative_sampling(u, i, self.dataset.num_items)
-        u_emb0, u_emb = self.embedding_user(u), self._user_embeddings[u]
-        i_emb0, i_emb = self.embedding_item(i), self._item_embeddings[i]
-        j_emb0, j_emb = self.embedding_item(j), self._item_embeddings[j]
+        u_emb0, u_emb = self.embedding_user(u), self._users[u]
+        i_emb0, i_emb = self.embedding_item(i), self._items[i]
+        j_emb0, j_emb = self.embedding_item(j), self._items[j]
 
         pos_scores = torch.sum(u_emb * i_emb, dim=-1, keepdim=True)  # [B, 1]
         neg_scores = torch.sum(u_emb * j_emb, dim=-1, keepdim=True)  # [B, 1]

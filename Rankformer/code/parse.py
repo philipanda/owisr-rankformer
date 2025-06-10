@@ -50,6 +50,7 @@ def parse_args():
     parser.add_argument('--del_omega_norm', action='store_true')
     parser.add_argument('--save_emb', action='store_true')
     parser.add_argument('--load_emb', action='store_true')
+    parser.add_argument('--softmax', action='store_true')
     return parser.parse_args()
 
 
