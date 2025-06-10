@@ -1,0 +1,36 @@
+seed: 12345
+Using cuda:0
+Model Setting
+    hidden dim: 64
+    Using 1 layers GCN.
+      gcn left = 1.000000
+      gcn right = 0.000000
+      Z = Z(1)
+    Using 2 layers Rankformer:
+      rankformer alpha = 2.000000
+      rankformer tau = 0.500000
+      rankformer clamp value = 0.000000
+Train Setting
+    learning rate: 0.100000
+    reg_lambda: 0.000100
+    loss batch size: 0
+    max epochs: 2000
+Test Setting
+    topks:  [20]
+    test batch size: 1000
+    valid interval: 20
+    stopping step: 10
+Data Setting
+    train: data/Amazon-CDs/train.txt
+    valid: data/Amazon-CDs/valid.txt
+    test: data/Amazon-CDs/test.txt
+Experiment Setting
+    |                   Ablation Study Setting                 |
+    | Negative pairs | Benchmark | Offset | Normalize of Omega |
+    |        Y       |     Y     |   Y    |          Y         |
+---------------------------
+51267 users, 46464 items.
+train: 512216, valid: 73172, test: 146346.
+[0/2000] Valid Result: ndcg@20 = 0.000253, recall@20 = 0.000595, pre@20 = 0.000057.
+===== Test Result(at 0 epoch) =====
+ndcg@20 = 0.000269, recall@20 = 0.000579, pre@20 = 0.000080
