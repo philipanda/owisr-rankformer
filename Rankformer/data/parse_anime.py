@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import pandas as pd
 import numpy as np
 import pickle as pkl
@@ -5,7 +7,7 @@ import pickle as pkl
 random_state = 2137
 
 # Load and reduce dataset
-df = pd.read_csv('anime/rating.csv')
+df = pd.read_csv('data/anime/rating.csv')
 df = df.drop(columns=['rating'])
 
 def continuous_missing(ids):
@@ -69,11 +71,11 @@ def write_to_file(df, filename):
             f.write(f"{row.user_id} {row.anime_id}\n")
     print(f"{filename}: {len(df)} rows")
 
-write_to_file(train_df, 'anime/train.txt')
-write_to_file(valid_df, 'anime/valid.txt')
-write_to_file(test_df, 'anime/test.txt')
+write_to_file(train_df, 'data/anime/train.txt')
+write_to_file(valid_df, 'data/anime/valid.txt')
+write_to_file(test_df, 'data/anime/test.txt')
 
-with open('anime/info.txt', 'w') as f:
+with open('data/anime/info.txt', 'w') as f:
     f.write(f"train {len(train_df)}\n")
     f.write(f"valid {len(valid_df)}\n")
     f.write(f"test {len(test_df)}\n")

@@ -38,7 +38,7 @@ def parse_args():
     parser.add_argument('--max_epochs', type=int, default=2000)
     parser.add_argument('--show_loss_interval', type=int, default=1)
     # Test
-    parser.add_argument('--topks', type=str, default='[20]')
+    parser.add_argument('--topks', type=str, default='[10]')
     parser.add_argument('--test_batch_size', type=int, default=1000)
     parser.add_argument('--valid_interval', type=int, default=10)
     parser.add_argument('--stopping_step', type=int, default=20)
