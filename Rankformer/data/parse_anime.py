@@ -31,7 +31,7 @@ with open("anime_id_mappings_dict.pkl", 'wb') as f:
     pkl.dump(id_mappings, f)
 
 # Reduce amount of entries by around this extent
-reduce_factor = 0.1
+reduce_factor = 1
 
 # removes up to the reduce_factor
 unique_users = np.sort(df['user_id'].unique())
