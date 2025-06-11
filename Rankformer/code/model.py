@@ -96,6 +96,7 @@ class Model(nn.Module):
             self.my_parameters,
             lr=args.learning_rate)
         if args.softmax:
+            print('Using Softmax Loss.\n\n\n\n\n')
             self.loss_func = self.loss_softmax
         else:
             self.loss_func = self.loss_bpr
@@ -188,6 +189,7 @@ class Model(nn.Module):
         return train_loss
 
     def loss_softmax(self, u, i):
+        print('Using Softmax Loss.')
         j = negative_sampling(u, i, self.dataset.num_items)
         u_emb0, u_emb = self.embedding_user(u), self._users[u]
         i_emb0, i_emb = self.embedding_item(i), self._items[i]
@@ -213,6 +215,7 @@ class Model(nn.Module):
         return loss + args.reg_lambda * reg_loss
 
     def loss_bpr(self, u, i):
+        print('Using BPR Loss.')
         j = negative_sampling(u, i, self.dataset.num_items)
         u_emb0, u_emb = self.embedding_user(u), self._users[u]
         i_emb0, i_emb = self.embedding_item(i), self._items[i]
@@ -235,7 +238,7 @@ class Model(nn.Module):
         train_item = self.dataset.train_item
         for _ in range(0, train_user.shape[0], args.loss_batch_size):
             self.computer()
-            train_loss = self.loss_bpr(train_user[_:_+args.loss_batch_size], train_item[_:_+args.loss_batch_size])
+            train_loss = self.loss_func(train_user[_:_+args.loss_batch_size], train_item[_:_+args.loss_batch_size])
             self.optimizer.zero_grad()
             train_loss.backward()
             self.optimizer.step()
