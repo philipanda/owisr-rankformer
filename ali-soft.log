@@ -1,0 +1,2228 @@
+seed: 12345
+Using cuda:0
+Model Setting
+    hidden dim: 64
+    Using 1 layers GCN.
+      gcn left = 1.000000
+      gcn right = 0.000000
+      Z = Z(1)
+    Using 4 layers Rankformer:
+      rankformer alpha = 2.000000
+      rankformer tau = 0.500000
+      rankformer clamp value = 0.000000
+Train Setting
+    learning rate: 0.100000
+    reg_lambda: 0.000100
+    loss batch size: 0
+    max epochs: 2000
+Test Setting
+    topks:  [20]
+    test batch size: 1000
+    valid interval: 10
+    stopping step: 20
+Data Setting
+    train: data/Ali-Display/train.txt
+    valid: data/Ali-Display/valid.txt
+    test: data/Ali-Display/test.txt
+Experiment Setting
+    |                   Ablation Study Setting                 |
+    | Negative pairs | Benchmark | Offset | Normalize of Omega |
+    |        Y       |     Y     |   Y    |          Y         |
+---------------------------
+17730 users, 10036 items.
+train: 121178, valid: 17311, test: 34622.
+Using Softmax Loss.
+
+
+
+
+
+[0/2000] Valid Result: ndcg@20 = 0.003009, recall@20 = 0.008126, pre@20 = 0.000632, mrr@20 = 0.002035, map@20 = 0.002023.
+######## new best ############
+===== Test Result(at 0 epoch) =====
+ndcg@20 = 0.003743, recall@20 = 0.008359, pre@20 = 0.000844, mrr@20 = 0.003425, map@20 = 0.003390.
+Using Softmax Loss.
+epoch 1, train_loss = 0.692915.
+Using Softmax Loss.
+epoch 2, train_loss = 0.689893.
+Using Softmax Loss.
+epoch 3, train_loss = 0.672045.
+Using Softmax Loss.
+epoch 4, train_loss = 0.628764.
+Using Softmax Loss.
+epoch 5, train_loss = 0.566260.
+Using Softmax Loss.
+epoch 6, train_loss = 0.512057.
+Using Softmax Loss.
+epoch 7, train_loss = 0.489574.
+Using Softmax Loss.
+epoch 8, train_loss = 0.492765.
+Using Softmax Loss.
+epoch 9, train_loss = 0.495067.
+Using Softmax Loss.
+epoch 10, train_loss = 0.475757.
+[10/2000] Valid Result: ndcg@20 = 0.021417, recall@20 = 0.047439, pre@20 = 0.003637, mrr@20 = 0.016878, map@20 = 0.016715.
+######## new best ############
+===== Test Result(at 10 epoch) =====
+ndcg@20 = 0.021163, recall@20 = 0.043151, pre@20 = 0.004749, mrr@20 = 0.020763, map@20 = 0.020323.
+Using Softmax Loss.
+epoch 11, train_loss = 0.451792.
+Using Softmax Loss.
+epoch 12, train_loss = 0.417094.
+Using Softmax Loss.
+epoch 13, train_loss = 0.388911.
+Using Softmax Loss.
+epoch 14, train_loss = 0.364502.
+Using Softmax Loss.
+epoch 15, train_loss = 0.348059.
+Using Softmax Loss.
+epoch 16, train_loss = 0.337870.
+Using Softmax Loss.
+epoch 17, train_loss = 0.332859.
+Using Softmax Loss.
+epoch 18, train_loss = 0.333013.
+Using Softmax Loss.
+epoch 19, train_loss = 0.331667.
+Using Softmax Loss.
+epoch 20, train_loss = 0.328298.
+[20/2000] Valid Result: ndcg@20 = 0.019091, recall@20 = 0.044171, pre@20 = 0.003358, mrr@20 = 0.015003, map@20 = 0.014825.
+Using Softmax Loss.
+epoch 21, train_loss = 0.326789.
+Using Softmax Loss.
+epoch 22, train_loss = 0.317649.
+Using Softmax Loss.
+epoch 23, train_loss = 0.307203.
+Using Softmax Loss.
+epoch 24, train_loss = 0.298189.
+Using Softmax Loss.
+epoch 25, train_loss = 0.285629.
+Using Softmax Loss.
+epoch 26, train_loss = 0.275971.
+Using Softmax Loss.
+epoch 27, train_loss = 0.267318.
+Using Softmax Loss.
+epoch 28, train_loss = 0.260417.
+Using Softmax Loss.
+epoch 29, train_loss = 0.252897.
+Using Softmax Loss.
+epoch 30, train_loss = 0.244692.
+[30/2000] Valid Result: ndcg@20 = 0.032126, recall@20 = 0.070483, pre@20 = 0.005368, mrr@20 = 0.025916, map@20 = 0.025520.
+######## new best ############
+===== Test Result(at 30 epoch) =====
+ndcg@20 = 0.035486, recall@20 = 0.071180, pre@20 = 0.007685, mrr@20 = 0.035672, map@20 = 0.034779.
+Using Softmax Loss.
+epoch 31, train_loss = 0.238238.
+Using Softmax Loss.
+epoch 32, train_loss = 0.231381.
+Using Softmax Loss.
+epoch 33, train_loss = 0.223913.
+Using Softmax Loss.
+epoch 34, train_loss = 0.217815.
+Using Softmax Loss.
+epoch 35, train_loss = 0.212246.
+Using Softmax Loss.
+epoch 36, train_loss = 0.210471.
+Using Softmax Loss.
+epoch 37, train_loss = 0.203266.
+Using Softmax Loss.
+epoch 38, train_loss = 0.201488.
+Using Softmax Loss.
+epoch 39, train_loss = 0.196836.
+Using Softmax Loss.
+epoch 40, train_loss = 0.192800.
+[40/2000] Valid Result: ndcg@20 = 0.031499, recall@20 = 0.070154, pre@20 = 0.005486, mrr@20 = 0.024987, map@20 = 0.024756.
+Using Softmax Loss.
+epoch 41, train_loss = 0.192118.
+Using Softmax Loss.
+epoch 42, train_loss = 0.190493.
+Using Softmax Loss.
+epoch 43, train_loss = 0.187553.
+Using Softmax Loss.
+epoch 44, train_loss = 0.186104.
+Using Softmax Loss.
+epoch 45, train_loss = 0.182793.
+Using Softmax Loss.
+epoch 46, train_loss = 0.179097.
+Using Softmax Loss.
+epoch 47, train_loss = 0.173628.
+Using Softmax Loss.
+epoch 48, train_loss = 0.172456.
+Using Softmax Loss.
+epoch 49, train_loss = 0.168791.
+Using Softmax Loss.
+epoch 50, train_loss = 0.165279.
+[50/2000] Valid Result: ndcg@20 = 0.036026, recall@20 = 0.078289, pre@20 = 0.006090, mrr@20 = 0.029804, map@20 = 0.029467.
+######## new best ############
+===== Test Result(at 50 epoch) =====
+ndcg@20 = 0.040500, recall@20 = 0.080765, pre@20 = 0.008759, mrr@20 = 0.040777, map@20 = 0.039247.
+Using Softmax Loss.
+epoch 51, train_loss = 0.161445.
+Using Softmax Loss.
+epoch 52, train_loss = 0.158099.
+Using Softmax Loss.
+epoch 53, train_loss = 0.156389.
+Using Softmax Loss.
+epoch 54, train_loss = 0.153812.
+Using Softmax Loss.
+epoch 55, train_loss = 0.150551.
+Using Softmax Loss.
+epoch 56, train_loss = 0.149386.
+Using Softmax Loss.
+epoch 57, train_loss = 0.145762.
+Using Softmax Loss.
+epoch 58, train_loss = 0.146607.
+Using Softmax Loss.
+epoch 59, train_loss = 0.144322.
+Using Softmax Loss.
+epoch 60, train_loss = 0.142207.
+[60/2000] Valid Result: ndcg@20 = 0.040662, recall@20 = 0.086171, pre@20 = 0.006651, mrr@20 = 0.034622, map@20 = 0.034042.
+######## new best ############
+===== Test Result(at 60 epoch) =====
+ndcg@20 = 0.045218, recall@20 = 0.088980, pre@20 = 0.009724, mrr@20 = 0.046020, map@20 = 0.044434.
+Using Softmax Loss.
+epoch 61, train_loss = 0.138516.
+Using Softmax Loss.
+epoch 62, train_loss = 0.138656.
+Using Softmax Loss.
+epoch 63, train_loss = 0.135690.
+Using Softmax Loss.
+epoch 64, train_loss = 0.136004.
+Using Softmax Loss.
+epoch 65, train_loss = 0.134229.
+Using Softmax Loss.
+epoch 66, train_loss = 0.134970.
+Using Softmax Loss.
+epoch 67, train_loss = 0.132885.
+Using Softmax Loss.
+epoch 68, train_loss = 0.129224.
+Using Softmax Loss.
+epoch 69, train_loss = 0.128856.
+Using Softmax Loss.
+epoch 70, train_loss = 0.126390.
+[70/2000] Valid Result: ndcg@20 = 0.042742, recall@20 = 0.091353, pre@20 = 0.007024, mrr@20 = 0.036116, map@20 = 0.035455.
+######## new best ############
+===== Test Result(at 70 epoch) =====
+ndcg@20 = 0.047182, recall@20 = 0.091175, pre@20 = 0.010004, mrr@20 = 0.048724, map@20 = 0.047273.
+Using Softmax Loss.
+epoch 71, train_loss = 0.125337.
+Using Softmax Loss.
+epoch 72, train_loss = 0.124052.
+Using Softmax Loss.
+epoch 73, train_loss = 0.124044.
+Using Softmax Loss.
+epoch 74, train_loss = 0.121723.
+Using Softmax Loss.
+epoch 75, train_loss = 0.119775.
+Using Softmax Loss.
+epoch 76, train_loss = 0.119118.
+Using Softmax Loss.
+epoch 77, train_loss = 0.117884.
+Using Softmax Loss.
+epoch 78, train_loss = 0.116831.
+Using Softmax Loss.
+epoch 79, train_loss = 0.116127.
+Using Softmax Loss.
+epoch 80, train_loss = 0.115603.
+[80/2000] Valid Result: ndcg@20 = 0.046409, recall@20 = 0.098386, pre@20 = 0.007514, mrr@20 = 0.039088, map@20 = 0.038231.
+######## new best ############
+===== Test Result(at 80 epoch) =====
+ndcg@20 = 0.049644, recall@20 = 0.095482, pre@20 = 0.010453, mrr@20 = 0.051510, map@20 = 0.049882.
+Using Softmax Loss.
+epoch 81, train_loss = 0.113300.
+Using Softmax Loss.
+epoch 82, train_loss = 0.112417.
+Using Softmax Loss.
+epoch 83, train_loss = 0.111572.
+Using Softmax Loss.
+epoch 84, train_loss = 0.109852.
+Using Softmax Loss.
+epoch 85, train_loss = 0.110658.
+Using Softmax Loss.
+epoch 86, train_loss = 0.108305.
+Using Softmax Loss.
+epoch 87, train_loss = 0.107765.
+Using Softmax Loss.
+epoch 88, train_loss = 0.106849.
+Using Softmax Loss.
+epoch 89, train_loss = 0.106925.
+Using Softmax Loss.
+epoch 90, train_loss = 0.104775.
+[90/2000] Valid Result: ndcg@20 = 0.048823, recall@20 = 0.103080, pre@20 = 0.007830, mrr@20 = 0.040850, map@20 = 0.039980.
+######## new best ############
+===== Test Result(at 90 epoch) =====
+ndcg@20 = 0.052086, recall@20 = 0.099215, pre@20 = 0.010848, mrr@20 = 0.054523, map@20 = 0.052720.
+Using Softmax Loss.
+epoch 91, train_loss = 0.105394.
+Using Softmax Loss.
+epoch 92, train_loss = 0.104184.
+Using Softmax Loss.
+epoch 93, train_loss = 0.102745.
+Using Softmax Loss.
+epoch 94, train_loss = 0.102311.
+Using Softmax Loss.
+epoch 95, train_loss = 0.102802.
+Using Softmax Loss.
+epoch 96, train_loss = 0.101132.
+Using Softmax Loss.
+epoch 97, train_loss = 0.099926.
+Using Softmax Loss.
+epoch 98, train_loss = 0.100622.
+Using Softmax Loss.
+epoch 99, train_loss = 0.098480.
+Using Softmax Loss.
+epoch 100, train_loss = 0.099511.
+[100/2000] Valid Result: ndcg@20 = 0.050628, recall@20 = 0.106657, pre@20 = 0.008108, mrr@20 = 0.042373, map@20 = 0.041406.
+######## new best ############
+===== Test Result(at 100 epoch) =====
+ndcg@20 = 0.054053, recall@20 = 0.102422, pre@20 = 0.011172, mrr@20 = 0.056946, map@20 = 0.055068.
+Using Softmax Loss.
+epoch 101, train_loss = 0.098447.
+Using Softmax Loss.
+epoch 102, train_loss = 0.097171.
+Using Softmax Loss.
+epoch 103, train_loss = 0.096610.
+Using Softmax Loss.
+epoch 104, train_loss = 0.096993.
+Using Softmax Loss.
+epoch 105, train_loss = 0.095858.
+Using Softmax Loss.
+epoch 106, train_loss = 0.095518.
+Using Softmax Loss.
+epoch 107, train_loss = 0.094588.
+Using Softmax Loss.
+epoch 108, train_loss = 0.094454.
+Using Softmax Loss.
+epoch 109, train_loss = 0.094435.
+Using Softmax Loss.
+epoch 110, train_loss = 0.093260.
+[110/2000] Valid Result: ndcg@20 = 0.052034, recall@20 = 0.111002, pre@20 = 0.008401, mrr@20 = 0.043155, map@20 = 0.042135.
+######## new best ############
+===== Test Result(at 110 epoch) =====
+ndcg@20 = 0.055720, recall@20 = 0.105689, pre@20 = 0.011536, mrr@20 = 0.058825, map@20 = 0.056807.
+Using Softmax Loss.
+epoch 111, train_loss = 0.092706.
+Using Softmax Loss.
+epoch 112, train_loss = 0.093020.
+Using Softmax Loss.
+epoch 113, train_loss = 0.092107.
+Using Softmax Loss.
+epoch 114, train_loss = 0.092525.
+Using Softmax Loss.
+epoch 115, train_loss = 0.091456.
+Using Softmax Loss.
+epoch 116, train_loss = 0.090271.
+Using Softmax Loss.
+epoch 117, train_loss = 0.090928.
+Using Softmax Loss.
+epoch 118, train_loss = 0.091296.
+Using Softmax Loss.
+epoch 119, train_loss = 0.089997.
+Using Softmax Loss.
+epoch 120, train_loss = 0.089154.
+[120/2000] Valid Result: ndcg@20 = 0.053437, recall@20 = 0.114356, pre@20 = 0.008675, mrr@20 = 0.044232, map@20 = 0.043223.
+######## new best ############
+===== Test Result(at 120 epoch) =====
+ndcg@20 = 0.057006, recall@20 = 0.107321, pre@20 = 0.011685, mrr@20 = 0.060527, map@20 = 0.058511.
+Using Softmax Loss.
+epoch 121, train_loss = 0.089504.
+Using Softmax Loss.
+epoch 122, train_loss = 0.089471.
+Using Softmax Loss.
+epoch 123, train_loss = 0.087718.
+Using Softmax Loss.
+epoch 124, train_loss = 0.087855.
+Using Softmax Loss.
+epoch 125, train_loss = 0.088534.
+Using Softmax Loss.
+epoch 126, train_loss = 0.087403.
+Using Softmax Loss.
+epoch 127, train_loss = 0.086424.
+Using Softmax Loss.
+epoch 128, train_loss = 0.087858.
+Using Softmax Loss.
+epoch 129, train_loss = 0.087185.
+Using Softmax Loss.
+epoch 130, train_loss = 0.086077.
+[130/2000] Valid Result: ndcg@20 = 0.054348, recall@20 = 0.115745, pre@20 = 0.008802, mrr@20 = 0.044762, map@20 = 0.043802.
+######## new best ############
+===== Test Result(at 130 epoch) =====
+ndcg@20 = 0.057426, recall@20 = 0.107669, pre@20 = 0.011769, mrr@20 = 0.061221, map@20 = 0.059117.
+Using Softmax Loss.
+epoch 131, train_loss = 0.086646.
+Using Softmax Loss.
+epoch 132, train_loss = 0.086389.
+Using Softmax Loss.
+epoch 133, train_loss = 0.084991.
+Using Softmax Loss.
+epoch 134, train_loss = 0.085238.
+Using Softmax Loss.
+epoch 135, train_loss = 0.085119.
+Using Softmax Loss.
+epoch 136, train_loss = 0.084503.
+Using Softmax Loss.
+epoch 137, train_loss = 0.083882.
+Using Softmax Loss.
+epoch 138, train_loss = 0.084221.
+Using Softmax Loss.
+epoch 139, train_loss = 0.084595.
+Using Softmax Loss.
+epoch 140, train_loss = 0.085141.
+[140/2000] Valid Result: ndcg@20 = 0.055125, recall@20 = 0.116323, pre@20 = 0.008844, mrr@20 = 0.045592, map@20 = 0.044668.
+######## new best ############
+===== Test Result(at 140 epoch) =====
+ndcg@20 = 0.058418, recall@20 = 0.110177, pre@20 = 0.012060, mrr@20 = 0.062104, map@20 = 0.059907.
+Using Softmax Loss.
+epoch 141, train_loss = 0.083995.
+Using Softmax Loss.
+epoch 142, train_loss = 0.083091.
+Using Softmax Loss.
+epoch 143, train_loss = 0.083762.
+Using Softmax Loss.
+epoch 144, train_loss = 0.083410.
+Using Softmax Loss.
+epoch 145, train_loss = 0.083160.
+Using Softmax Loss.
+epoch 146, train_loss = 0.084016.
+Using Softmax Loss.
+epoch 147, train_loss = 0.082984.
+Using Softmax Loss.
+epoch 148, train_loss = 0.082466.
+Using Softmax Loss.
+epoch 149, train_loss = 0.082075.
+Using Softmax Loss.
+epoch 150, train_loss = 0.082813.
+[150/2000] Valid Result: ndcg@20 = 0.055679, recall@20 = 0.117439, pre@20 = 0.008920, mrr@20 = 0.046138, map@20 = 0.045217.
+######## new best ############
+===== Test Result(at 150 epoch) =====
+ndcg@20 = 0.059023, recall@20 = 0.111048, pre@20 = 0.012178, mrr@20 = 0.062909, map@20 = 0.060653.
+Using Softmax Loss.
+epoch 151, train_loss = 0.082073.
+Using Softmax Loss.
+epoch 152, train_loss = 0.081202.
+Using Softmax Loss.
+epoch 153, train_loss = 0.082080.
+Using Softmax Loss.
+epoch 154, train_loss = 0.081342.
+Using Softmax Loss.
+epoch 155, train_loss = 0.081075.
+Using Softmax Loss.
+epoch 156, train_loss = 0.080223.
+Using Softmax Loss.
+epoch 157, train_loss = 0.080552.
+Using Softmax Loss.
+epoch 158, train_loss = 0.080251.
+Using Softmax Loss.
+epoch 159, train_loss = 0.079470.
+Using Softmax Loss.
+epoch 160, train_loss = 0.080400.
+[160/2000] Valid Result: ndcg@20 = 0.056184, recall@20 = 0.118772, pre@20 = 0.009038, mrr@20 = 0.046486, map@20 = 0.045504.
+######## new best ############
+===== Test Result(at 160 epoch) =====
+ndcg@20 = 0.059069, recall@20 = 0.111159, pre@20 = 0.012195, mrr@20 = 0.062829, map@20 = 0.060689.
+Using Softmax Loss.
+epoch 161, train_loss = 0.079717.
+Using Softmax Loss.
+epoch 162, train_loss = 0.080225.
+Using Softmax Loss.
+epoch 163, train_loss = 0.080210.
+Using Softmax Loss.
+epoch 164, train_loss = 0.079369.
+Using Softmax Loss.
+epoch 165, train_loss = 0.079472.
+Using Softmax Loss.
+epoch 166, train_loss = 0.079056.
+Using Softmax Loss.
+epoch 167, train_loss = 0.079160.
+Using Softmax Loss.
+epoch 168, train_loss = 0.079000.
+Using Softmax Loss.
+epoch 169, train_loss = 0.078506.
+Using Softmax Loss.
+epoch 170, train_loss = 0.079000.
+[170/2000] Valid Result: ndcg@20 = 0.056383, recall@20 = 0.118784, pre@20 = 0.009047, mrr@20 = 0.046801, map@20 = 0.045801.
+######## new best ############
+===== Test Result(at 170 epoch) =====
+ndcg@20 = 0.060133, recall@20 = 0.113318, pre@20 = 0.012394, mrr@20 = 0.064026, map@20 = 0.061801.
+Using Softmax Loss.
+epoch 171, train_loss = 0.078145.
+Using Softmax Loss.
+epoch 172, train_loss = 0.078443.
+Using Softmax Loss.
+epoch 173, train_loss = 0.077638.
+Using Softmax Loss.
+epoch 174, train_loss = 0.078178.
+Using Softmax Loss.
+epoch 175, train_loss = 0.077678.
+Using Softmax Loss.
+epoch 176, train_loss = 0.077915.
+Using Softmax Loss.
+epoch 177, train_loss = 0.077666.
+Using Softmax Loss.
+epoch 178, train_loss = 0.077582.
+Using Softmax Loss.
+epoch 179, train_loss = 0.077374.
+Using Softmax Loss.
+epoch 180, train_loss = 0.077207.
+[180/2000] Valid Result: ndcg@20 = 0.056924, recall@20 = 0.120058, pre@20 = 0.009142, mrr@20 = 0.047310, map@20 = 0.046267.
+######## new best ############
+===== Test Result(at 180 epoch) =====
+ndcg@20 = 0.060585, recall@20 = 0.113676, pre@20 = 0.012454, mrr@20 = 0.064624, map@20 = 0.062359.
+Using Softmax Loss.
+epoch 181, train_loss = 0.076558.
+Using Softmax Loss.
+epoch 182, train_loss = 0.077255.
+Using Softmax Loss.
+epoch 183, train_loss = 0.077478.
+Using Softmax Loss.
+epoch 184, train_loss = 0.077211.
+Using Softmax Loss.
+epoch 185, train_loss = 0.076871.
+Using Softmax Loss.
+epoch 186, train_loss = 0.077897.
+Using Softmax Loss.
+epoch 187, train_loss = 0.076943.
+Using Softmax Loss.
+epoch 188, train_loss = 0.076507.
+Using Softmax Loss.
+epoch 189, train_loss = 0.076292.
+Using Softmax Loss.
+epoch 190, train_loss = 0.076237.
+[190/2000] Valid Result: ndcg@20 = 0.057589, recall@20 = 0.120737, pre@20 = 0.009208, mrr@20 = 0.048106, map@20 = 0.047070.
+######## new best ############
+===== Test Result(at 190 epoch) =====
+ndcg@20 = 0.061026, recall@20 = 0.115332, pre@20 = 0.012633, mrr@20 = 0.064763, map@20 = 0.062429.
+Using Softmax Loss.
+epoch 191, train_loss = 0.075983.
+Using Softmax Loss.
+epoch 192, train_loss = 0.076824.
+Using Softmax Loss.
+epoch 193, train_loss = 0.076293.
+Using Softmax Loss.
+epoch 194, train_loss = 0.075616.
+Using Softmax Loss.
+epoch 195, train_loss = 0.075653.
+Using Softmax Loss.
+epoch 196, train_loss = 0.075830.
+Using Softmax Loss.
+epoch 197, train_loss = 0.075452.
+Using Softmax Loss.
+epoch 198, train_loss = 0.075359.
+Using Softmax Loss.
+epoch 199, train_loss = 0.075457.
+Using Softmax Loss.
+epoch 200, train_loss = 0.076240.
+[200/2000] Valid Result: ndcg@20 = 0.057993, recall@20 = 0.121409, pre@20 = 0.009241, mrr@20 = 0.048563, map@20 = 0.047472.
+######## new best ############
+===== Test Result(at 200 epoch) =====
+ndcg@20 = 0.061488, recall@20 = 0.116300, pre@20 = 0.012768, mrr@20 = 0.065035, map@20 = 0.062572.
+Using Softmax Loss.
+epoch 201, train_loss = 0.074900.
+Using Softmax Loss.
+epoch 202, train_loss = 0.075265.
+Using Softmax Loss.
+epoch 203, train_loss = 0.075396.
+Using Softmax Loss.
+epoch 204, train_loss = 0.074778.
+Using Softmax Loss.
+epoch 205, train_loss = 0.075240.
+Using Softmax Loss.
+epoch 206, train_loss = 0.074808.
+Using Softmax Loss.
+epoch 207, train_loss = 0.075188.
+Using Softmax Loss.
+epoch 208, train_loss = 0.074705.
+Using Softmax Loss.
+epoch 209, train_loss = 0.074874.
+Using Softmax Loss.
+epoch 210, train_loss = 0.074826.
+[210/2000] Valid Result: ndcg@20 = 0.058287, recall@20 = 0.121848, pre@20 = 0.009311, mrr@20 = 0.048735, map@20 = 0.047692.
+######## new best ############
+===== Test Result(at 210 epoch) =====
+ndcg@20 = 0.061881, recall@20 = 0.116998, pre@20 = 0.012839, mrr@20 = 0.065503, map@20 = 0.062880.
+Using Softmax Loss.
+epoch 211, train_loss = 0.075188.
+Using Softmax Loss.
+epoch 212, train_loss = 0.074120.
+Using Softmax Loss.
+epoch 213, train_loss = 0.075037.
+Using Softmax Loss.
+epoch 214, train_loss = 0.074614.
+Using Softmax Loss.
+epoch 215, train_loss = 0.074660.
+Using Softmax Loss.
+epoch 216, train_loss = 0.074037.
+Using Softmax Loss.
+epoch 217, train_loss = 0.074115.
+Using Softmax Loss.
+epoch 218, train_loss = 0.073911.
+Using Softmax Loss.
+epoch 219, train_loss = 0.073281.
+Using Softmax Loss.
+epoch 220, train_loss = 0.073455.
+[220/2000] Valid Result: ndcg@20 = 0.058939, recall@20 = 0.124367, pre@20 = 0.009476, mrr@20 = 0.048917, map@20 = 0.047924.
+######## new best ############
+===== Test Result(at 220 epoch) =====
+ndcg@20 = 0.062135, recall@20 = 0.116871, pre@20 = 0.012839, mrr@20 = 0.066041, map@20 = 0.063537.
+Using Softmax Loss.
+epoch 221, train_loss = 0.074262.
+Using Softmax Loss.
+epoch 222, train_loss = 0.073911.
+Using Softmax Loss.
+epoch 223, train_loss = 0.073391.
+Using Softmax Loss.
+epoch 224, train_loss = 0.073553.
+Using Softmax Loss.
+epoch 225, train_loss = 0.074400.
+Using Softmax Loss.
+epoch 226, train_loss = 0.073673.
+Using Softmax Loss.
+epoch 227, train_loss = 0.074420.
+Using Softmax Loss.
+epoch 228, train_loss = 0.073134.
+Using Softmax Loss.
+epoch 229, train_loss = 0.073753.
+Using Softmax Loss.
+epoch 230, train_loss = 0.073493.
+[230/2000] Valid Result: ndcg@20 = 0.059082, recall@20 = 0.124673, pre@20 = 0.009481, mrr@20 = 0.048995, map@20 = 0.048019.
+######## new best ############
+===== Test Result(at 230 epoch) =====
+ndcg@20 = 0.062474, recall@20 = 0.117849, pre@20 = 0.012920, mrr@20 = 0.066285, map@20 = 0.063718.
+Using Softmax Loss.
+epoch 231, train_loss = 0.072993.
+Using Softmax Loss.
+epoch 232, train_loss = 0.073181.
+Using Softmax Loss.
+epoch 233, train_loss = 0.073215.
+Using Softmax Loss.
+epoch 234, train_loss = 0.073180.
+Using Softmax Loss.
+epoch 235, train_loss = 0.072305.
+Using Softmax Loss.
+epoch 236, train_loss = 0.073052.
+Using Softmax Loss.
+epoch 237, train_loss = 0.073340.
+Using Softmax Loss.
+epoch 238, train_loss = 0.073354.
+Using Softmax Loss.
+epoch 239, train_loss = 0.072800.
+Using Softmax Loss.
+epoch 240, train_loss = 0.072447.
+[240/2000] Valid Result: ndcg@20 = 0.059237, recall@20 = 0.125062, pre@20 = 0.009486, mrr@20 = 0.049104, map@20 = 0.048080.
+######## new best ############
+===== Test Result(at 240 epoch) =====
+ndcg@20 = 0.062671, recall@20 = 0.118386, pre@20 = 0.012951, mrr@20 = 0.066429, map@20 = 0.063829.
+Using Softmax Loss.
+epoch 241, train_loss = 0.073048.
+Using Softmax Loss.
+epoch 242, train_loss = 0.073130.
+Using Softmax Loss.
+epoch 243, train_loss = 0.072777.
+Using Softmax Loss.
+epoch 244, train_loss = 0.072981.
+Using Softmax Loss.
+epoch 245, train_loss = 0.072429.
+Using Softmax Loss.
+epoch 246, train_loss = 0.072727.
+Using Softmax Loss.
+epoch 247, train_loss = 0.072319.
+Using Softmax Loss.
+epoch 248, train_loss = 0.072558.
+Using Softmax Loss.
+epoch 249, train_loss = 0.072456.
+Using Softmax Loss.
+epoch 250, train_loss = 0.072276.
+[250/2000] Valid Result: ndcg@20 = 0.059438, recall@20 = 0.125419, pre@20 = 0.009528, mrr@20 = 0.049177, map@20 = 0.048218.
+######## new best ############
+===== Test Result(at 250 epoch) =====
+ndcg@20 = 0.063007, recall@20 = 0.119330, pre@20 = 0.013042, mrr@20 = 0.066655, map@20 = 0.064010.
+Using Softmax Loss.
+epoch 251, train_loss = 0.072033.
+Using Softmax Loss.
+epoch 252, train_loss = 0.071796.
+Using Softmax Loss.
+epoch 253, train_loss = 0.072226.
+Using Softmax Loss.
+epoch 254, train_loss = 0.071686.
+Using Softmax Loss.
+epoch 255, train_loss = 0.072498.
+Using Softmax Loss.
+epoch 256, train_loss = 0.072087.
+Using Softmax Loss.
+epoch 257, train_loss = 0.071634.
+Using Softmax Loss.
+epoch 258, train_loss = 0.072145.
+Using Softmax Loss.
+epoch 259, train_loss = 0.071692.
+Using Softmax Loss.
+epoch 260, train_loss = 0.071779.
+[260/2000] Valid Result: ndcg@20 = 0.059591, recall@20 = 0.125384, pre@20 = 0.009524, mrr@20 = 0.049434, map@20 = 0.048530.
+######## new best ############
+===== Test Result(at 260 epoch) =====
+ndcg@20 = 0.062948, recall@20 = 0.119058, pre@20 = 0.013048, mrr@20 = 0.066799, map@20 = 0.064132.
+Using Softmax Loss.
+epoch 261, train_loss = 0.071973.
+Using Softmax Loss.
+epoch 262, train_loss = 0.071403.
+Using Softmax Loss.
+epoch 263, train_loss = 0.072032.
+Using Softmax Loss.
+epoch 264, train_loss = 0.071634.
+Using Softmax Loss.
+epoch 265, train_loss = 0.072087.
+Using Softmax Loss.
+epoch 266, train_loss = 0.071225.
+Using Softmax Loss.
+epoch 267, train_loss = 0.071788.
+Using Softmax Loss.
+epoch 268, train_loss = 0.071945.
+Using Softmax Loss.
+epoch 269, train_loss = 0.072037.
+Using Softmax Loss.
+epoch 270, train_loss = 0.071439.
+[270/2000] Valid Result: ndcg@20 = 0.059935, recall@20 = 0.126010, pre@20 = 0.009585, mrr@20 = 0.049799, map@20 = 0.048819.
+######## new best ############
+===== Test Result(at 270 epoch) =====
+ndcg@20 = 0.063365, recall@20 = 0.119894, pre@20 = 0.013119, mrr@20 = 0.067207, map@20 = 0.064403.
+Using Softmax Loss.
+epoch 271, train_loss = 0.071199.
+Using Softmax Loss.
+epoch 272, train_loss = 0.071355.
+Using Softmax Loss.
+epoch 273, train_loss = 0.071429.
+Using Softmax Loss.
+epoch 274, train_loss = 0.070979.
+Using Softmax Loss.
+epoch 275, train_loss = 0.071124.
+Using Softmax Loss.
+epoch 276, train_loss = 0.072180.
+Using Softmax Loss.
+epoch 277, train_loss = 0.071891.
+Using Softmax Loss.
+epoch 278, train_loss = 0.070864.
+Using Softmax Loss.
+epoch 279, train_loss = 0.070683.
+Using Softmax Loss.
+epoch 280, train_loss = 0.071199.
+[280/2000] Valid Result: ndcg@20 = 0.060016, recall@20 = 0.125666, pre@20 = 0.009580, mrr@20 = 0.049934, map@20 = 0.048990.
+######## new best ############
+===== Test Result(at 280 epoch) =====
+ndcg@20 = 0.063232, recall@20 = 0.119097, pre@20 = 0.013079, mrr@20 = 0.067269, map@20 = 0.064515.
+Using Softmax Loss.
+epoch 281, train_loss = 0.070801.
+Using Softmax Loss.
+epoch 282, train_loss = 0.070928.
+Using Softmax Loss.
+epoch 283, train_loss = 0.071585.
+Using Softmax Loss.
+epoch 284, train_loss = 0.071650.
+Using Softmax Loss.
+epoch 285, train_loss = 0.071605.
+Using Softmax Loss.
+epoch 286, train_loss = 0.070778.
+Using Softmax Loss.
+epoch 287, train_loss = 0.070995.
+Using Softmax Loss.
+epoch 288, train_loss = 0.070498.
+Using Softmax Loss.
+epoch 289, train_loss = 0.071057.
+Using Softmax Loss.
+epoch 290, train_loss = 0.070287.
+[290/2000] Valid Result: ndcg@20 = 0.060022, recall@20 = 0.125505, pre@20 = 0.009571, mrr@20 = 0.050101, map@20 = 0.049162.
+######## new best ############
+===== Test Result(at 290 epoch) =====
+ndcg@20 = 0.063142, recall@20 = 0.118668, pre@20 = 0.013052, mrr@20 = 0.067148, map@20 = 0.064599.
+Using Softmax Loss.
+epoch 291, train_loss = 0.070965.
+Using Softmax Loss.
+epoch 292, train_loss = 0.071081.
+Using Softmax Loss.
+epoch 293, train_loss = 0.070822.
+Using Softmax Loss.
+epoch 294, train_loss = 0.070707.
+Using Softmax Loss.
+epoch 295, train_loss = 0.071176.
+Using Softmax Loss.
+epoch 296, train_loss = 0.070595.
+Using Softmax Loss.
+epoch 297, train_loss = 0.070357.
+Using Softmax Loss.
+epoch 298, train_loss = 0.070193.
+Using Softmax Loss.
+epoch 299, train_loss = 0.070648.
+Using Softmax Loss.
+epoch 300, train_loss = 0.070504.
+[300/2000] Valid Result: ndcg@20 = 0.060005, recall@20 = 0.125449, pre@20 = 0.009552, mrr@20 = 0.050163, map@20 = 0.049177.
+Using Softmax Loss.
+epoch 301, train_loss = 0.070596.
+Using Softmax Loss.
+epoch 302, train_loss = 0.070496.
+Using Softmax Loss.
+epoch 303, train_loss = 0.070473.
+Using Softmax Loss.
+epoch 304, train_loss = 0.070631.
+Using Softmax Loss.
+epoch 305, train_loss = 0.070479.
+Using Softmax Loss.
+epoch 306, train_loss = 0.070441.
+Using Softmax Loss.
+epoch 307, train_loss = 0.070546.
+Using Softmax Loss.
+epoch 308, train_loss = 0.070841.
+Using Softmax Loss.
+epoch 309, train_loss = 0.070178.
+Using Softmax Loss.
+epoch 310, train_loss = 0.070284.
+[310/2000] Valid Result: ndcg@20 = 0.060036, recall@20 = 0.125192, pre@20 = 0.009533, mrr@20 = 0.050313, map@20 = 0.049352.
+######## new best ############
+===== Test Result(at 310 epoch) =====
+ndcg@20 = 0.063607, recall@20 = 0.119772, pre@20 = 0.013153, mrr@20 = 0.067382, map@20 = 0.064868.
+Using Softmax Loss.
+epoch 311, train_loss = 0.070187.
+Using Softmax Loss.
+epoch 312, train_loss = 0.070502.
+Using Softmax Loss.
+epoch 313, train_loss = 0.069456.
+Using Softmax Loss.
+epoch 314, train_loss = 0.070284.
+Using Softmax Loss.
+epoch 315, train_loss = 0.070321.
+Using Softmax Loss.
+epoch 316, train_loss = 0.070141.
+Using Softmax Loss.
+epoch 317, train_loss = 0.070269.
+Using Softmax Loss.
+epoch 318, train_loss = 0.070084.
+Using Softmax Loss.
+epoch 319, train_loss = 0.070335.
+Using Softmax Loss.
+epoch 320, train_loss = 0.070241.
+[320/2000] Valid Result: ndcg@20 = 0.060295, recall@20 = 0.125352, pre@20 = 0.009552, mrr@20 = 0.050556, map@20 = 0.049580.
+######## new best ############
+===== Test Result(at 320 epoch) =====
+ndcg@20 = 0.063793, recall@20 = 0.120101, pre@20 = 0.013207, mrr@20 = 0.067562, map@20 = 0.064895.
+Using Softmax Loss.
+epoch 321, train_loss = 0.069724.
+Using Softmax Loss.
+epoch 322, train_loss = 0.070271.
+Using Softmax Loss.
+epoch 323, train_loss = 0.069897.
+Using Softmax Loss.
+epoch 324, train_loss = 0.068948.
+Using Softmax Loss.
+epoch 325, train_loss = 0.069249.
+Using Softmax Loss.
+epoch 326, train_loss = 0.069998.
+Using Softmax Loss.
+epoch 327, train_loss = 0.069825.
+Using Softmax Loss.
+epoch 328, train_loss = 0.070094.
+Using Softmax Loss.
+epoch 329, train_loss = 0.069919.
+Using Softmax Loss.
+epoch 330, train_loss = 0.070189.
+[330/2000] Valid Result: ndcg@20 = 0.060468, recall@20 = 0.126021, pre@20 = 0.009590, mrr@20 = 0.050631, map@20 = 0.049591.
+######## new best ############
+===== Test Result(at 330 epoch) =====
+ndcg@20 = 0.064014, recall@20 = 0.120187, pre@20 = 0.013248, mrr@20 = 0.067950, map@20 = 0.065342.
+Using Softmax Loss.
+epoch 331, train_loss = 0.070219.
+Using Softmax Loss.
+epoch 332, train_loss = 0.070033.
+Using Softmax Loss.
+epoch 333, train_loss = 0.069628.
+Using Softmax Loss.
+epoch 334, train_loss = 0.070178.
+Using Softmax Loss.
+epoch 335, train_loss = 0.069728.
+Using Softmax Loss.
+epoch 336, train_loss = 0.069658.
+Using Softmax Loss.
+epoch 337, train_loss = 0.069585.
+Using Softmax Loss.
+epoch 338, train_loss = 0.069324.
+Using Softmax Loss.
+epoch 339, train_loss = 0.069683.
+Using Softmax Loss.
+epoch 340, train_loss = 0.069565.
+[340/2000] Valid Result: ndcg@20 = 0.060700, recall@20 = 0.126342, pre@20 = 0.009594, mrr@20 = 0.050911, map@20 = 0.049932.
+######## new best ############
+===== Test Result(at 340 epoch) =====
+ndcg@20 = 0.064352, recall@20 = 0.120850, pre@20 = 0.013322, mrr@20 = 0.068399, map@20 = 0.065612.
+Using Softmax Loss.
+epoch 341, train_loss = 0.069920.
+Using Softmax Loss.
+epoch 342, train_loss = 0.069434.
+Using Softmax Loss.
+epoch 343, train_loss = 0.069300.
+Using Softmax Loss.
+epoch 344, train_loss = 0.069864.
+Using Softmax Loss.
+epoch 345, train_loss = 0.069795.
+Using Softmax Loss.
+epoch 346, train_loss = 0.069138.
+Using Softmax Loss.
+epoch 347, train_loss = 0.068999.
+Using Softmax Loss.
+epoch 348, train_loss = 0.069671.
+Using Softmax Loss.
+epoch 349, train_loss = 0.069370.
+Using Softmax Loss.
+epoch 350, train_loss = 0.069664.
+[350/2000] Valid Result: ndcg@20 = 0.060657, recall@20 = 0.127028, pre@20 = 0.009627, mrr@20 = 0.050581, map@20 = 0.049590.
+Using Softmax Loss.
+epoch 351, train_loss = 0.069328.
+Using Softmax Loss.
+epoch 352, train_loss = 0.069222.
+Using Softmax Loss.
+epoch 353, train_loss = 0.068699.
+Using Softmax Loss.
+epoch 354, train_loss = 0.068679.
+Using Softmax Loss.
+epoch 355, train_loss = 0.069054.
+Using Softmax Loss.
+epoch 356, train_loss = 0.069220.
+Using Softmax Loss.
+epoch 357, train_loss = 0.068881.
+Using Softmax Loss.
+epoch 358, train_loss = 0.069670.
+Using Softmax Loss.
+epoch 359, train_loss = 0.069295.
+Using Softmax Loss.
+epoch 360, train_loss = 0.069115.
+[360/2000] Valid Result: ndcg@20 = 0.060599, recall@20 = 0.126636, pre@20 = 0.009618, mrr@20 = 0.050626, map@20 = 0.049658.
+Using Softmax Loss.
+epoch 361, train_loss = 0.068950.
+Using Softmax Loss.
+epoch 362, train_loss = 0.068966.
+Using Softmax Loss.
+epoch 363, train_loss = 0.068696.
+Using Softmax Loss.
+epoch 364, train_loss = 0.069372.
+Using Softmax Loss.
+epoch 365, train_loss = 0.069031.
+Using Softmax Loss.
+epoch 366, train_loss = 0.068781.
+Using Softmax Loss.
+epoch 367, train_loss = 0.068897.
+Using Softmax Loss.
+epoch 368, train_loss = 0.068825.
+Using Softmax Loss.
+epoch 369, train_loss = 0.069084.
+Using Softmax Loss.
+epoch 370, train_loss = 0.068613.
+[370/2000] Valid Result: ndcg@20 = 0.060887, recall@20 = 0.127293, pre@20 = 0.009646, mrr@20 = 0.050766, map@20 = 0.049855.
+######## new best ############
+===== Test Result(at 370 epoch) =====
+ndcg@20 = 0.064360, recall@20 = 0.120585, pre@20 = 0.013318, mrr@20 = 0.068560, map@20 = 0.065683.
+Using Softmax Loss.
+epoch 371, train_loss = 0.069494.
+Using Softmax Loss.
+epoch 372, train_loss = 0.069121.
+Using Softmax Loss.
+epoch 373, train_loss = 0.068756.
+Using Softmax Loss.
+epoch 374, train_loss = 0.068794.
+Using Softmax Loss.
+epoch 375, train_loss = 0.068769.
+Using Softmax Loss.
+epoch 376, train_loss = 0.069087.
+Using Softmax Loss.
+epoch 377, train_loss = 0.069259.
+Using Softmax Loss.
+epoch 378, train_loss = 0.069224.
+Using Softmax Loss.
+epoch 379, train_loss = 0.068784.
+Using Softmax Loss.
+epoch 380, train_loss = 0.068956.
+[380/2000] Valid Result: ndcg@20 = 0.061166, recall@20 = 0.128351, pre@20 = 0.009726, mrr@20 = 0.050993, map@20 = 0.049970.
+######## new best ############
+===== Test Result(at 380 epoch) =====
+ndcg@20 = 0.064308, recall@20 = 0.120431, pre@20 = 0.013302, mrr@20 = 0.068318, map@20 = 0.065586.
+Using Softmax Loss.
+epoch 381, train_loss = 0.068709.
+Using Softmax Loss.
+epoch 382, train_loss = 0.069141.
+Using Softmax Loss.
+epoch 383, train_loss = 0.069007.
+Using Softmax Loss.
+epoch 384, train_loss = 0.069014.
+Using Softmax Loss.
+epoch 385, train_loss = 0.068943.
+Using Softmax Loss.
+epoch 386, train_loss = 0.069123.
+Using Softmax Loss.
+epoch 387, train_loss = 0.068990.
+Using Softmax Loss.
+epoch 388, train_loss = 0.068901.
+Using Softmax Loss.
+epoch 389, train_loss = 0.069203.
+Using Softmax Loss.
+epoch 390, train_loss = 0.069146.
+[390/2000] Valid Result: ndcg@20 = 0.060812, recall@20 = 0.127472, pre@20 = 0.009651, mrr@20 = 0.050715, map@20 = 0.049808.
+Using Softmax Loss.
+epoch 391, train_loss = 0.068702.
+Using Softmax Loss.
+epoch 392, train_loss = 0.068618.
+Using Softmax Loss.
+epoch 393, train_loss = 0.068568.
+Using Softmax Loss.
+epoch 394, train_loss = 0.069083.
+Using Softmax Loss.
+epoch 395, train_loss = 0.068856.
+Using Softmax Loss.
+epoch 396, train_loss = 0.069007.
+Using Softmax Loss.
+epoch 397, train_loss = 0.069105.
+Using Softmax Loss.
+epoch 398, train_loss = 0.068611.
+Using Softmax Loss.
+epoch 399, train_loss = 0.068705.
+Using Softmax Loss.
+epoch 400, train_loss = 0.068517.
+[400/2000] Valid Result: ndcg@20 = 0.061003, recall@20 = 0.128423, pre@20 = 0.009717, mrr@20 = 0.050573, map@20 = 0.049602.
+Using Softmax Loss.
+epoch 401, train_loss = 0.068729.
+Using Softmax Loss.
+epoch 402, train_loss = 0.068742.
+Using Softmax Loss.
+epoch 403, train_loss = 0.068983.
+Using Softmax Loss.
+epoch 404, train_loss = 0.068680.
+Using Softmax Loss.
+epoch 405, train_loss = 0.068782.
+Using Softmax Loss.
+epoch 406, train_loss = 0.068820.
+Using Softmax Loss.
+epoch 407, train_loss = 0.068453.
+Using Softmax Loss.
+epoch 408, train_loss = 0.068592.
+Using Softmax Loss.
+epoch 409, train_loss = 0.068667.
+Using Softmax Loss.
+epoch 410, train_loss = 0.068396.
+[410/2000] Valid Result: ndcg@20 = 0.061080, recall@20 = 0.128092, pre@20 = 0.009717, mrr@20 = 0.050907, map@20 = 0.049965.
+Using Softmax Loss.
+epoch 411, train_loss = 0.068737.
+Using Softmax Loss.
+epoch 412, train_loss = 0.068664.
+Using Softmax Loss.
+epoch 413, train_loss = 0.068607.
+Using Softmax Loss.
+epoch 414, train_loss = 0.068722.
+Using Softmax Loss.
+epoch 415, train_loss = 0.068287.
+Using Softmax Loss.
+epoch 416, train_loss = 0.068535.
+Using Softmax Loss.
+epoch 417, train_loss = 0.068227.
+Using Softmax Loss.
+epoch 418, train_loss = 0.068264.
+Using Softmax Loss.
+epoch 419, train_loss = 0.068811.
+Using Softmax Loss.
+epoch 420, train_loss = 0.068661.
+[420/2000] Valid Result: ndcg@20 = 0.060902, recall@20 = 0.127554, pre@20 = 0.009684, mrr@20 = 0.050838, map@20 = 0.049927.
+Using Softmax Loss.
+epoch 421, train_loss = 0.068504.
+Using Softmax Loss.
+epoch 422, train_loss = 0.068646.
+Using Softmax Loss.
+epoch 423, train_loss = 0.068319.
+Using Softmax Loss.
+epoch 424, train_loss = 0.068585.
+Using Softmax Loss.
+epoch 425, train_loss = 0.068917.
+Using Softmax Loss.
+epoch 426, train_loss = 0.069171.
+Using Softmax Loss.
+epoch 427, train_loss = 0.068668.
+Using Softmax Loss.
+epoch 428, train_loss = 0.068385.
+Using Softmax Loss.
+epoch 429, train_loss = 0.068376.
+Using Softmax Loss.
+epoch 430, train_loss = 0.068363.
+[430/2000] Valid Result: ndcg@20 = 0.061023, recall@20 = 0.127750, pre@20 = 0.009684, mrr@20 = 0.051005, map@20 = 0.050113.
+Using Softmax Loss.
+epoch 431, train_loss = 0.068102.
+Using Softmax Loss.
+epoch 432, train_loss = 0.068145.
+Using Softmax Loss.
+epoch 433, train_loss = 0.068096.
+Using Softmax Loss.
+epoch 434, train_loss = 0.068554.
+Using Softmax Loss.
+epoch 435, train_loss = 0.068769.
+Using Softmax Loss.
+epoch 436, train_loss = 0.068763.
+Using Softmax Loss.
+epoch 437, train_loss = 0.068740.
+Using Softmax Loss.
+epoch 438, train_loss = 0.068207.
+Using Softmax Loss.
+epoch 439, train_loss = 0.068351.
+Using Softmax Loss.
+epoch 440, train_loss = 0.068263.
+[440/2000] Valid Result: ndcg@20 = 0.061166, recall@20 = 0.128225, pre@20 = 0.009717, mrr@20 = 0.051129, map@20 = 0.050288.
+######## new best ############
+===== Test Result(at 440 epoch) =====
+ndcg@20 = 0.064944, recall@20 = 0.120621, pre@20 = 0.013356, mrr@20 = 0.069726, map@20 = 0.066884.
+Using Softmax Loss.
+epoch 441, train_loss = 0.068515.
+Using Softmax Loss.
+epoch 442, train_loss = 0.068544.
+Using Softmax Loss.
+epoch 443, train_loss = 0.067869.
+Using Softmax Loss.
+epoch 444, train_loss = 0.068236.
+Using Softmax Loss.
+epoch 445, train_loss = 0.068247.
+Using Softmax Loss.
+epoch 446, train_loss = 0.068487.
+Using Softmax Loss.
+epoch 447, train_loss = 0.068165.
+Using Softmax Loss.
+epoch 448, train_loss = 0.068189.
+Using Softmax Loss.
+epoch 449, train_loss = 0.068353.
+Using Softmax Loss.
+epoch 450, train_loss = 0.068663.
+[450/2000] Valid Result: ndcg@20 = 0.061121, recall@20 = 0.127915, pre@20 = 0.009684, mrr@20 = 0.051178, map@20 = 0.050394.
+Using Softmax Loss.
+epoch 451, train_loss = 0.068474.
+Using Softmax Loss.
+epoch 452, train_loss = 0.068239.
+Using Softmax Loss.
+epoch 453, train_loss = 0.068415.
+Using Softmax Loss.
+epoch 454, train_loss = 0.068333.
+Using Softmax Loss.
+epoch 455, train_loss = 0.068170.
+Using Softmax Loss.
+epoch 456, train_loss = 0.067893.
+Using Softmax Loss.
+epoch 457, train_loss = 0.068592.
+Using Softmax Loss.
+epoch 458, train_loss = 0.068468.
+Using Softmax Loss.
+epoch 459, train_loss = 0.068406.
+Using Softmax Loss.
+epoch 460, train_loss = 0.068087.
+[460/2000] Valid Result: ndcg@20 = 0.061015, recall@20 = 0.127392, pre@20 = 0.009665, mrr@20 = 0.051089, map@20 = 0.050233.
+Using Softmax Loss.
+epoch 461, train_loss = 0.068045.
+Using Softmax Loss.
+epoch 462, train_loss = 0.068081.
+Using Softmax Loss.
+epoch 463, train_loss = 0.067909.
+Using Softmax Loss.
+epoch 464, train_loss = 0.068052.
+Using Softmax Loss.
+epoch 465, train_loss = 0.068366.
+Using Softmax Loss.
+epoch 466, train_loss = 0.067879.
+Using Softmax Loss.
+epoch 467, train_loss = 0.067993.
+Using Softmax Loss.
+epoch 468, train_loss = 0.068039.
+Using Softmax Loss.
+epoch 469, train_loss = 0.067894.
+Using Softmax Loss.
+epoch 470, train_loss = 0.068392.
+[470/2000] Valid Result: ndcg@20 = 0.061114, recall@20 = 0.127486, pre@20 = 0.009656, mrr@20 = 0.051210, map@20 = 0.050217.
+Using Softmax Loss.
+epoch 471, train_loss = 0.068191.
+Using Softmax Loss.
+epoch 472, train_loss = 0.068403.
+Using Softmax Loss.
+epoch 473, train_loss = 0.067719.
+Using Softmax Loss.
+epoch 474, train_loss = 0.067419.
+Using Softmax Loss.
+epoch 475, train_loss = 0.067781.
+Using Softmax Loss.
+epoch 476, train_loss = 0.067893.
+Using Softmax Loss.
+epoch 477, train_loss = 0.068154.
+Using Softmax Loss.
+epoch 478, train_loss = 0.068023.
+Using Softmax Loss.
+epoch 479, train_loss = 0.068096.
+Using Softmax Loss.
+epoch 480, train_loss = 0.067931.
+[480/2000] Valid Result: ndcg@20 = 0.061340, recall@20 = 0.127878, pre@20 = 0.009703, mrr@20 = 0.051468, map@20 = 0.050599.
+######## new best ############
+===== Test Result(at 480 epoch) =====
+ndcg@20 = 0.065544, recall@20 = 0.122020, pre@20 = 0.013464, mrr@20 = 0.070061, map@20 = 0.067276.
+Using Softmax Loss.
+epoch 481, train_loss = 0.068001.
+Using Softmax Loss.
+epoch 482, train_loss = 0.067664.
+Using Softmax Loss.
+epoch 483, train_loss = 0.068243.
+Using Softmax Loss.
+epoch 484, train_loss = 0.067904.
+Using Softmax Loss.
+epoch 485, train_loss = 0.067871.
+Using Softmax Loss.
+epoch 486, train_loss = 0.067965.
+Using Softmax Loss.
+epoch 487, train_loss = 0.068200.
+Using Softmax Loss.
+epoch 488, train_loss = 0.067776.
+Using Softmax Loss.
+epoch 489, train_loss = 0.067796.
+Using Softmax Loss.
+epoch 490, train_loss = 0.067852.
+[490/2000] Valid Result: ndcg@20 = 0.061392, recall@20 = 0.127366, pre@20 = 0.009679, mrr@20 = 0.051696, map@20 = 0.050835.
+######## new best ############
+===== Test Result(at 490 epoch) =====
+ndcg@20 = 0.065620, recall@20 = 0.122133, pre@20 = 0.013491, mrr@20 = 0.070226, map@20 = 0.067257.
+Using Softmax Loss.
+epoch 491, train_loss = 0.067553.
+Using Softmax Loss.
+epoch 492, train_loss = 0.067927.
+Using Softmax Loss.
+epoch 493, train_loss = 0.067966.
+Using Softmax Loss.
+epoch 494, train_loss = 0.067592.
+Using Softmax Loss.
+epoch 495, train_loss = 0.067718.
+Using Softmax Loss.
+epoch 496, train_loss = 0.067847.
+Using Softmax Loss.
+epoch 497, train_loss = 0.067874.
+Using Softmax Loss.
+epoch 498, train_loss = 0.068006.
+Using Softmax Loss.
+epoch 499, train_loss = 0.067923.
+Using Softmax Loss.
+epoch 500, train_loss = 0.067647.
+[500/2000] Valid Result: ndcg@20 = 0.061674, recall@20 = 0.128298, pre@20 = 0.009745, mrr@20 = 0.052035, map@20 = 0.051101.
+######## new best ############
+===== Test Result(at 500 epoch) =====
+ndcg@20 = 0.065157, recall@20 = 0.121569, pre@20 = 0.013433, mrr@20 = 0.069723, map@20 = 0.066903.
+Using Softmax Loss.
+epoch 501, train_loss = 0.067702.
+Using Softmax Loss.
+epoch 502, train_loss = 0.067706.
+Using Softmax Loss.
+epoch 503, train_loss = 0.067840.
+Using Softmax Loss.
+epoch 504, train_loss = 0.067577.
+Using Softmax Loss.
+epoch 505, train_loss = 0.067640.
+Using Softmax Loss.
+epoch 506, train_loss = 0.067597.
+Using Softmax Loss.
+epoch 507, train_loss = 0.067772.
+Using Softmax Loss.
+epoch 508, train_loss = 0.067479.
+Using Softmax Loss.
+epoch 509, train_loss = 0.067706.
+Using Softmax Loss.
+epoch 510, train_loss = 0.067628.
+[510/2000] Valid Result: ndcg@20 = 0.061965, recall@20 = 0.128975, pre@20 = 0.009816, mrr@20 = 0.052121, map@20 = 0.051169.
+######## new best ############
+===== Test Result(at 510 epoch) =====
+ndcg@20 = 0.065041, recall@20 = 0.121332, pre@20 = 0.013420, mrr@20 = 0.069486, map@20 = 0.066805.
+Using Softmax Loss.
+epoch 511, train_loss = 0.067513.
+Using Softmax Loss.
+epoch 512, train_loss = 0.067982.
+Using Softmax Loss.
+epoch 513, train_loss = 0.067416.
+Using Softmax Loss.
+epoch 514, train_loss = 0.067399.
+Using Softmax Loss.
+epoch 515, train_loss = 0.067665.
+Using Softmax Loss.
+epoch 516, train_loss = 0.068242.
+Using Softmax Loss.
+epoch 517, train_loss = 0.067976.
+Using Softmax Loss.
+epoch 518, train_loss = 0.067222.
+Using Softmax Loss.
+epoch 519, train_loss = 0.067550.
+Using Softmax Loss.
+epoch 520, train_loss = 0.067594.
+[520/2000] Valid Result: ndcg@20 = 0.061666, recall@20 = 0.128923, pre@20 = 0.009792, mrr@20 = 0.051556, map@20 = 0.050754.
+Using Softmax Loss.
+epoch 521, train_loss = 0.067393.
+Using Softmax Loss.
+epoch 522, train_loss = 0.067942.
+Using Softmax Loss.
+epoch 523, train_loss = 0.067845.
+Using Softmax Loss.
+epoch 524, train_loss = 0.067791.
+Using Softmax Loss.
+epoch 525, train_loss = 0.067862.
+Using Softmax Loss.
+epoch 526, train_loss = 0.067765.
+Using Softmax Loss.
+epoch 527, train_loss = 0.067832.
+Using Softmax Loss.
+epoch 528, train_loss = 0.067139.
+Using Softmax Loss.
+epoch 529, train_loss = 0.067750.
+Using Softmax Loss.
+epoch 530, train_loss = 0.067665.
+[530/2000] Valid Result: ndcg@20 = 0.061766, recall@20 = 0.128477, pre@20 = 0.009745, mrr@20 = 0.051827, map@20 = 0.051028.
+Using Softmax Loss.
+epoch 531, train_loss = 0.068038.
+Using Softmax Loss.
+epoch 532, train_loss = 0.067704.
+Using Softmax Loss.
+epoch 533, train_loss = 0.067998.
+Using Softmax Loss.
+epoch 534, train_loss = 0.067285.
+Using Softmax Loss.
+epoch 535, train_loss = 0.067705.
+Using Softmax Loss.
+epoch 536, train_loss = 0.067492.
+Using Softmax Loss.
+epoch 537, train_loss = 0.067484.
+Using Softmax Loss.
+epoch 538, train_loss = 0.067750.
+Using Softmax Loss.
+epoch 539, train_loss = 0.067426.
+Using Softmax Loss.
+epoch 540, train_loss = 0.067724.
+[540/2000] Valid Result: ndcg@20 = 0.061834, recall@20 = 0.128569, pre@20 = 0.009731, mrr@20 = 0.052108, map@20 = 0.051210.
+Using Softmax Loss.
+epoch 541, train_loss = 0.067297.
+Using Softmax Loss.
+epoch 542, train_loss = 0.067708.
+Using Softmax Loss.
+epoch 543, train_loss = 0.067371.
+Using Softmax Loss.
+epoch 544, train_loss = 0.067609.
+Using Softmax Loss.
+epoch 545, train_loss = 0.067180.
+Using Softmax Loss.
+epoch 546, train_loss = 0.067698.
+Using Softmax Loss.
+epoch 547, train_loss = 0.067518.
+Using Softmax Loss.
+epoch 548, train_loss = 0.067836.
+Using Softmax Loss.
+epoch 549, train_loss = 0.067600.
+Using Softmax Loss.
+epoch 550, train_loss = 0.067655.
+[550/2000] Valid Result: ndcg@20 = 0.061541, recall@20 = 0.127540, pre@20 = 0.009670, mrr@20 = 0.051904, map@20 = 0.051123.
+Using Softmax Loss.
+epoch 551, train_loss = 0.067989.
+Using Softmax Loss.
+epoch 552, train_loss = 0.067981.
+Using Softmax Loss.
+epoch 553, train_loss = 0.067500.
+Using Softmax Loss.
+epoch 554, train_loss = 0.067149.
+Using Softmax Loss.
+epoch 555, train_loss = 0.067520.
+Using Softmax Loss.
+epoch 556, train_loss = 0.067774.
+Using Softmax Loss.
+epoch 557, train_loss = 0.067590.
+Using Softmax Loss.
+epoch 558, train_loss = 0.067484.
+Using Softmax Loss.
+epoch 559, train_loss = 0.067394.
+Using Softmax Loss.
+epoch 560, train_loss = 0.067696.
+[560/2000] Valid Result: ndcg@20 = 0.061601, recall@20 = 0.128644, pre@20 = 0.009741, mrr@20 = 0.051724, map@20 = 0.050961.
+Using Softmax Loss.
+epoch 561, train_loss = 0.067361.
+Using Softmax Loss.
+epoch 562, train_loss = 0.067110.
+Using Softmax Loss.
+epoch 563, train_loss = 0.067551.
+Using Softmax Loss.
+epoch 564, train_loss = 0.067188.
+Using Softmax Loss.
+epoch 565, train_loss = 0.067239.
+Using Softmax Loss.
+epoch 566, train_loss = 0.067015.
+Using Softmax Loss.
+epoch 567, train_loss = 0.067361.
+Using Softmax Loss.
+epoch 568, train_loss = 0.067413.
+Using Softmax Loss.
+epoch 569, train_loss = 0.067171.
+Using Softmax Loss.
+epoch 570, train_loss = 0.067525.
+[570/2000] Valid Result: ndcg@20 = 0.061589, recall@20 = 0.128051, pre@20 = 0.009698, mrr@20 = 0.051974, map@20 = 0.051188.
+Using Softmax Loss.
+epoch 571, train_loss = 0.067637.
+Using Softmax Loss.
+epoch 572, train_loss = 0.067359.
+Using Softmax Loss.
+epoch 573, train_loss = 0.067441.
+Using Softmax Loss.
+epoch 574, train_loss = 0.067201.
+Using Softmax Loss.
+epoch 575, train_loss = 0.067456.
+Using Softmax Loss.
+epoch 576, train_loss = 0.067240.
+Using Softmax Loss.
+epoch 577, train_loss = 0.067150.
+Using Softmax Loss.
+epoch 578, train_loss = 0.067394.
+Using Softmax Loss.
+epoch 579, train_loss = 0.067324.
+Using Softmax Loss.
+epoch 580, train_loss = 0.067650.
+[580/2000] Valid Result: ndcg@20 = 0.061319, recall@20 = 0.127325, pre@20 = 0.009670, mrr@20 = 0.051694, map@20 = 0.050876.
+Using Softmax Loss.
+epoch 581, train_loss = 0.067333.
+Using Softmax Loss.
+epoch 582, train_loss = 0.066874.
+Using Softmax Loss.
+epoch 583, train_loss = 0.067407.
+Using Softmax Loss.
+epoch 584, train_loss = 0.067144.
+Using Softmax Loss.
+epoch 585, train_loss = 0.067599.
+Using Softmax Loss.
+epoch 586, train_loss = 0.067570.
+Using Softmax Loss.
+epoch 587, train_loss = 0.067481.
+Using Softmax Loss.
+epoch 588, train_loss = 0.067104.
+Using Softmax Loss.
+epoch 589, train_loss = 0.067730.
+Using Softmax Loss.
+epoch 590, train_loss = 0.066964.
+[590/2000] Valid Result: ndcg@20 = 0.061324, recall@20 = 0.128456, pre@20 = 0.009755, mrr@20 = 0.051351, map@20 = 0.050513.
+Using Softmax Loss.
+epoch 591, train_loss = 0.067031.
+Using Softmax Loss.
+epoch 592, train_loss = 0.067116.
+Using Softmax Loss.
+epoch 593, train_loss = 0.067447.
+Using Softmax Loss.
+epoch 594, train_loss = 0.067539.
+Using Softmax Loss.
+epoch 595, train_loss = 0.067233.
+Using Softmax Loss.
+epoch 596, train_loss = 0.067137.
+Using Softmax Loss.
+epoch 597, train_loss = 0.067116.
+Using Softmax Loss.
+epoch 598, train_loss = 0.066900.
+Using Softmax Loss.
+epoch 599, train_loss = 0.067295.
+Using Softmax Loss.
+epoch 600, train_loss = 0.067249.
+[600/2000] Valid Result: ndcg@20 = 0.061451, recall@20 = 0.128932, pre@20 = 0.009759, mrr@20 = 0.051551, map@20 = 0.050621.
+Using Softmax Loss.
+epoch 601, train_loss = 0.067453.
+Using Softmax Loss.
+epoch 602, train_loss = 0.067616.
+Using Softmax Loss.
+epoch 603, train_loss = 0.067666.
+Using Softmax Loss.
+epoch 604, train_loss = 0.067518.
+Using Softmax Loss.
+epoch 605, train_loss = 0.067411.
+Using Softmax Loss.
+epoch 606, train_loss = 0.067604.
+Using Softmax Loss.
+epoch 607, train_loss = 0.067211.
+Using Softmax Loss.
+epoch 608, train_loss = 0.067272.
+Using Softmax Loss.
+epoch 609, train_loss = 0.067230.
+Using Softmax Loss.
+epoch 610, train_loss = 0.067670.
+[610/2000] Valid Result: ndcg@20 = 0.061617, recall@20 = 0.128523, pre@20 = 0.009736, mrr@20 = 0.052015, map@20 = 0.051084.
+Using Softmax Loss.
+epoch 611, train_loss = 0.067310.
+Using Softmax Loss.
+epoch 612, train_loss = 0.067342.
+Using Softmax Loss.
+epoch 613, train_loss = 0.067164.
+Using Softmax Loss.
+epoch 614, train_loss = 0.067155.
+Using Softmax Loss.
+epoch 615, train_loss = 0.067362.
+Using Softmax Loss.
+epoch 616, train_loss = 0.066885.
+Using Softmax Loss.
+epoch 617, train_loss = 0.067418.
+Using Softmax Loss.
+epoch 618, train_loss = 0.067332.
+Using Softmax Loss.
+epoch 619, train_loss = 0.067128.
+Using Softmax Loss.
+epoch 620, train_loss = 0.067136.
+[620/2000] Valid Result: ndcg@20 = 0.061829, recall@20 = 0.128567, pre@20 = 0.009750, mrr@20 = 0.052280, map@20 = 0.051378.
+Using Softmax Loss.
+epoch 621, train_loss = 0.066875.
+Using Softmax Loss.
+epoch 622, train_loss = 0.066802.
+Using Softmax Loss.
+epoch 623, train_loss = 0.067110.
+Using Softmax Loss.
+epoch 624, train_loss = 0.067170.
+Using Softmax Loss.
+epoch 625, train_loss = 0.067340.
+Using Softmax Loss.
+epoch 626, train_loss = 0.067190.
+Using Softmax Loss.
+epoch 627, train_loss = 0.067212.
+Using Softmax Loss.
+epoch 628, train_loss = 0.067294.
+Using Softmax Loss.
+epoch 629, train_loss = 0.067480.
+Using Softmax Loss.
+epoch 630, train_loss = 0.067247.
+[630/2000] Valid Result: ndcg@20 = 0.062068, recall@20 = 0.128392, pre@20 = 0.009712, mrr@20 = 0.052717, map@20 = 0.051862.
+######## new best ############
+===== Test Result(at 630 epoch) =====
+ndcg@20 = 0.065346, recall@20 = 0.120687, pre@20 = 0.013433, mrr@20 = 0.069986, map@20 = 0.067127.
+Using Softmax Loss.
+epoch 631, train_loss = 0.067332.
+Using Softmax Loss.
+epoch 632, train_loss = 0.067317.
+Using Softmax Loss.
+epoch 633, train_loss = 0.067259.
+Using Softmax Loss.
+epoch 634, train_loss = 0.066991.
+Using Softmax Loss.
+epoch 635, train_loss = 0.067155.
+Using Softmax Loss.
+epoch 636, train_loss = 0.067046.
+Using Softmax Loss.
+epoch 637, train_loss = 0.067363.
+Using Softmax Loss.
+epoch 638, train_loss = 0.067418.
+Using Softmax Loss.
+epoch 639, train_loss = 0.067468.
+Using Softmax Loss.
+epoch 640, train_loss = 0.067173.
+[640/2000] Valid Result: ndcg@20 = 0.062207, recall@20 = 0.129654, pre@20 = 0.009821, mrr@20 = 0.052606, map@20 = 0.051690.
+######## new best ############
+===== Test Result(at 640 epoch) =====
+ndcg@20 = 0.065527, recall@20 = 0.121504, pre@20 = 0.013453, mrr@20 = 0.070106, map@20 = 0.067155.
+Using Softmax Loss.
+epoch 641, train_loss = 0.067220.
+Using Softmax Loss.
+epoch 642, train_loss = 0.067040.
+Using Softmax Loss.
+epoch 643, train_loss = 0.067222.
+Using Softmax Loss.
+epoch 644, train_loss = 0.066776.
+Using Softmax Loss.
+epoch 645, train_loss = 0.067286.
+Using Softmax Loss.
+epoch 646, train_loss = 0.067389.
+Using Softmax Loss.
+epoch 647, train_loss = 0.066884.
+Using Softmax Loss.
+epoch 648, train_loss = 0.066821.
+Using Softmax Loss.
+epoch 649, train_loss = 0.067167.
+Using Softmax Loss.
+epoch 650, train_loss = 0.067419.
+[650/2000] Valid Result: ndcg@20 = 0.062132, recall@20 = 0.129082, pre@20 = 0.009764, mrr@20 = 0.052625, map@20 = 0.051684.
+Using Softmax Loss.
+epoch 651, train_loss = 0.067212.
+Using Softmax Loss.
+epoch 652, train_loss = 0.067303.
+Using Softmax Loss.
+epoch 653, train_loss = 0.067061.
+Using Softmax Loss.
+epoch 654, train_loss = 0.066823.
+Using Softmax Loss.
+epoch 655, train_loss = 0.067206.
+Using Softmax Loss.
+epoch 656, train_loss = 0.067148.
+Using Softmax Loss.
+epoch 657, train_loss = 0.067208.
+Using Softmax Loss.
+epoch 658, train_loss = 0.067239.
+Using Softmax Loss.
+epoch 659, train_loss = 0.067205.
+Using Softmax Loss.
+epoch 660, train_loss = 0.066861.
+[660/2000] Valid Result: ndcg@20 = 0.061795, recall@20 = 0.128469, pre@20 = 0.009731, mrr@20 = 0.052307, map@20 = 0.051405.
+Using Softmax Loss.
+epoch 661, train_loss = 0.066860.
+Using Softmax Loss.
+epoch 662, train_loss = 0.067093.
+Using Softmax Loss.
+epoch 663, train_loss = 0.067006.
+Using Softmax Loss.
+epoch 664, train_loss = 0.067088.
+Using Softmax Loss.
+epoch 665, train_loss = 0.066758.
+Using Softmax Loss.
+epoch 666, train_loss = 0.067223.
+Using Softmax Loss.
+epoch 667, train_loss = 0.067055.
+Using Softmax Loss.
+epoch 668, train_loss = 0.066958.
+Using Softmax Loss.
+epoch 669, train_loss = 0.067088.
+Using Softmax Loss.
+epoch 670, train_loss = 0.067292.
+[670/2000] Valid Result: ndcg@20 = 0.061530, recall@20 = 0.127671, pre@20 = 0.009670, mrr@20 = 0.052082, map@20 = 0.051241.
+Using Softmax Loss.
+epoch 671, train_loss = 0.066972.
+Using Softmax Loss.
+epoch 672, train_loss = 0.067087.
+Using Softmax Loss.
+epoch 673, train_loss = 0.067230.
+Using Softmax Loss.
+epoch 674, train_loss = 0.066696.
+Using Softmax Loss.
+epoch 675, train_loss = 0.066840.
+Using Softmax Loss.
+epoch 676, train_loss = 0.066802.
+Using Softmax Loss.
+epoch 677, train_loss = 0.067048.
+Using Softmax Loss.
+epoch 678, train_loss = 0.067100.
+Using Softmax Loss.
+epoch 679, train_loss = 0.066945.
+Using Softmax Loss.
+epoch 680, train_loss = 0.067229.
+[680/2000] Valid Result: ndcg@20 = 0.061365, recall@20 = 0.127512, pre@20 = 0.009632, mrr@20 = 0.051863, map@20 = 0.051066.
+Using Softmax Loss.
+epoch 681, train_loss = 0.066647.
+Using Softmax Loss.
+epoch 682, train_loss = 0.067062.
+Using Softmax Loss.
+epoch 683, train_loss = 0.066737.
+Using Softmax Loss.
+epoch 684, train_loss = 0.066985.
+Using Softmax Loss.
+epoch 685, train_loss = 0.067018.
+Using Softmax Loss.
+epoch 686, train_loss = 0.066906.
+Using Softmax Loss.
+epoch 687, train_loss = 0.067325.
+Using Softmax Loss.
+epoch 688, train_loss = 0.067011.
+Using Softmax Loss.
+epoch 689, train_loss = 0.067388.
+Using Softmax Loss.
+epoch 690, train_loss = 0.067100.
+[690/2000] Valid Result: ndcg@20 = 0.061432, recall@20 = 0.127604, pre@20 = 0.009689, mrr@20 = 0.051957, map@20 = 0.051196.
+Using Softmax Loss.
+epoch 691, train_loss = 0.067017.
+Using Softmax Loss.
+epoch 692, train_loss = 0.066856.
+Using Softmax Loss.
+epoch 693, train_loss = 0.067199.
+Using Softmax Loss.
+epoch 694, train_loss = 0.067250.
+Using Softmax Loss.
+epoch 695, train_loss = 0.067596.
+Using Softmax Loss.
+epoch 696, train_loss = 0.066997.
+Using Softmax Loss.
+epoch 697, train_loss = 0.067287.
+Using Softmax Loss.
+epoch 698, train_loss = 0.066979.
+Using Softmax Loss.
+epoch 699, train_loss = 0.066862.
+Using Softmax Loss.
+epoch 700, train_loss = 0.067276.
+[700/2000] Valid Result: ndcg@20 = 0.061546, recall@20 = 0.128220, pre@20 = 0.009708, mrr@20 = 0.051863, map@20 = 0.051053.
+Using Softmax Loss.
+epoch 701, train_loss = 0.066706.
+Using Softmax Loss.
+epoch 702, train_loss = 0.067014.
+Using Softmax Loss.
+epoch 703, train_loss = 0.066596.
+Using Softmax Loss.
+epoch 704, train_loss = 0.066814.
+Using Softmax Loss.
+epoch 705, train_loss = 0.067219.
+Using Softmax Loss.
+epoch 706, train_loss = 0.067086.
+Using Softmax Loss.
+epoch 707, train_loss = 0.066847.
+Using Softmax Loss.
+epoch 708, train_loss = 0.067047.
+Using Softmax Loss.
+epoch 709, train_loss = 0.067060.
+Using Softmax Loss.
+epoch 710, train_loss = 0.067106.
+[710/2000] Valid Result: ndcg@20 = 0.061423, recall@20 = 0.126918, pre@20 = 0.009632, mrr@20 = 0.052217, map@20 = 0.051345.
+Using Softmax Loss.
+epoch 711, train_loss = 0.067173.
+Using Softmax Loss.
+epoch 712, train_loss = 0.066961.
+Using Softmax Loss.
+epoch 713, train_loss = 0.067016.
+Using Softmax Loss.
+epoch 714, train_loss = 0.066898.
+Using Softmax Loss.
+epoch 715, train_loss = 0.066604.
+Using Softmax Loss.
+epoch 716, train_loss = 0.066902.
+Using Softmax Loss.
+epoch 717, train_loss = 0.066917.
+Using Softmax Loss.
+epoch 718, train_loss = 0.067527.
+Using Softmax Loss.
+epoch 719, train_loss = 0.067070.
+Using Softmax Loss.
+epoch 720, train_loss = 0.067120.
+[720/2000] Valid Result: ndcg@20 = 0.061745, recall@20 = 0.127908, pre@20 = 0.009689, mrr@20 = 0.052363, map@20 = 0.051525.
+Using Softmax Loss.
+epoch 721, train_loss = 0.066893.
+Using Softmax Loss.
+epoch 722, train_loss = 0.067191.
+Using Softmax Loss.
+epoch 723, train_loss = 0.066638.
+Using Softmax Loss.
+epoch 724, train_loss = 0.066561.
+Using Softmax Loss.
+epoch 725, train_loss = 0.066968.
+Using Softmax Loss.
+epoch 726, train_loss = 0.067258.
+Using Softmax Loss.
+epoch 727, train_loss = 0.066539.
+Using Softmax Loss.
+epoch 728, train_loss = 0.066999.
+Using Softmax Loss.
+epoch 729, train_loss = 0.066634.
+Using Softmax Loss.
+epoch 730, train_loss = 0.066709.
+[730/2000] Valid Result: ndcg@20 = 0.062105, recall@20 = 0.128561, pre@20 = 0.009750, mrr@20 = 0.052765, map@20 = 0.051965.
+Using Softmax Loss.
+epoch 731, train_loss = 0.067100.
+Using Softmax Loss.
+epoch 732, train_loss = 0.067157.
+Using Softmax Loss.
+epoch 733, train_loss = 0.066709.
+Using Softmax Loss.
+epoch 734, train_loss = 0.067323.
+Using Softmax Loss.
+epoch 735, train_loss = 0.066659.
+Using Softmax Loss.
+epoch 736, train_loss = 0.066638.
+Using Softmax Loss.
+epoch 737, train_loss = 0.066993.
+Using Softmax Loss.
+epoch 738, train_loss = 0.067223.
+Using Softmax Loss.
+epoch 739, train_loss = 0.066808.
+Using Softmax Loss.
+epoch 740, train_loss = 0.066651.
+[740/2000] Valid Result: ndcg@20 = 0.061849, recall@20 = 0.127888, pre@20 = 0.009722, mrr@20 = 0.052445, map@20 = 0.051635.
+Using Softmax Loss.
+epoch 741, train_loss = 0.066836.
+Using Softmax Loss.
+epoch 742, train_loss = 0.066911.
+Using Softmax Loss.
+epoch 743, train_loss = 0.066728.
+Using Softmax Loss.
+epoch 744, train_loss = 0.067136.
+Using Softmax Loss.
+epoch 745, train_loss = 0.066991.
+Using Softmax Loss.
+epoch 746, train_loss = 0.066675.
+Using Softmax Loss.
+epoch 747, train_loss = 0.066876.
+Using Softmax Loss.
+epoch 748, train_loss = 0.066666.
+Using Softmax Loss.
+epoch 749, train_loss = 0.066696.
+Using Softmax Loss.
+epoch 750, train_loss = 0.066864.
+[750/2000] Valid Result: ndcg@20 = 0.061929, recall@20 = 0.128503, pre@20 = 0.009750, mrr@20 = 0.052423, map@20 = 0.051554.
+Using Softmax Loss.
+epoch 751, train_loss = 0.067124.
+Using Softmax Loss.
+epoch 752, train_loss = 0.066708.
+Using Softmax Loss.
+epoch 753, train_loss = 0.066530.
+Using Softmax Loss.
+epoch 754, train_loss = 0.066864.
+Using Softmax Loss.
+epoch 755, train_loss = 0.066816.
+Using Softmax Loss.
+epoch 756, train_loss = 0.067063.
+Using Softmax Loss.
+epoch 757, train_loss = 0.067049.
+Using Softmax Loss.
+epoch 758, train_loss = 0.066519.
+Using Softmax Loss.
+epoch 759, train_loss = 0.067257.
+Using Softmax Loss.
+epoch 760, train_loss = 0.067084.
+[760/2000] Valid Result: ndcg@20 = 0.061901, recall@20 = 0.128390, pre@20 = 0.009769, mrr@20 = 0.052324, map@20 = 0.051470.
+Using Softmax Loss.
+epoch 761, train_loss = 0.067012.
+Using Softmax Loss.
+epoch 762, train_loss = 0.067076.
+Using Softmax Loss.
+epoch 763, train_loss = 0.066637.
+Using Softmax Loss.
+epoch 764, train_loss = 0.067218.
+Using Softmax Loss.
+epoch 765, train_loss = 0.066680.
+Using Softmax Loss.
+epoch 766, train_loss = 0.066754.
+Using Softmax Loss.
+epoch 767, train_loss = 0.066824.
+Using Softmax Loss.
+epoch 768, train_loss = 0.067024.
+Using Softmax Loss.
+epoch 769, train_loss = 0.066690.
+Using Softmax Loss.
+epoch 770, train_loss = 0.067305.
+[770/2000] Valid Result: ndcg@20 = 0.061883, recall@20 = 0.129489, pre@20 = 0.009854, mrr@20 = 0.051905, map@20 = 0.051081.
+Using Softmax Loss.
+epoch 771, train_loss = 0.066635.
+Using Softmax Loss.
+epoch 772, train_loss = 0.066765.
+Using Softmax Loss.
+epoch 773, train_loss = 0.066801.
+Using Softmax Loss.
+epoch 774, train_loss = 0.066552.
+Using Softmax Loss.
+epoch 775, train_loss = 0.066862.
+Using Softmax Loss.
+epoch 776, train_loss = 0.066818.
+Using Softmax Loss.
+epoch 777, train_loss = 0.066899.
+Using Softmax Loss.
+epoch 778, train_loss = 0.066723.
+Using Softmax Loss.
+epoch 779, train_loss = 0.066797.
+Using Softmax Loss.
+epoch 780, train_loss = 0.066951.
+[780/2000] Valid Result: ndcg@20 = 0.062249, recall@20 = 0.129842, pre@20 = 0.009854, mrr@20 = 0.052391, map@20 = 0.051559.
+######## new best ############
+===== Test Result(at 780 epoch) =====
+ndcg@20 = 0.065394, recall@20 = 0.120913, pre@20 = 0.013437, mrr@20 = 0.070210, map@20 = 0.067272.
+Using Softmax Loss.
+epoch 781, train_loss = 0.066936.
+Using Softmax Loss.
+epoch 782, train_loss = 0.066604.
+Using Softmax Loss.
+epoch 783, train_loss = 0.067254.
+Using Softmax Loss.
+epoch 784, train_loss = 0.066636.
+Using Softmax Loss.
+epoch 785, train_loss = 0.066582.
+Using Softmax Loss.
+epoch 786, train_loss = 0.066592.
+Using Softmax Loss.
+epoch 787, train_loss = 0.066917.
+Using Softmax Loss.
+epoch 788, train_loss = 0.066768.
+Using Softmax Loss.
+epoch 789, train_loss = 0.066669.
+Using Softmax Loss.
+epoch 790, train_loss = 0.066599.
+[790/2000] Valid Result: ndcg@20 = 0.061974, recall@20 = 0.129642, pre@20 = 0.009854, mrr@20 = 0.052013, map@20 = 0.051222.
+Using Softmax Loss.
+epoch 791, train_loss = 0.066844.
+Using Softmax Loss.
+epoch 792, train_loss = 0.066608.
+Using Softmax Loss.
+epoch 793, train_loss = 0.066514.
+Using Softmax Loss.
+epoch 794, train_loss = 0.066606.
+Using Softmax Loss.
+epoch 795, train_loss = 0.066814.
+Using Softmax Loss.
+epoch 796, train_loss = 0.066944.
+Using Softmax Loss.
+epoch 797, train_loss = 0.066957.
+Using Softmax Loss.
+epoch 798, train_loss = 0.066834.
+Using Softmax Loss.
+epoch 799, train_loss = 0.067032.
+Using Softmax Loss.
+epoch 800, train_loss = 0.066533.
+[800/2000] Valid Result: ndcg@20 = 0.061764, recall@20 = 0.128570, pre@20 = 0.009764, mrr@20 = 0.052130, map@20 = 0.051316.
+Using Softmax Loss.
+epoch 801, train_loss = 0.066348.
+Using Softmax Loss.
+epoch 802, train_loss = 0.066679.
+Using Softmax Loss.
+epoch 803, train_loss = 0.066879.
+Using Softmax Loss.
+epoch 804, train_loss = 0.066704.
+Using Softmax Loss.
+epoch 805, train_loss = 0.066871.
+Using Softmax Loss.
+epoch 806, train_loss = 0.066851.
+Using Softmax Loss.
+epoch 807, train_loss = 0.066722.
+Using Softmax Loss.
+epoch 808, train_loss = 0.066725.
+Using Softmax Loss.
+epoch 809, train_loss = 0.066747.
+Using Softmax Loss.
+epoch 810, train_loss = 0.066722.
+[810/2000] Valid Result: ndcg@20 = 0.061855, recall@20 = 0.128874, pre@20 = 0.009783, mrr@20 = 0.052255, map@20 = 0.051375.
+Using Softmax Loss.
+epoch 811, train_loss = 0.066954.
+Using Softmax Loss.
+epoch 812, train_loss = 0.066988.
+Using Softmax Loss.
+epoch 813, train_loss = 0.066900.
+Using Softmax Loss.
+epoch 814, train_loss = 0.066669.
+Using Softmax Loss.
+epoch 815, train_loss = 0.066503.
+Using Softmax Loss.
+epoch 816, train_loss = 0.066665.
+Using Softmax Loss.
+epoch 817, train_loss = 0.066710.
+Using Softmax Loss.
+epoch 818, train_loss = 0.066395.
+Using Softmax Loss.
+epoch 819, train_loss = 0.066673.
+Using Softmax Loss.
+epoch 820, train_loss = 0.066722.
+[820/2000] Valid Result: ndcg@20 = 0.061584, recall@20 = 0.127843, pre@20 = 0.009712, mrr@20 = 0.052053, map@20 = 0.051213.
+Using Softmax Loss.
+epoch 821, train_loss = 0.066927.
+Using Softmax Loss.
+epoch 822, train_loss = 0.066711.
+Using Softmax Loss.
+epoch 823, train_loss = 0.066394.
+Using Softmax Loss.
+epoch 824, train_loss = 0.066591.
+Using Softmax Loss.
+epoch 825, train_loss = 0.066901.
+Using Softmax Loss.
+epoch 826, train_loss = 0.066934.
+Using Softmax Loss.
+epoch 827, train_loss = 0.066709.
+Using Softmax Loss.
+epoch 828, train_loss = 0.066788.
+Using Softmax Loss.
+epoch 829, train_loss = 0.067006.
+Using Softmax Loss.
+epoch 830, train_loss = 0.066373.
+[830/2000] Valid Result: ndcg@20 = 0.061785, recall@20 = 0.127820, pre@20 = 0.009717, mrr@20 = 0.052239, map@20 = 0.051386.
+Using Softmax Loss.
+epoch 831, train_loss = 0.066693.
+Using Softmax Loss.
+epoch 832, train_loss = 0.066633.
+Using Softmax Loss.
+epoch 833, train_loss = 0.066471.
+Using Softmax Loss.
+epoch 834, train_loss = 0.066702.
+Using Softmax Loss.
+epoch 835, train_loss = 0.066868.
+Using Softmax Loss.
+epoch 836, train_loss = 0.066494.
+Using Softmax Loss.
+epoch 837, train_loss = 0.066565.
+Using Softmax Loss.
+epoch 838, train_loss = 0.066552.
+Using Softmax Loss.
+epoch 839, train_loss = 0.066882.
+Using Softmax Loss.
+epoch 840, train_loss = 0.066676.
+[840/2000] Valid Result: ndcg@20 = 0.061929, recall@20 = 0.127974, pre@20 = 0.009741, mrr@20 = 0.052406, map@20 = 0.051536.
+Using Softmax Loss.
+epoch 841, train_loss = 0.066510.
+Using Softmax Loss.
+epoch 842, train_loss = 0.066071.
+Using Softmax Loss.
+epoch 843, train_loss = 0.066325.
+Using Softmax Loss.
+epoch 844, train_loss = 0.067042.
+Using Softmax Loss.
+epoch 845, train_loss = 0.066607.
+Using Softmax Loss.
+epoch 846, train_loss = 0.066858.
+Using Softmax Loss.
+epoch 847, train_loss = 0.066865.
+Using Softmax Loss.
+epoch 848, train_loss = 0.066535.
+Using Softmax Loss.
+epoch 849, train_loss = 0.066686.
+Using Softmax Loss.
+epoch 850, train_loss = 0.066498.
+[850/2000] Valid Result: ndcg@20 = 0.062070, recall@20 = 0.128436, pre@20 = 0.009764, mrr@20 = 0.052498, map@20 = 0.051781.
+Using Softmax Loss.
+epoch 851, train_loss = 0.067055.
+Using Softmax Loss.
+epoch 852, train_loss = 0.066513.
+Using Softmax Loss.
+epoch 853, train_loss = 0.066341.
+Using Softmax Loss.
+epoch 854, train_loss = 0.066464.
+Using Softmax Loss.
+epoch 855, train_loss = 0.066196.
+Using Softmax Loss.
+epoch 856, train_loss = 0.066297.
+Using Softmax Loss.
+epoch 857, train_loss = 0.066444.
+Using Softmax Loss.
+epoch 858, train_loss = 0.066212.
+Using Softmax Loss.
+epoch 859, train_loss = 0.066677.
+Using Softmax Loss.
+epoch 860, train_loss = 0.066786.
+[860/2000] Valid Result: ndcg@20 = 0.062192, recall@20 = 0.128925, pre@20 = 0.009797, mrr@20 = 0.052562, map@20 = 0.051748.
+Using Softmax Loss.
+epoch 861, train_loss = 0.066798.
+Using Softmax Loss.
+epoch 862, train_loss = 0.066801.
+Using Softmax Loss.
+epoch 863, train_loss = 0.066256.
+Using Softmax Loss.
+epoch 864, train_loss = 0.066615.
+Using Softmax Loss.
+epoch 865, train_loss = 0.066521.
+Using Softmax Loss.
+epoch 866, train_loss = 0.066854.
+Using Softmax Loss.
+epoch 867, train_loss = 0.066273.
+Using Softmax Loss.
+epoch 868, train_loss = 0.066321.
+Using Softmax Loss.
+epoch 869, train_loss = 0.066851.
+Using Softmax Loss.
+epoch 870, train_loss = 0.066535.
+[870/2000] Valid Result: ndcg@20 = 0.061789, recall@20 = 0.128507, pre@20 = 0.009769, mrr@20 = 0.052083, map@20 = 0.051305.
+Using Softmax Loss.
+epoch 871, train_loss = 0.066463.
+Using Softmax Loss.
+epoch 872, train_loss = 0.066609.
+Using Softmax Loss.
+epoch 873, train_loss = 0.066918.
+Using Softmax Loss.
+epoch 874, train_loss = 0.066664.
+Using Softmax Loss.
+epoch 875, train_loss = 0.066466.
+Using Softmax Loss.
+epoch 876, train_loss = 0.066832.
+Using Softmax Loss.
+epoch 877, train_loss = 0.066569.
+Using Softmax Loss.
+epoch 878, train_loss = 0.066539.
+Using Softmax Loss.
+epoch 879, train_loss = 0.066427.
+Using Softmax Loss.
+epoch 880, train_loss = 0.066593.
+[880/2000] Valid Result: ndcg@20 = 0.061666, recall@20 = 0.128143, pre@20 = 0.009755, mrr@20 = 0.051962, map@20 = 0.051161.
+Using Softmax Loss.
+epoch 881, train_loss = 0.066697.
+Using Softmax Loss.
+epoch 882, train_loss = 0.066442.
+Using Softmax Loss.
+epoch 883, train_loss = 0.066350.
+Using Softmax Loss.
+epoch 884, train_loss = 0.066680.
+Using Softmax Loss.
+epoch 885, train_loss = 0.066667.
+Using Softmax Loss.
+epoch 886, train_loss = 0.066682.
+Using Softmax Loss.
+epoch 887, train_loss = 0.066638.
+Using Softmax Loss.
+epoch 888, train_loss = 0.066968.
+Using Softmax Loss.
+epoch 889, train_loss = 0.066336.
+Using Softmax Loss.
+epoch 890, train_loss = 0.066708.
+[890/2000] Valid Result: ndcg@20 = 0.061351, recall@20 = 0.126880, pre@20 = 0.009689, mrr@20 = 0.051804, map@20 = 0.051062.
+Using Softmax Loss.
+epoch 891, train_loss = 0.066486.
+Using Softmax Loss.
+epoch 892, train_loss = 0.067062.
+Using Softmax Loss.
+epoch 893, train_loss = 0.066390.
+Using Softmax Loss.
+epoch 894, train_loss = 0.067221.
+Using Softmax Loss.
+epoch 895, train_loss = 0.066712.
+Using Softmax Loss.
+epoch 896, train_loss = 0.066990.
+Using Softmax Loss.
+epoch 897, train_loss = 0.066793.
+Using Softmax Loss.
+epoch 898, train_loss = 0.066746.
+Using Softmax Loss.
+epoch 899, train_loss = 0.067120.
+Using Softmax Loss.
+epoch 900, train_loss = 0.066732.
+[900/2000] Valid Result: ndcg@20 = 0.061531, recall@20 = 0.126757, pre@20 = 0.009679, mrr@20 = 0.052062, map@20 = 0.051377.
+Using Softmax Loss.
+epoch 901, train_loss = 0.066411.
+Using Softmax Loss.
+epoch 902, train_loss = 0.066437.
+Using Softmax Loss.
+epoch 903, train_loss = 0.066467.
+Using Softmax Loss.
+epoch 904, train_loss = 0.066491.
+Using Softmax Loss.
+epoch 905, train_loss = 0.066589.
+Using Softmax Loss.
+epoch 906, train_loss = 0.066468.
+Using Softmax Loss.
+epoch 907, train_loss = 0.066707.
+Using Softmax Loss.
+epoch 908, train_loss = 0.066503.
+Using Softmax Loss.
+epoch 909, train_loss = 0.066825.
+Using Softmax Loss.
+epoch 910, train_loss = 0.066880.
+[910/2000] Valid Result: ndcg@20 = 0.061770, recall@20 = 0.126993, pre@20 = 0.009708, mrr@20 = 0.052365, map@20 = 0.051663.
+Using Softmax Loss.
+epoch 911, train_loss = 0.066173.
+Using Softmax Loss.
+epoch 912, train_loss = 0.066849.
+Using Softmax Loss.
+epoch 913, train_loss = 0.066528.
+Using Softmax Loss.
+epoch 914, train_loss = 0.066717.
+Using Softmax Loss.
+epoch 915, train_loss = 0.066548.
+Using Softmax Loss.
+epoch 916, train_loss = 0.066967.
+Using Softmax Loss.
+epoch 917, train_loss = 0.066611.
+Using Softmax Loss.
+epoch 918, train_loss = 0.066379.
+Using Softmax Loss.
+epoch 919, train_loss = 0.066515.
+Using Softmax Loss.
+epoch 920, train_loss = 0.066421.
+[920/2000] Valid Result: ndcg@20 = 0.061620, recall@20 = 0.127702, pre@20 = 0.009731, mrr@20 = 0.051936, map@20 = 0.051208.
+Using Softmax Loss.
+epoch 921, train_loss = 0.066605.
+Using Softmax Loss.
+epoch 922, train_loss = 0.066533.
+Using Softmax Loss.
+epoch 923, train_loss = 0.066385.
+Using Softmax Loss.
+epoch 924, train_loss = 0.066194.
+Using Softmax Loss.
+epoch 925, train_loss = 0.066498.
+Using Softmax Loss.
+epoch 926, train_loss = 0.066533.
+Using Softmax Loss.
+epoch 927, train_loss = 0.066352.
+Using Softmax Loss.
+epoch 928, train_loss = 0.066482.
+Using Softmax Loss.
+epoch 929, train_loss = 0.066419.
+Using Softmax Loss.
+epoch 930, train_loss = 0.067028.
+[930/2000] Valid Result: ndcg@20 = 0.061341, recall@20 = 0.127095, pre@20 = 0.009693, mrr@20 = 0.051654, map@20 = 0.050912.
+Using Softmax Loss.
+epoch 931, train_loss = 0.066377.
+Using Softmax Loss.
+epoch 932, train_loss = 0.066554.
+Using Softmax Loss.
+epoch 933, train_loss = 0.066367.
+Using Softmax Loss.
+epoch 934, train_loss = 0.066432.
+Using Softmax Loss.
+epoch 935, train_loss = 0.066474.
+Using Softmax Loss.
+epoch 936, train_loss = 0.066463.
+Using Softmax Loss.
+epoch 937, train_loss = 0.066221.
+Using Softmax Loss.
+epoch 938, train_loss = 0.066450.
+Using Softmax Loss.
+epoch 939, train_loss = 0.066787.
+Using Softmax Loss.
+epoch 940, train_loss = 0.066653.
+[940/2000] Valid Result: ndcg@20 = 0.061601, recall@20 = 0.127759, pre@20 = 0.009736, mrr@20 = 0.051852, map@20 = 0.051033.
+Using Softmax Loss.
+epoch 941, train_loss = 0.066633.
+Using Softmax Loss.
+epoch 942, train_loss = 0.067153.
+Using Softmax Loss.
+epoch 943, train_loss = 0.066338.
+Using Softmax Loss.
+epoch 944, train_loss = 0.066547.
+Using Softmax Loss.
+epoch 945, train_loss = 0.066501.
+Using Softmax Loss.
+epoch 946, train_loss = 0.066227.
+Using Softmax Loss.
+epoch 947, train_loss = 0.066369.
+Using Softmax Loss.
+epoch 948, train_loss = 0.066301.
+Using Softmax Loss.
+epoch 949, train_loss = 0.066566.
+Using Softmax Loss.
+epoch 950, train_loss = 0.066584.
+[950/2000] Valid Result: ndcg@20 = 0.061646, recall@20 = 0.127735, pre@20 = 0.009755, mrr@20 = 0.052021, map@20 = 0.051257.
+Using Softmax Loss.
+epoch 951, train_loss = 0.066152.
+Using Softmax Loss.
+epoch 952, train_loss = 0.066467.
+Using Softmax Loss.
+epoch 953, train_loss = 0.066630.
+Using Softmax Loss.
+epoch 954, train_loss = 0.066547.
+Using Softmax Loss.
+epoch 955, train_loss = 0.066407.
+Using Softmax Loss.
+epoch 956, train_loss = 0.066135.
+Using Softmax Loss.
+epoch 957, train_loss = 0.066700.
+Using Softmax Loss.
+epoch 958, train_loss = 0.066276.
+Using Softmax Loss.
+epoch 959, train_loss = 0.066458.
+Using Softmax Loss.
+epoch 960, train_loss = 0.066416.
+[960/2000] Valid Result: ndcg@20 = 0.061435, recall@20 = 0.127239, pre@20 = 0.009712, mrr@20 = 0.051964, map@20 = 0.051125.
+Using Softmax Loss.
+epoch 961, train_loss = 0.066507.
+Using Softmax Loss.
+epoch 962, train_loss = 0.066285.
+Using Softmax Loss.
+epoch 963, train_loss = 0.066996.
+Using Softmax Loss.
+epoch 964, train_loss = 0.066428.
+Using Softmax Loss.
+epoch 965, train_loss = 0.066519.
+Using Softmax Loss.
+epoch 966, train_loss = 0.066264.
+Using Softmax Loss.
+epoch 967, train_loss = 0.066650.
+Using Softmax Loss.
+epoch 968, train_loss = 0.066415.
+Using Softmax Loss.
+epoch 969, train_loss = 0.066459.
+Using Softmax Loss.
+epoch 970, train_loss = 0.066380.
+[970/2000] Valid Result: ndcg@20 = 0.061279, recall@20 = 0.127818, pre@20 = 0.009745, mrr@20 = 0.051517, map@20 = 0.050602.
+Using Softmax Loss.
+epoch 971, train_loss = 0.066544.
+Using Softmax Loss.
+epoch 972, train_loss = 0.066562.
+Using Softmax Loss.
+epoch 973, train_loss = 0.066598.
+Using Softmax Loss.
+epoch 974, train_loss = 0.066240.
+Using Softmax Loss.
+epoch 975, train_loss = 0.066595.
+Using Softmax Loss.
+epoch 976, train_loss = 0.066354.
+Using Softmax Loss.
+epoch 977, train_loss = 0.066451.
+Using Softmax Loss.
+epoch 978, train_loss = 0.066396.
+Using Softmax Loss.
+epoch 979, train_loss = 0.066403.
+Using Softmax Loss.
+epoch 980, train_loss = 0.066683.
+[980/2000] Valid Result: ndcg@20 = 0.061366, recall@20 = 0.127642, pre@20 = 0.009741, mrr@20 = 0.051766, map@20 = 0.050882.
+---------------------------
+done.
+===== Test Result(at 780 epoch) =====
+ndcg@20 = 0.065394, recall@20 = 0.120913, pre@20 = 0.013437, mrr@20 = 0.070210, map@20 = 0.067272.

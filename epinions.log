@@ -1,0 +1,2441 @@
+seed: 12345
+Using cuda:0
+Model Setting
+    hidden dim: 64
+    Using 1 layers GCN.
+      gcn left = 1.000000
+      gcn right = 0.000000
+      Z = Z(1)
+    Using 4 layers Rankformer:
+      rankformer alpha = 2.000000
+      rankformer tau = 0.400000
+      rankformer clamp value = 0.000000
+Train Setting
+    learning rate: 0.100000
+    reg_lambda: 0.000100
+    loss batch size: 0
+    max epochs: 2000
+Test Setting
+    topks:  [20]
+    test batch size: 1000
+    valid interval: 10
+    stopping step: 20
+Data Setting
+    train: data/Epinions/train.txt
+    valid: data/Epinions/valid.txt
+    test: data/Epinions/test.txt
+Experiment Setting
+    |                   Ablation Study Setting                 |
+    | Negative pairs | Benchmark | Offset | Normalize of Omega |
+    |        Y       |     Y     |   Y    |          Y         |
+---------------------------
+17894 users, 17660 items.
+train: 210967, valid: 30137, test: 60274.
+[0/2000] Valid Result: ndcg@20 = 0.000240, recall@20 = 0.000559, pre@20 = 0.000091, mrr@20 = 0.000256, map@20 = 0.000256.
+######## new best ############
+===== Test Result(at 0 epoch) =====
+ndcg@20 = 0.000468, recall@20 = 0.000863, pre@20 = 0.000183, mrr@20 = 0.000728, map@20 = 0.000726.
+Using BPR Loss.
+epoch 1, train_loss = 0.692837.
+Using BPR Loss.
+epoch 2, train_loss = 0.688052.
+Using BPR Loss.
+epoch 3, train_loss = 0.656933.
+Using BPR Loss.
+epoch 4, train_loss = 0.588009.
+Using BPR Loss.
+epoch 5, train_loss = 0.508511.
+Using BPR Loss.
+epoch 6, train_loss = 0.473844.
+Using BPR Loss.
+epoch 7, train_loss = 0.489270.
+Using BPR Loss.
+epoch 8, train_loss = 0.502201.
+Using BPR Loss.
+epoch 9, train_loss = 0.490510.
+Using BPR Loss.
+epoch 10, train_loss = 0.466300.
+[10/2000] Valid Result: ndcg@20 = 0.020103, recall@20 = 0.042326, pre@20 = 0.004875, mrr@20 = 0.020434, map@20 = 0.019960.
+######## new best ############
+===== Test Result(at 10 epoch) =====
+ndcg@20 = 0.025139, recall@20 = 0.044829, pre@20 = 0.008137, mrr@20 = 0.034754, map@20 = 0.033095.
+Using BPR Loss.
+epoch 11, train_loss = 0.436315.
+Using BPR Loss.
+epoch 12, train_loss = 0.408752.
+Using BPR Loss.
+epoch 13, train_loss = 0.389609.
+Using BPR Loss.
+epoch 14, train_loss = 0.376159.
+Using BPR Loss.
+epoch 15, train_loss = 0.366396.
+Using BPR Loss.
+epoch 16, train_loss = 0.356945.
+Using BPR Loss.
+epoch 17, train_loss = 0.347724.
+Using BPR Loss.
+epoch 18, train_loss = 0.340211.
+Using BPR Loss.
+epoch 19, train_loss = 0.331479.
+Using BPR Loss.
+epoch 20, train_loss = 0.323971.
+[20/2000] Valid Result: ndcg@20 = 0.016527, recall@20 = 0.035670, pre@20 = 0.004163, mrr@20 = 0.016119, map@20 = 0.015681.
+Using BPR Loss.
+epoch 21, train_loss = 0.315743.
+Using BPR Loss.
+epoch 22, train_loss = 0.309337.
+Using BPR Loss.
+epoch 23, train_loss = 0.304080.
+Using BPR Loss.
+epoch 24, train_loss = 0.297964.
+Using BPR Loss.
+epoch 25, train_loss = 0.295320.
+Using BPR Loss.
+epoch 26, train_loss = 0.292532.
+Using BPR Loss.
+epoch 27, train_loss = 0.286473.
+Using BPR Loss.
+epoch 28, train_loss = 0.278738.
+Using BPR Loss.
+epoch 29, train_loss = 0.273383.
+Using BPR Loss.
+epoch 30, train_loss = 0.263909.
+[30/2000] Valid Result: ndcg@20 = 0.027119, recall@20 = 0.056202, pre@20 = 0.006555, mrr@20 = 0.028135, map@20 = 0.027233.
+######## new best ############
+===== Test Result(at 30 epoch) =====
+ndcg@20 = 0.031197, recall@20 = 0.054935, pre@20 = 0.010363, mrr@20 = 0.042768, map@20 = 0.040205.
+Using BPR Loss.
+epoch 31, train_loss = 0.256903.
+Using BPR Loss.
+epoch 32, train_loss = 0.247101.
+Using BPR Loss.
+epoch 33, train_loss = 0.242747.
+Using BPR Loss.
+epoch 34, train_loss = 0.239089.
+Using BPR Loss.
+epoch 35, train_loss = 0.234346.
+Using BPR Loss.
+epoch 36, train_loss = 0.231071.
+Using BPR Loss.
+epoch 37, train_loss = 0.228774.
+Using BPR Loss.
+epoch 38, train_loss = 0.225655.
+Using BPR Loss.
+epoch 39, train_loss = 0.224207.
+Using BPR Loss.
+epoch 40, train_loss = 0.221053.
+[40/2000] Valid Result: ndcg@20 = 0.026421, recall@20 = 0.054251, pre@20 = 0.006489, mrr@20 = 0.028199, map@20 = 0.027041.
+Using BPR Loss.
+epoch 41, train_loss = 0.218597.
+Using BPR Loss.
+epoch 42, train_loss = 0.214797.
+Using BPR Loss.
+epoch 43, train_loss = 0.212002.
+Using BPR Loss.
+epoch 44, train_loss = 0.208543.
+Using BPR Loss.
+epoch 45, train_loss = 0.203551.
+Using BPR Loss.
+epoch 46, train_loss = 0.200501.
+Using BPR Loss.
+epoch 47, train_loss = 0.198814.
+Using BPR Loss.
+epoch 48, train_loss = 0.195040.
+Using BPR Loss.
+epoch 49, train_loss = 0.193671.
+Using BPR Loss.
+epoch 50, train_loss = 0.190124.
+[50/2000] Valid Result: ndcg@20 = 0.031561, recall@20 = 0.064279, pre@20 = 0.007519, mrr@20 = 0.033595, map@20 = 0.032323.
+######## new best ############
+===== Test Result(at 50 epoch) =====
+ndcg@20 = 0.036652, recall@20 = 0.064342, pre@20 = 0.012141, mrr@20 = 0.050391, map@20 = 0.047154.
+Using BPR Loss.
+epoch 51, train_loss = 0.188469.
+Using BPR Loss.
+epoch 52, train_loss = 0.186902.
+Using BPR Loss.
+epoch 53, train_loss = 0.185324.
+Using BPR Loss.
+epoch 54, train_loss = 0.182647.
+Using BPR Loss.
+epoch 55, train_loss = 0.178299.
+Using BPR Loss.
+epoch 56, train_loss = 0.176859.
+Using BPR Loss.
+epoch 57, train_loss = 0.177106.
+Using BPR Loss.
+epoch 58, train_loss = 0.173811.
+Using BPR Loss.
+epoch 59, train_loss = 0.171289.
+Using BPR Loss.
+epoch 60, train_loss = 0.169379.
+[60/2000] Valid Result: ndcg@20 = 0.033572, recall@20 = 0.067035, pre@20 = 0.007929, mrr@20 = 0.035874, map@20 = 0.034316.
+######## new best ############
+===== Test Result(at 60 epoch) =====
+ndcg@20 = 0.039029, recall@20 = 0.068464, pre@20 = 0.012730, mrr@20 = 0.053503, map@20 = 0.050149.
+Using BPR Loss.
+epoch 61, train_loss = 0.166725.
+Using BPR Loss.
+epoch 62, train_loss = 0.164207.
+Using BPR Loss.
+epoch 63, train_loss = 0.163130.
+Using BPR Loss.
+epoch 64, train_loss = 0.162014.
+Using BPR Loss.
+epoch 65, train_loss = 0.160109.
+Using BPR Loss.
+epoch 66, train_loss = 0.157345.
+Using BPR Loss.
+epoch 67, train_loss = 0.155633.
+Using BPR Loss.
+epoch 68, train_loss = 0.152918.
+Using BPR Loss.
+epoch 69, train_loss = 0.151392.
+Using BPR Loss.
+epoch 70, train_loss = 0.150936.
+[70/2000] Valid Result: ndcg@20 = 0.035995, recall@20 = 0.071657, pre@20 = 0.008587, mrr@20 = 0.038252, map@20 = 0.036842.
+######## new best ############
+===== Test Result(at 70 epoch) =====
+ndcg@20 = 0.042119, recall@20 = 0.071680, pre@20 = 0.013714, mrr@20 = 0.058911, map@20 = 0.054713.
+Using BPR Loss.
+epoch 71, train_loss = 0.147430.
+Using BPR Loss.
+epoch 72, train_loss = 0.146792.
+Using BPR Loss.
+epoch 73, train_loss = 0.145027.
+Using BPR Loss.
+epoch 74, train_loss = 0.142728.
+Using BPR Loss.
+epoch 75, train_loss = 0.141764.
+Using BPR Loss.
+epoch 76, train_loss = 0.139550.
+Using BPR Loss.
+epoch 77, train_loss = 0.137918.
+Using BPR Loss.
+epoch 78, train_loss = 0.137477.
+Using BPR Loss.
+epoch 79, train_loss = 0.135953.
+Using BPR Loss.
+epoch 80, train_loss = 0.135543.
+[80/2000] Valid Result: ndcg@20 = 0.037789, recall@20 = 0.075521, pre@20 = 0.009026, mrr@20 = 0.039929, map@20 = 0.038215.
+######## new best ############
+===== Test Result(at 80 epoch) =====
+ndcg@20 = 0.044136, recall@20 = 0.074571, pre@20 = 0.014312, mrr@20 = 0.062291, map@20 = 0.057136.
+Using BPR Loss.
+epoch 81, train_loss = 0.133129.
+Using BPR Loss.
+epoch 82, train_loss = 0.131236.
+Using BPR Loss.
+epoch 83, train_loss = 0.130891.
+Using BPR Loss.
+epoch 84, train_loss = 0.129846.
+Using BPR Loss.
+epoch 85, train_loss = 0.128390.
+Using BPR Loss.
+epoch 86, train_loss = 0.127203.
+Using BPR Loss.
+epoch 87, train_loss = 0.125998.
+Using BPR Loss.
+epoch 88, train_loss = 0.123775.
+Using BPR Loss.
+epoch 89, train_loss = 0.123789.
+Using BPR Loss.
+epoch 90, train_loss = 0.123372.
+[90/2000] Valid Result: ndcg@20 = 0.038525, recall@20 = 0.077188, pre@20 = 0.009216, mrr@20 = 0.040946, map@20 = 0.039201.
+######## new best ############
+===== Test Result(at 90 epoch) =====
+ndcg@20 = 0.045250, recall@20 = 0.076622, pre@20 = 0.014678, mrr@20 = 0.063790, map@20 = 0.058528.
+Using BPR Loss.
+epoch 91, train_loss = 0.122635.
+Using BPR Loss.
+epoch 92, train_loss = 0.120791.
+Using BPR Loss.
+epoch 93, train_loss = 0.120245.
+Using BPR Loss.
+epoch 94, train_loss = 0.118615.
+Using BPR Loss.
+epoch 95, train_loss = 0.117651.
+Using BPR Loss.
+epoch 96, train_loss = 0.117556.
+Using BPR Loss.
+epoch 97, train_loss = 0.116422.
+Using BPR Loss.
+epoch 98, train_loss = 0.115550.
+Using BPR Loss.
+epoch 99, train_loss = 0.114999.
+Using BPR Loss.
+epoch 100, train_loss = 0.114358.
+[100/2000] Valid Result: ndcg@20 = 0.039693, recall@20 = 0.079785, pre@20 = 0.009551, mrr@20 = 0.042242, map@20 = 0.040400.
+######## new best ############
+===== Test Result(at 100 epoch) =====
+ndcg@20 = 0.046296, recall@20 = 0.078737, pre@20 = 0.015083, mrr@20 = 0.065331, map@20 = 0.059758.
+Using BPR Loss.
+epoch 101, train_loss = 0.114150.
+Using BPR Loss.
+epoch 102, train_loss = 0.113308.
+Using BPR Loss.
+epoch 103, train_loss = 0.111391.
+Using BPR Loss.
+epoch 104, train_loss = 0.111568.
+Using BPR Loss.
+epoch 105, train_loss = 0.109836.
+Using BPR Loss.
+epoch 106, train_loss = 0.110021.
+Using BPR Loss.
+epoch 107, train_loss = 0.110674.
+Using BPR Loss.
+epoch 108, train_loss = 0.108667.
+Using BPR Loss.
+epoch 109, train_loss = 0.107804.
+Using BPR Loss.
+epoch 110, train_loss = 0.109079.
+[110/2000] Valid Result: ndcg@20 = 0.040164, recall@20 = 0.080413, pre@20 = 0.009651, mrr@20 = 0.042644, map@20 = 0.040836.
+######## new best ############
+===== Test Result(at 110 epoch) =====
+ndcg@20 = 0.046964, recall@20 = 0.079342, pre@20 = 0.015270, mrr@20 = 0.066757, map@20 = 0.061074.
+Using BPR Loss.
+epoch 111, train_loss = 0.106865.
+Using BPR Loss.
+epoch 112, train_loss = 0.106344.
+Using BPR Loss.
+epoch 113, train_loss = 0.105508.
+Using BPR Loss.
+epoch 114, train_loss = 0.105684.
+Using BPR Loss.
+epoch 115, train_loss = 0.104772.
+Using BPR Loss.
+epoch 116, train_loss = 0.104250.
+Using BPR Loss.
+epoch 117, train_loss = 0.104112.
+Using BPR Loss.
+epoch 118, train_loss = 0.103823.
+Using BPR Loss.
+epoch 119, train_loss = 0.102274.
+Using BPR Loss.
+epoch 120, train_loss = 0.102775.
+[120/2000] Valid Result: ndcg@20 = 0.040987, recall@20 = 0.082033, pre@20 = 0.009829, mrr@20 = 0.043317, map@20 = 0.041674.
+######## new best ############
+===== Test Result(at 120 epoch) =====
+ndcg@20 = 0.047416, recall@20 = 0.079583, pre@20 = 0.015397, mrr@20 = 0.067892, map@20 = 0.061878.
+Using BPR Loss.
+epoch 121, train_loss = 0.102249.
+Using BPR Loss.
+epoch 122, train_loss = 0.101923.
+Using BPR Loss.
+epoch 123, train_loss = 0.101580.
+Using BPR Loss.
+epoch 124, train_loss = 0.100601.
+Using BPR Loss.
+epoch 125, train_loss = 0.100398.
+Using BPR Loss.
+epoch 126, train_loss = 0.101308.
+Using BPR Loss.
+epoch 127, train_loss = 0.099317.
+Using BPR Loss.
+epoch 128, train_loss = 0.099202.
+Using BPR Loss.
+epoch 129, train_loss = 0.099577.
+Using BPR Loss.
+epoch 130, train_loss = 0.098047.
+[130/2000] Valid Result: ndcg@20 = 0.041606, recall@20 = 0.082667, pre@20 = 0.009911, mrr@20 = 0.044335, map@20 = 0.042605.
+######## new best ############
+===== Test Result(at 130 epoch) =====
+ndcg@20 = 0.048355, recall@20 = 0.081070, pre@20 = 0.015678, mrr@20 = 0.069041, map@20 = 0.062771.
+Using BPR Loss.
+epoch 131, train_loss = 0.098101.
+Using BPR Loss.
+epoch 132, train_loss = 0.097832.
+Using BPR Loss.
+epoch 133, train_loss = 0.097703.
+Using BPR Loss.
+epoch 134, train_loss = 0.097442.
+Using BPR Loss.
+epoch 135, train_loss = 0.096389.
+Using BPR Loss.
+epoch 136, train_loss = 0.097121.
+Using BPR Loss.
+epoch 137, train_loss = 0.096031.
+Using BPR Loss.
+epoch 138, train_loss = 0.095831.
+Using BPR Loss.
+epoch 139, train_loss = 0.095386.
+Using BPR Loss.
+epoch 140, train_loss = 0.095336.
+[140/2000] Valid Result: ndcg@20 = 0.041978, recall@20 = 0.082891, pre@20 = 0.010015, mrr@20 = 0.044611, map@20 = 0.042882.
+######## new best ############
+===== Test Result(at 140 epoch) =====
+ndcg@20 = 0.049041, recall@20 = 0.082026, pre@20 = 0.015783, mrr@20 = 0.070130, map@20 = 0.063951.
+Using BPR Loss.
+epoch 141, train_loss = 0.095332.
+Using BPR Loss.
+epoch 142, train_loss = 0.094712.
+Using BPR Loss.
+epoch 143, train_loss = 0.094694.
+Using BPR Loss.
+epoch 144, train_loss = 0.094291.
+Using BPR Loss.
+epoch 145, train_loss = 0.094405.
+Using BPR Loss.
+epoch 146, train_loss = 0.094272.
+Using BPR Loss.
+epoch 147, train_loss = 0.093364.
+Using BPR Loss.
+epoch 148, train_loss = 0.093727.
+Using BPR Loss.
+epoch 149, train_loss = 0.092330.
+Using BPR Loss.
+epoch 150, train_loss = 0.092490.
+[150/2000] Valid Result: ndcg@20 = 0.042612, recall@20 = 0.083901, pre@20 = 0.010135, mrr@20 = 0.045444, map@20 = 0.043589.
+######## new best ############
+===== Test Result(at 150 epoch) =====
+ndcg@20 = 0.049342, recall@20 = 0.082290, pre@20 = 0.015852, mrr@20 = 0.070507, map@20 = 0.064469.
+Using BPR Loss.
+epoch 151, train_loss = 0.093127.
+Using BPR Loss.
+epoch 152, train_loss = 0.092818.
+Using BPR Loss.
+epoch 153, train_loss = 0.092192.
+Using BPR Loss.
+epoch 154, train_loss = 0.092126.
+Using BPR Loss.
+epoch 155, train_loss = 0.091585.
+Using BPR Loss.
+epoch 156, train_loss = 0.092097.
+Using BPR Loss.
+epoch 157, train_loss = 0.091487.
+Using BPR Loss.
+epoch 158, train_loss = 0.091886.
+Using BPR Loss.
+epoch 159, train_loss = 0.091045.
+Using BPR Loss.
+epoch 160, train_loss = 0.090367.
+[160/2000] Valid Result: ndcg@20 = 0.043061, recall@20 = 0.084232, pre@20 = 0.010164, mrr@20 = 0.046240, map@20 = 0.044337.
+######## new best ############
+===== Test Result(at 160 epoch) =====
+ndcg@20 = 0.049653, recall@20 = 0.082564, pre@20 = 0.015956, mrr@20 = 0.071054, map@20 = 0.064840.
+Using BPR Loss.
+epoch 161, train_loss = 0.091033.
+Using BPR Loss.
+epoch 162, train_loss = 0.090231.
+Using BPR Loss.
+epoch 163, train_loss = 0.090439.
+Using BPR Loss.
+epoch 164, train_loss = 0.090475.
+Using BPR Loss.
+epoch 165, train_loss = 0.090021.
+Using BPR Loss.
+epoch 166, train_loss = 0.090607.
+Using BPR Loss.
+epoch 167, train_loss = 0.089235.
+Using BPR Loss.
+epoch 168, train_loss = 0.089514.
+Using BPR Loss.
+epoch 169, train_loss = 0.089199.
+Using BPR Loss.
+epoch 170, train_loss = 0.089636.
+[170/2000] Valid Result: ndcg@20 = 0.043211, recall@20 = 0.083950, pre@20 = 0.010197, mrr@20 = 0.046319, map@20 = 0.044567.
+######## new best ############
+===== Test Result(at 170 epoch) =====
+ndcg@20 = 0.050282, recall@20 = 0.083131, pre@20 = 0.016172, mrr@20 = 0.072061, map@20 = 0.065694.
+Using BPR Loss.
+epoch 171, train_loss = 0.088390.
+Using BPR Loss.
+epoch 172, train_loss = 0.088580.
+Using BPR Loss.
+epoch 173, train_loss = 0.088394.
+Using BPR Loss.
+epoch 174, train_loss = 0.087771.
+Using BPR Loss.
+epoch 175, train_loss = 0.089257.
+Using BPR Loss.
+epoch 176, train_loss = 0.088558.
+Using BPR Loss.
+epoch 177, train_loss = 0.087806.
+Using BPR Loss.
+epoch 178, train_loss = 0.087641.
+Using BPR Loss.
+epoch 179, train_loss = 0.088035.
+Using BPR Loss.
+epoch 180, train_loss = 0.087324.
+[180/2000] Valid Result: ndcg@20 = 0.043510, recall@20 = 0.083863, pre@20 = 0.010193, mrr@20 = 0.046869, map@20 = 0.045040.
+######## new best ############
+===== Test Result(at 180 epoch) =====
+ndcg@20 = 0.050401, recall@20 = 0.083156, pre@20 = 0.016198, mrr@20 = 0.072489, map@20 = 0.066094.
+Using BPR Loss.
+epoch 181, train_loss = 0.088066.
+Using BPR Loss.
+epoch 182, train_loss = 0.087459.
+Using BPR Loss.
+epoch 183, train_loss = 0.087272.
+Using BPR Loss.
+epoch 184, train_loss = 0.087034.
+Using BPR Loss.
+epoch 185, train_loss = 0.087165.
+Using BPR Loss.
+epoch 186, train_loss = 0.086680.
+Using BPR Loss.
+epoch 187, train_loss = 0.086704.
+Using BPR Loss.
+epoch 188, train_loss = 0.086430.
+Using BPR Loss.
+epoch 189, train_loss = 0.086476.
+Using BPR Loss.
+epoch 190, train_loss = 0.086274.
+[190/2000] Valid Result: ndcg@20 = 0.044278, recall@20 = 0.085012, pre@20 = 0.010288, mrr@20 = 0.047903, map@20 = 0.045981.
+######## new best ############
+===== Test Result(at 190 epoch) =====
+ndcg@20 = 0.050482, recall@20 = 0.083158, pre@20 = 0.016280, mrr@20 = 0.072442, map@20 = 0.065995.
+Using BPR Loss.
+epoch 191, train_loss = 0.086043.
+Using BPR Loss.
+epoch 192, train_loss = 0.085804.
+Using BPR Loss.
+epoch 193, train_loss = 0.086005.
+Using BPR Loss.
+epoch 194, train_loss = 0.085943.
+Using BPR Loss.
+epoch 195, train_loss = 0.085437.
+Using BPR Loss.
+epoch 196, train_loss = 0.085728.
+Using BPR Loss.
+epoch 197, train_loss = 0.085520.
+Using BPR Loss.
+epoch 198, train_loss = 0.084968.
+Using BPR Loss.
+epoch 199, train_loss = 0.085200.
+Using BPR Loss.
+epoch 200, train_loss = 0.085322.
+[200/2000] Valid Result: ndcg@20 = 0.044405, recall@20 = 0.084999, pre@20 = 0.010350, mrr@20 = 0.048268, map@20 = 0.046147.
+######## new best ############
+===== Test Result(at 200 epoch) =====
+ndcg@20 = 0.051104, recall@20 = 0.084605, pre@20 = 0.016473, mrr@20 = 0.073083, map@20 = 0.066668.
+Using BPR Loss.
+epoch 201, train_loss = 0.085055.
+Using BPR Loss.
+epoch 202, train_loss = 0.085654.
+Using BPR Loss.
+epoch 203, train_loss = 0.085252.
+Using BPR Loss.
+epoch 204, train_loss = 0.085299.
+Using BPR Loss.
+epoch 205, train_loss = 0.085155.
+Using BPR Loss.
+epoch 206, train_loss = 0.084371.
+Using BPR Loss.
+epoch 207, train_loss = 0.084840.
+Using BPR Loss.
+epoch 208, train_loss = 0.084303.
+Using BPR Loss.
+epoch 209, train_loss = 0.084153.
+Using BPR Loss.
+epoch 210, train_loss = 0.084288.
+[210/2000] Valid Result: ndcg@20 = 0.044600, recall@20 = 0.085030, pre@20 = 0.010358, mrr@20 = 0.048375, map@20 = 0.046348.
+######## new best ############
+===== Test Result(at 210 epoch) =====
+ndcg@20 = 0.051390, recall@20 = 0.084679, pre@20 = 0.016469, mrr@20 = 0.073733, map@20 = 0.067469.
+Using BPR Loss.
+epoch 211, train_loss = 0.083777.
+Using BPR Loss.
+epoch 212, train_loss = 0.084244.
+Using BPR Loss.
+epoch 213, train_loss = 0.084168.
+Using BPR Loss.
+epoch 214, train_loss = 0.084565.
+Using BPR Loss.
+epoch 215, train_loss = 0.083957.
+Using BPR Loss.
+epoch 216, train_loss = 0.084067.
+Using BPR Loss.
+epoch 217, train_loss = 0.083675.
+Using BPR Loss.
+epoch 218, train_loss = 0.083705.
+Using BPR Loss.
+epoch 219, train_loss = 0.084334.
+Using BPR Loss.
+epoch 220, train_loss = 0.083264.
+[220/2000] Valid Result: ndcg@20 = 0.044489, recall@20 = 0.084766, pre@20 = 0.010400, mrr@20 = 0.048379, map@20 = 0.046124.
+Using BPR Loss.
+epoch 221, train_loss = 0.083260.
+Using BPR Loss.
+epoch 222, train_loss = 0.083939.
+Using BPR Loss.
+epoch 223, train_loss = 0.083933.
+Using BPR Loss.
+epoch 224, train_loss = 0.083552.
+Using BPR Loss.
+epoch 225, train_loss = 0.083273.
+Using BPR Loss.
+epoch 226, train_loss = 0.082807.
+Using BPR Loss.
+epoch 227, train_loss = 0.082493.
+Using BPR Loss.
+epoch 228, train_loss = 0.082701.
+Using BPR Loss.
+epoch 229, train_loss = 0.082620.
+Using BPR Loss.
+epoch 230, train_loss = 0.082541.
+[230/2000] Valid Result: ndcg@20 = 0.044433, recall@20 = 0.084644, pre@20 = 0.010346, mrr@20 = 0.048435, map@20 = 0.046237.
+Using BPR Loss.
+epoch 231, train_loss = 0.082826.
+Using BPR Loss.
+epoch 232, train_loss = 0.082458.
+Using BPR Loss.
+epoch 233, train_loss = 0.082296.
+Using BPR Loss.
+epoch 234, train_loss = 0.082736.
+Using BPR Loss.
+epoch 235, train_loss = 0.082460.
+Using BPR Loss.
+epoch 236, train_loss = 0.082253.
+Using BPR Loss.
+epoch 237, train_loss = 0.082410.
+Using BPR Loss.
+epoch 238, train_loss = 0.082245.
+Using BPR Loss.
+epoch 239, train_loss = 0.082137.
+Using BPR Loss.
+epoch 240, train_loss = 0.082238.
+[240/2000] Valid Result: ndcg@20 = 0.044459, recall@20 = 0.084816, pre@20 = 0.010400, mrr@20 = 0.048309, map@20 = 0.046058.
+Using BPR Loss.
+epoch 241, train_loss = 0.082603.
+Using BPR Loss.
+epoch 242, train_loss = 0.081966.
+Using BPR Loss.
+epoch 243, train_loss = 0.082039.
+Using BPR Loss.
+epoch 244, train_loss = 0.081931.
+Using BPR Loss.
+epoch 245, train_loss = 0.082046.
+Using BPR Loss.
+epoch 246, train_loss = 0.081911.
+Using BPR Loss.
+epoch 247, train_loss = 0.081833.
+Using BPR Loss.
+epoch 248, train_loss = 0.081871.
+Using BPR Loss.
+epoch 249, train_loss = 0.081434.
+Using BPR Loss.
+epoch 250, train_loss = 0.081143.
+[250/2000] Valid Result: ndcg@20 = 0.044694, recall@20 = 0.084875, pre@20 = 0.010420, mrr@20 = 0.048554, map@20 = 0.046185.
+######## new best ############
+===== Test Result(at 250 epoch) =====
+ndcg@20 = 0.052264, recall@20 = 0.085723, pre@20 = 0.016865, mrr@20 = 0.074655, map@20 = 0.067879.
+Using BPR Loss.
+epoch 251, train_loss = 0.082001.
+Using BPR Loss.
+epoch 252, train_loss = 0.081396.
+Using BPR Loss.
+epoch 253, train_loss = 0.081274.
+Using BPR Loss.
+epoch 254, train_loss = 0.081246.
+Using BPR Loss.
+epoch 255, train_loss = 0.080923.
+Using BPR Loss.
+epoch 256, train_loss = 0.081115.
+Using BPR Loss.
+epoch 257, train_loss = 0.080917.
+Using BPR Loss.
+epoch 258, train_loss = 0.081127.
+Using BPR Loss.
+epoch 259, train_loss = 0.081389.
+Using BPR Loss.
+epoch 260, train_loss = 0.080665.
+[260/2000] Valid Result: ndcg@20 = 0.044750, recall@20 = 0.085049, pre@20 = 0.010396, mrr@20 = 0.048567, map@20 = 0.046331.
+######## new best ############
+===== Test Result(at 260 epoch) =====
+ndcg@20 = 0.052669, recall@20 = 0.086111, pre@20 = 0.016865, mrr@20 = 0.075473, map@20 = 0.068699.
+Using BPR Loss.
+epoch 261, train_loss = 0.080616.
+Using BPR Loss.
+epoch 262, train_loss = 0.080718.
+Using BPR Loss.
+epoch 263, train_loss = 0.080692.
+Using BPR Loss.
+epoch 264, train_loss = 0.080810.
+Using BPR Loss.
+epoch 265, train_loss = 0.080861.
+Using BPR Loss.
+epoch 266, train_loss = 0.080914.
+Using BPR Loss.
+epoch 267, train_loss = 0.080740.
+Using BPR Loss.
+epoch 268, train_loss = 0.080522.
+Using BPR Loss.
+epoch 269, train_loss = 0.080343.
+Using BPR Loss.
+epoch 270, train_loss = 0.080541.
+[270/2000] Valid Result: ndcg@20 = 0.045050, recall@20 = 0.085661, pre@20 = 0.010408, mrr@20 = 0.048772, map@20 = 0.046629.
+######## new best ############
+===== Test Result(at 270 epoch) =====
+ndcg@20 = 0.052603, recall@20 = 0.086451, pre@20 = 0.016868, mrr@20 = 0.074762, map@20 = 0.068367.
+Using BPR Loss.
+epoch 271, train_loss = 0.079855.
+Using BPR Loss.
+epoch 272, train_loss = 0.080137.
+Using BPR Loss.
+epoch 273, train_loss = 0.080996.
+Using BPR Loss.
+epoch 274, train_loss = 0.081017.
+Using BPR Loss.
+epoch 275, train_loss = 0.080065.
+Using BPR Loss.
+epoch 276, train_loss = 0.080188.
+Using BPR Loss.
+epoch 277, train_loss = 0.080421.
+Using BPR Loss.
+epoch 278, train_loss = 0.080358.
+Using BPR Loss.
+epoch 279, train_loss = 0.080087.
+Using BPR Loss.
+epoch 280, train_loss = 0.080344.
+[280/2000] Valid Result: ndcg@20 = 0.045189, recall@20 = 0.085503, pre@20 = 0.010437, mrr@20 = 0.049226, map@20 = 0.047034.
+######## new best ############
+===== Test Result(at 280 epoch) =====
+ndcg@20 = 0.052743, recall@20 = 0.086868, pre@20 = 0.016934, mrr@20 = 0.074713, map@20 = 0.068526.
+Using BPR Loss.
+epoch 281, train_loss = 0.079564.
+Using BPR Loss.
+epoch 282, train_loss = 0.079974.
+Using BPR Loss.
+epoch 283, train_loss = 0.079658.
+Using BPR Loss.
+epoch 284, train_loss = 0.079499.
+Using BPR Loss.
+epoch 285, train_loss = 0.080047.
+Using BPR Loss.
+epoch 286, train_loss = 0.080088.
+Using BPR Loss.
+epoch 287, train_loss = 0.079831.
+Using BPR Loss.
+epoch 288, train_loss = 0.079427.
+Using BPR Loss.
+epoch 289, train_loss = 0.079660.
+Using BPR Loss.
+epoch 290, train_loss = 0.079971.
+[290/2000] Valid Result: ndcg@20 = 0.045225, recall@20 = 0.085953, pre@20 = 0.010507, mrr@20 = 0.048985, map@20 = 0.046845.
+######## new best ############
+===== Test Result(at 290 epoch) =====
+ndcg@20 = 0.052869, recall@20 = 0.087404, pre@20 = 0.016983, mrr@20 = 0.074916, map@20 = 0.068569.
+Using BPR Loss.
+epoch 291, train_loss = 0.079315.
+Using BPR Loss.
+epoch 292, train_loss = 0.079857.
+Using BPR Loss.
+epoch 293, train_loss = 0.080139.
+Using BPR Loss.
+epoch 294, train_loss = 0.079398.
+Using BPR Loss.
+epoch 295, train_loss = 0.079650.
+Using BPR Loss.
+epoch 296, train_loss = 0.079360.
+Using BPR Loss.
+epoch 297, train_loss = 0.078986.
+Using BPR Loss.
+epoch 298, train_loss = 0.079740.
+Using BPR Loss.
+epoch 299, train_loss = 0.079101.
+Using BPR Loss.
+epoch 300, train_loss = 0.079329.
+[300/2000] Valid Result: ndcg@20 = 0.045420, recall@20 = 0.086694, pre@20 = 0.010565, mrr@20 = 0.049229, map@20 = 0.047006.
+######## new best ############
+===== Test Result(at 300 epoch) =====
+ndcg@20 = 0.052780, recall@20 = 0.086879, pre@20 = 0.016907, mrr@20 = 0.074809, map@20 = 0.068252.
+Using BPR Loss.
+epoch 301, train_loss = 0.078985.
+Using BPR Loss.
+epoch 302, train_loss = 0.078942.
+Using BPR Loss.
+epoch 303, train_loss = 0.079204.
+Using BPR Loss.
+epoch 304, train_loss = 0.079418.
+Using BPR Loss.
+epoch 305, train_loss = 0.078806.
+Using BPR Loss.
+epoch 306, train_loss = 0.078883.
+Using BPR Loss.
+epoch 307, train_loss = 0.078974.
+Using BPR Loss.
+epoch 308, train_loss = 0.079061.
+Using BPR Loss.
+epoch 309, train_loss = 0.079154.
+Using BPR Loss.
+epoch 310, train_loss = 0.079013.
+[310/2000] Valid Result: ndcg@20 = 0.045379, recall@20 = 0.086394, pre@20 = 0.010549, mrr@20 = 0.049170, map@20 = 0.046994.
+Using BPR Loss.
+epoch 311, train_loss = 0.078691.
+Using BPR Loss.
+epoch 312, train_loss = 0.078617.
+Using BPR Loss.
+epoch 313, train_loss = 0.078534.
+Using BPR Loss.
+epoch 314, train_loss = 0.078347.
+Using BPR Loss.
+epoch 315, train_loss = 0.078943.
+Using BPR Loss.
+epoch 316, train_loss = 0.078730.
+Using BPR Loss.
+epoch 317, train_loss = 0.078857.
+Using BPR Loss.
+epoch 318, train_loss = 0.078574.
+Using BPR Loss.
+epoch 319, train_loss = 0.078366.
+Using BPR Loss.
+epoch 320, train_loss = 0.078937.
+[320/2000] Valid Result: ndcg@20 = 0.045356, recall@20 = 0.085787, pre@20 = 0.010474, mrr@20 = 0.049310, map@20 = 0.047012.
+Using BPR Loss.
+epoch 321, train_loss = 0.078417.
+Using BPR Loss.
+epoch 322, train_loss = 0.078543.
+Using BPR Loss.
+epoch 323, train_loss = 0.078954.
+Using BPR Loss.
+epoch 324, train_loss = 0.078968.
+Using BPR Loss.
+epoch 325, train_loss = 0.078531.
+Using BPR Loss.
+epoch 326, train_loss = 0.078525.
+Using BPR Loss.
+epoch 327, train_loss = 0.078450.
+Using BPR Loss.
+epoch 328, train_loss = 0.078440.
+Using BPR Loss.
+epoch 329, train_loss = 0.078724.
+Using BPR Loss.
+epoch 330, train_loss = 0.078395.
+[330/2000] Valid Result: ndcg@20 = 0.045635, recall@20 = 0.085759, pre@20 = 0.010520, mrr@20 = 0.049846, map@20 = 0.047484.
+######## new best ############
+===== Test Result(at 330 epoch) =====
+ndcg@20 = 0.053366, recall@20 = 0.087415, pre@20 = 0.017097, mrr@20 = 0.075763, map@20 = 0.069237.
+Using BPR Loss.
+epoch 331, train_loss = 0.078240.
+Using BPR Loss.
+epoch 332, train_loss = 0.078726.
+Using BPR Loss.
+epoch 333, train_loss = 0.078084.
+Using BPR Loss.
+epoch 334, train_loss = 0.078395.
+Using BPR Loss.
+epoch 335, train_loss = 0.078145.
+Using BPR Loss.
+epoch 336, train_loss = 0.078350.
+Using BPR Loss.
+epoch 337, train_loss = 0.077864.
+Using BPR Loss.
+epoch 338, train_loss = 0.078237.
+Using BPR Loss.
+epoch 339, train_loss = 0.078116.
+Using BPR Loss.
+epoch 340, train_loss = 0.078082.
+[340/2000] Valid Result: ndcg@20 = 0.045738, recall@20 = 0.085933, pre@20 = 0.010532, mrr@20 = 0.049994, map@20 = 0.047761.
+######## new best ############
+===== Test Result(at 340 epoch) =====
+ndcg@20 = 0.053533, recall@20 = 0.087666, pre@20 = 0.017107, mrr@20 = 0.076034, map@20 = 0.069494.
+Using BPR Loss.
+epoch 341, train_loss = 0.077759.
+Using BPR Loss.
+epoch 342, train_loss = 0.078255.
+Using BPR Loss.
+epoch 343, train_loss = 0.078163.
+Using BPR Loss.
+epoch 344, train_loss = 0.077991.
+Using BPR Loss.
+epoch 345, train_loss = 0.078451.
+Using BPR Loss.
+epoch 346, train_loss = 0.078177.
+Using BPR Loss.
+epoch 347, train_loss = 0.078349.
+Using BPR Loss.
+epoch 348, train_loss = 0.078161.
+Using BPR Loss.
+epoch 349, train_loss = 0.078014.
+Using BPR Loss.
+epoch 350, train_loss = 0.078158.
+[350/2000] Valid Result: ndcg@20 = 0.045746, recall@20 = 0.085793, pre@20 = 0.010499, mrr@20 = 0.050155, map@20 = 0.047939.
+######## new best ############
+===== Test Result(at 350 epoch) =====
+ndcg@20 = 0.053545, recall@20 = 0.087609, pre@20 = 0.017074, mrr@20 = 0.076230, map@20 = 0.069596.
+Using BPR Loss.
+epoch 351, train_loss = 0.078040.
+Using BPR Loss.
+epoch 352, train_loss = 0.077911.
+Using BPR Loss.
+epoch 353, train_loss = 0.077781.
+Using BPR Loss.
+epoch 354, train_loss = 0.077931.
+Using BPR Loss.
+epoch 355, train_loss = 0.077620.
+Using BPR Loss.
+epoch 356, train_loss = 0.077856.
+Using BPR Loss.
+epoch 357, train_loss = 0.077481.
+Using BPR Loss.
+epoch 358, train_loss = 0.077527.
+Using BPR Loss.
+epoch 359, train_loss = 0.077856.
+Using BPR Loss.
+epoch 360, train_loss = 0.077627.
+[360/2000] Valid Result: ndcg@20 = 0.046101, recall@20 = 0.086549, pre@20 = 0.010574, mrr@20 = 0.050457, map@20 = 0.048286.
+######## new best ############
+===== Test Result(at 360 epoch) =====
+ndcg@20 = 0.053452, recall@20 = 0.087206, pre@20 = 0.017091, mrr@20 = 0.076047, map@20 = 0.069498.
+Using BPR Loss.
+epoch 361, train_loss = 0.077844.
+Using BPR Loss.
+epoch 362, train_loss = 0.078197.
+Using BPR Loss.
+epoch 363, train_loss = 0.077534.
+Using BPR Loss.
+epoch 364, train_loss = 0.078085.
+Using BPR Loss.
+epoch 365, train_loss = 0.077995.
+Using BPR Loss.
+epoch 366, train_loss = 0.077678.
+Using BPR Loss.
+epoch 367, train_loss = 0.077819.
+Using BPR Loss.
+epoch 368, train_loss = 0.077643.
+Using BPR Loss.
+epoch 369, train_loss = 0.077204.
+Using BPR Loss.
+epoch 370, train_loss = 0.077470.
+[370/2000] Valid Result: ndcg@20 = 0.046181, recall@20 = 0.086693, pre@20 = 0.010586, mrr@20 = 0.050592, map@20 = 0.048309.
+######## new best ############
+===== Test Result(at 370 epoch) =====
+ndcg@20 = 0.053599, recall@20 = 0.087672, pre@20 = 0.017198, mrr@20 = 0.076134, map@20 = 0.069457.
+Using BPR Loss.
+epoch 371, train_loss = 0.077430.
+Using BPR Loss.
+epoch 372, train_loss = 0.077252.
+Using BPR Loss.
+epoch 373, train_loss = 0.077599.
+Using BPR Loss.
+epoch 374, train_loss = 0.077343.
+Using BPR Loss.
+epoch 375, train_loss = 0.077541.
+Using BPR Loss.
+epoch 376, train_loss = 0.077530.
+Using BPR Loss.
+epoch 377, train_loss = 0.077281.
+Using BPR Loss.
+epoch 378, train_loss = 0.077413.
+Using BPR Loss.
+epoch 379, train_loss = 0.077506.
+Using BPR Loss.
+epoch 380, train_loss = 0.077357.
+[380/2000] Valid Result: ndcg@20 = 0.046132, recall@20 = 0.086857, pre@20 = 0.010623, mrr@20 = 0.050504, map@20 = 0.048142.
+Using BPR Loss.
+epoch 381, train_loss = 0.076959.
+Using BPR Loss.
+epoch 382, train_loss = 0.077675.
+Using BPR Loss.
+epoch 383, train_loss = 0.077412.
+Using BPR Loss.
+epoch 384, train_loss = 0.077065.
+Using BPR Loss.
+epoch 385, train_loss = 0.077147.
+Using BPR Loss.
+epoch 386, train_loss = 0.077652.
+Using BPR Loss.
+epoch 387, train_loss = 0.076934.
+Using BPR Loss.
+epoch 388, train_loss = 0.076790.
+Using BPR Loss.
+epoch 389, train_loss = 0.077064.
+Using BPR Loss.
+epoch 390, train_loss = 0.077196.
+[390/2000] Valid Result: ndcg@20 = 0.046252, recall@20 = 0.087287, pre@20 = 0.010627, mrr@20 = 0.050358, map@20 = 0.048122.
+######## new best ############
+===== Test Result(at 390 epoch) =====
+ndcg@20 = 0.053824, recall@20 = 0.088409, pre@20 = 0.017313, mrr@20 = 0.076031, map@20 = 0.069486.
+Using BPR Loss.
+epoch 391, train_loss = 0.077190.
+Using BPR Loss.
+epoch 392, train_loss = 0.076997.
+Using BPR Loss.
+epoch 393, train_loss = 0.077113.
+Using BPR Loss.
+epoch 394, train_loss = 0.076812.
+Using BPR Loss.
+epoch 395, train_loss = 0.076828.
+Using BPR Loss.
+epoch 396, train_loss = 0.076620.
+Using BPR Loss.
+epoch 397, train_loss = 0.077016.
+Using BPR Loss.
+epoch 398, train_loss = 0.076460.
+Using BPR Loss.
+epoch 399, train_loss = 0.076760.
+Using BPR Loss.
+epoch 400, train_loss = 0.077136.
+[400/2000] Valid Result: ndcg@20 = 0.046331, recall@20 = 0.087398, pre@20 = 0.010656, mrr@20 = 0.050539, map@20 = 0.048330.
+######## new best ############
+===== Test Result(at 400 epoch) =====
+ndcg@20 = 0.053857, recall@20 = 0.088421, pre@20 = 0.017306, mrr@20 = 0.076071, map@20 = 0.069524.
+Using BPR Loss.
+epoch 401, train_loss = 0.077402.
+Using BPR Loss.
+epoch 402, train_loss = 0.077166.
+Using BPR Loss.
+epoch 403, train_loss = 0.076420.
+Using BPR Loss.
+epoch 404, train_loss = 0.076550.
+Using BPR Loss.
+epoch 405, train_loss = 0.076747.
+Using BPR Loss.
+epoch 406, train_loss = 0.076542.
+Using BPR Loss.
+epoch 407, train_loss = 0.076691.
+Using BPR Loss.
+epoch 408, train_loss = 0.076687.
+Using BPR Loss.
+epoch 409, train_loss = 0.076959.
+Using BPR Loss.
+epoch 410, train_loss = 0.077043.
+[410/2000] Valid Result: ndcg@20 = 0.046259, recall@20 = 0.087250, pre@20 = 0.010677, mrr@20 = 0.050359, map@20 = 0.048162.
+Using BPR Loss.
+epoch 411, train_loss = 0.076521.
+Using BPR Loss.
+epoch 412, train_loss = 0.076637.
+Using BPR Loss.
+epoch 413, train_loss = 0.076357.
+Using BPR Loss.
+epoch 414, train_loss = 0.077029.
+Using BPR Loss.
+epoch 415, train_loss = 0.076684.
+Using BPR Loss.
+epoch 416, train_loss = 0.076695.
+Using BPR Loss.
+epoch 417, train_loss = 0.077075.
+Using BPR Loss.
+epoch 418, train_loss = 0.076352.
+Using BPR Loss.
+epoch 419, train_loss = 0.077029.
+Using BPR Loss.
+epoch 420, train_loss = 0.076979.
+[420/2000] Valid Result: ndcg@20 = 0.046224, recall@20 = 0.087042, pre@20 = 0.010640, mrr@20 = 0.050498, map@20 = 0.048181.
+Using BPR Loss.
+epoch 421, train_loss = 0.076566.
+Using BPR Loss.
+epoch 422, train_loss = 0.076665.
+Using BPR Loss.
+epoch 423, train_loss = 0.076548.
+Using BPR Loss.
+epoch 424, train_loss = 0.076905.
+Using BPR Loss.
+epoch 425, train_loss = 0.077105.
+Using BPR Loss.
+epoch 426, train_loss = 0.076846.
+Using BPR Loss.
+epoch 427, train_loss = 0.076292.
+Using BPR Loss.
+epoch 428, train_loss = 0.076457.
+Using BPR Loss.
+epoch 429, train_loss = 0.076264.
+Using BPR Loss.
+epoch 430, train_loss = 0.076354.
+[430/2000] Valid Result: ndcg@20 = 0.046400, recall@20 = 0.086858, pre@20 = 0.010611, mrr@20 = 0.050980, map@20 = 0.048655.
+######## new best ############
+===== Test Result(at 430 epoch) =====
+ndcg@20 = 0.053601, recall@20 = 0.088181, pre@20 = 0.017221, mrr@20 = 0.075721, map@20 = 0.069365.
+Using BPR Loss.
+epoch 431, train_loss = 0.076469.
+Using BPR Loss.
+epoch 432, train_loss = 0.076892.
+Using BPR Loss.
+epoch 433, train_loss = 0.076575.
+Using BPR Loss.
+epoch 434, train_loss = 0.076285.
+Using BPR Loss.
+epoch 435, train_loss = 0.076327.
+Using BPR Loss.
+epoch 436, train_loss = 0.076481.
+Using BPR Loss.
+epoch 437, train_loss = 0.076738.
+Using BPR Loss.
+epoch 438, train_loss = 0.075942.
+Using BPR Loss.
+epoch 439, train_loss = 0.076288.
+Using BPR Loss.
+epoch 440, train_loss = 0.075755.
+[440/2000] Valid Result: ndcg@20 = 0.046537, recall@20 = 0.086853, pre@20 = 0.010627, mrr@20 = 0.051371, map@20 = 0.048866.
+######## new best ############
+===== Test Result(at 440 epoch) =====
+ndcg@20 = 0.054076, recall@20 = 0.088334, pre@20 = 0.017297, mrr@20 = 0.076654, map@20 = 0.069973.
+Using BPR Loss.
+epoch 441, train_loss = 0.075725.
+Using BPR Loss.
+epoch 442, train_loss = 0.076153.
+Using BPR Loss.
+epoch 443, train_loss = 0.076453.
+Using BPR Loss.
+epoch 444, train_loss = 0.076333.
+Using BPR Loss.
+epoch 445, train_loss = 0.075840.
+Using BPR Loss.
+epoch 446, train_loss = 0.076798.
+Using BPR Loss.
+epoch 447, train_loss = 0.076619.
+Using BPR Loss.
+epoch 448, train_loss = 0.076392.
+Using BPR Loss.
+epoch 449, train_loss = 0.076370.
+Using BPR Loss.
+epoch 450, train_loss = 0.075838.
+[450/2000] Valid Result: ndcg@20 = 0.046416, recall@20 = 0.086772, pre@20 = 0.010660, mrr@20 = 0.051072, map@20 = 0.048709.
+Using BPR Loss.
+epoch 451, train_loss = 0.076045.
+Using BPR Loss.
+epoch 452, train_loss = 0.075962.
+Using BPR Loss.
+epoch 453, train_loss = 0.076446.
+Using BPR Loss.
+epoch 454, train_loss = 0.076513.
+Using BPR Loss.
+epoch 455, train_loss = 0.075823.
+Using BPR Loss.
+epoch 456, train_loss = 0.076071.
+Using BPR Loss.
+epoch 457, train_loss = 0.076139.
+Using BPR Loss.
+epoch 458, train_loss = 0.075951.
+Using BPR Loss.
+epoch 459, train_loss = 0.075854.
+Using BPR Loss.
+epoch 460, train_loss = 0.075857.
+[460/2000] Valid Result: ndcg@20 = 0.046231, recall@20 = 0.087144, pre@20 = 0.010677, mrr@20 = 0.050571, map@20 = 0.048342.
+Using BPR Loss.
+epoch 461, train_loss = 0.076121.
+Using BPR Loss.
+epoch 462, train_loss = 0.075767.
+Using BPR Loss.
+epoch 463, train_loss = 0.076014.
+Using BPR Loss.
+epoch 464, train_loss = 0.076245.
+Using BPR Loss.
+epoch 465, train_loss = 0.076252.
+Using BPR Loss.
+epoch 466, train_loss = 0.075868.
+Using BPR Loss.
+epoch 467, train_loss = 0.076175.
+Using BPR Loss.
+epoch 468, train_loss = 0.076048.
+Using BPR Loss.
+epoch 469, train_loss = 0.075867.
+Using BPR Loss.
+epoch 470, train_loss = 0.075653.
+[470/2000] Valid Result: ndcg@20 = 0.046074, recall@20 = 0.086417, pre@20 = 0.010619, mrr@20 = 0.050519, map@20 = 0.048277.
+Using BPR Loss.
+epoch 471, train_loss = 0.076447.
+Using BPR Loss.
+epoch 472, train_loss = 0.075854.
+Using BPR Loss.
+epoch 473, train_loss = 0.075754.
+Using BPR Loss.
+epoch 474, train_loss = 0.075652.
+Using BPR Loss.
+epoch 475, train_loss = 0.076349.
+Using BPR Loss.
+epoch 476, train_loss = 0.075860.
+Using BPR Loss.
+epoch 477, train_loss = 0.076055.
+Using BPR Loss.
+epoch 478, train_loss = 0.075459.
+Using BPR Loss.
+epoch 479, train_loss = 0.075446.
+Using BPR Loss.
+epoch 480, train_loss = 0.076374.
+[480/2000] Valid Result: ndcg@20 = 0.046189, recall@20 = 0.087082, pre@20 = 0.010694, mrr@20 = 0.050691, map@20 = 0.048318.
+Using BPR Loss.
+epoch 481, train_loss = 0.075788.
+Using BPR Loss.
+epoch 482, train_loss = 0.075193.
+Using BPR Loss.
+epoch 483, train_loss = 0.075791.
+Using BPR Loss.
+epoch 484, train_loss = 0.075837.
+Using BPR Loss.
+epoch 485, train_loss = 0.075854.
+Using BPR Loss.
+epoch 486, train_loss = 0.075832.
+Using BPR Loss.
+epoch 487, train_loss = 0.075580.
+Using BPR Loss.
+epoch 488, train_loss = 0.075832.
+Using BPR Loss.
+epoch 489, train_loss = 0.075916.
+Using BPR Loss.
+epoch 490, train_loss = 0.076177.
+[490/2000] Valid Result: ndcg@20 = 0.046386, recall@20 = 0.087134, pre@20 = 0.010685, mrr@20 = 0.051200, map@20 = 0.048915.
+Using BPR Loss.
+epoch 491, train_loss = 0.075706.
+Using BPR Loss.
+epoch 492, train_loss = 0.075436.
+Using BPR Loss.
+epoch 493, train_loss = 0.075709.
+Using BPR Loss.
+epoch 494, train_loss = 0.076105.
+Using BPR Loss.
+epoch 495, train_loss = 0.075319.
+Using BPR Loss.
+epoch 496, train_loss = 0.076184.
+Using BPR Loss.
+epoch 497, train_loss = 0.075590.
+Using BPR Loss.
+epoch 498, train_loss = 0.075772.
+Using BPR Loss.
+epoch 499, train_loss = 0.075984.
+Using BPR Loss.
+epoch 500, train_loss = 0.076101.
+[500/2000] Valid Result: ndcg@20 = 0.046522, recall@20 = 0.087482, pre@20 = 0.010731, mrr@20 = 0.051143, map@20 = 0.048737.
+Using BPR Loss.
+epoch 501, train_loss = 0.075388.
+Using BPR Loss.
+epoch 502, train_loss = 0.075702.
+Using BPR Loss.
+epoch 503, train_loss = 0.075424.
+Using BPR Loss.
+epoch 504, train_loss = 0.075666.
+Using BPR Loss.
+epoch 505, train_loss = 0.075534.
+Using BPR Loss.
+epoch 506, train_loss = 0.075392.
+Using BPR Loss.
+epoch 507, train_loss = 0.075188.
+Using BPR Loss.
+epoch 508, train_loss = 0.075509.
+Using BPR Loss.
+epoch 509, train_loss = 0.075417.
+Using BPR Loss.
+epoch 510, train_loss = 0.075349.
+[510/2000] Valid Result: ndcg@20 = 0.046354, recall@20 = 0.086818, pre@20 = 0.010689, mrr@20 = 0.050971, map@20 = 0.048616.
+Using BPR Loss.
+epoch 511, train_loss = 0.075528.
+Using BPR Loss.
+epoch 512, train_loss = 0.075699.
+Using BPR Loss.
+epoch 513, train_loss = 0.075286.
+Using BPR Loss.
+epoch 514, train_loss = 0.075509.
+Using BPR Loss.
+epoch 515, train_loss = 0.075804.
+Using BPR Loss.
+epoch 516, train_loss = 0.075583.
+Using BPR Loss.
+epoch 517, train_loss = 0.075489.
+Using BPR Loss.
+epoch 518, train_loss = 0.075221.
+Using BPR Loss.
+epoch 519, train_loss = 0.075153.
+Using BPR Loss.
+epoch 520, train_loss = 0.075479.
+[520/2000] Valid Result: ndcg@20 = 0.046384, recall@20 = 0.087404, pre@20 = 0.010702, mrr@20 = 0.050908, map@20 = 0.048476.
+Using BPR Loss.
+epoch 521, train_loss = 0.075474.
+Using BPR Loss.
+epoch 522, train_loss = 0.075180.
+Using BPR Loss.
+epoch 523, train_loss = 0.075604.
+Using BPR Loss.
+epoch 524, train_loss = 0.075457.
+Using BPR Loss.
+epoch 525, train_loss = 0.075365.
+Using BPR Loss.
+epoch 526, train_loss = 0.075445.
+Using BPR Loss.
+epoch 527, train_loss = 0.075264.
+Using BPR Loss.
+epoch 528, train_loss = 0.075530.
+Using BPR Loss.
+epoch 529, train_loss = 0.075054.
+Using BPR Loss.
+epoch 530, train_loss = 0.075270.
+[530/2000] Valid Result: ndcg@20 = 0.046498, recall@20 = 0.087650, pre@20 = 0.010768, mrr@20 = 0.051057, map@20 = 0.048619.
+Using BPR Loss.
+epoch 531, train_loss = 0.075616.
+Using BPR Loss.
+epoch 532, train_loss = 0.075358.
+Using BPR Loss.
+epoch 533, train_loss = 0.075332.
+Using BPR Loss.
+epoch 534, train_loss = 0.075424.
+Using BPR Loss.
+epoch 535, train_loss = 0.075556.
+Using BPR Loss.
+epoch 536, train_loss = 0.075126.
+Using BPR Loss.
+epoch 537, train_loss = 0.075297.
+Using BPR Loss.
+epoch 538, train_loss = 0.075851.
+Using BPR Loss.
+epoch 539, train_loss = 0.075375.
+Using BPR Loss.
+epoch 540, train_loss = 0.075484.
+[540/2000] Valid Result: ndcg@20 = 0.046515, recall@20 = 0.087438, pre@20 = 0.010756, mrr@20 = 0.051238, map@20 = 0.048729.
+Using BPR Loss.
+epoch 541, train_loss = 0.075215.
+Using BPR Loss.
+epoch 542, train_loss = 0.075187.
+Using BPR Loss.
+epoch 543, train_loss = 0.075426.
+Using BPR Loss.
+epoch 544, train_loss = 0.075153.
+Using BPR Loss.
+epoch 545, train_loss = 0.075448.
+Using BPR Loss.
+epoch 546, train_loss = 0.075681.
+Using BPR Loss.
+epoch 547, train_loss = 0.074972.
+Using BPR Loss.
+epoch 548, train_loss = 0.075518.
+Using BPR Loss.
+epoch 549, train_loss = 0.075188.
+Using BPR Loss.
+epoch 550, train_loss = 0.075104.
+[550/2000] Valid Result: ndcg@20 = 0.046586, recall@20 = 0.087395, pre@20 = 0.010772, mrr@20 = 0.051510, map@20 = 0.048864.
+######## new best ############
+===== Test Result(at 550 epoch) =====
+ndcg@20 = 0.054235, recall@20 = 0.088425, pre@20 = 0.017329, mrr@20 = 0.076697, map@20 = 0.070139.
+Using BPR Loss.
+epoch 551, train_loss = 0.075105.
+Using BPR Loss.
+epoch 552, train_loss = 0.075068.
+Using BPR Loss.
+epoch 553, train_loss = 0.075427.
+Using BPR Loss.
+epoch 554, train_loss = 0.075036.
+Using BPR Loss.
+epoch 555, train_loss = 0.075276.
+Using BPR Loss.
+epoch 556, train_loss = 0.075317.
+Using BPR Loss.
+epoch 557, train_loss = 0.075514.
+Using BPR Loss.
+epoch 558, train_loss = 0.075022.
+Using BPR Loss.
+epoch 559, train_loss = 0.074838.
+Using BPR Loss.
+epoch 560, train_loss = 0.075243.
+[560/2000] Valid Result: ndcg@20 = 0.046562, recall@20 = 0.087116, pre@20 = 0.010805, mrr@20 = 0.051374, map@20 = 0.048981.
+Using BPR Loss.
+epoch 561, train_loss = 0.075269.
+Using BPR Loss.
+epoch 562, train_loss = 0.075367.
+Using BPR Loss.
+epoch 563, train_loss = 0.074961.
+Using BPR Loss.
+epoch 564, train_loss = 0.075049.
+Using BPR Loss.
+epoch 565, train_loss = 0.075108.
+Using BPR Loss.
+epoch 566, train_loss = 0.075390.
+Using BPR Loss.
+epoch 567, train_loss = 0.074981.
+Using BPR Loss.
+epoch 568, train_loss = 0.075011.
+Using BPR Loss.
+epoch 569, train_loss = 0.074764.
+Using BPR Loss.
+epoch 570, train_loss = 0.075309.
+[570/2000] Valid Result: ndcg@20 = 0.046236, recall@20 = 0.086843, pre@20 = 0.010739, mrr@20 = 0.050823, map@20 = 0.048555.
+Using BPR Loss.
+epoch 571, train_loss = 0.074976.
+Using BPR Loss.
+epoch 572, train_loss = 0.075011.
+Using BPR Loss.
+epoch 573, train_loss = 0.075435.
+Using BPR Loss.
+epoch 574, train_loss = 0.075063.
+Using BPR Loss.
+epoch 575, train_loss = 0.075383.
+Using BPR Loss.
+epoch 576, train_loss = 0.075666.
+Using BPR Loss.
+epoch 577, train_loss = 0.074899.
+Using BPR Loss.
+epoch 578, train_loss = 0.075244.
+Using BPR Loss.
+epoch 579, train_loss = 0.074841.
+Using BPR Loss.
+epoch 580, train_loss = 0.075040.
+[580/2000] Valid Result: ndcg@20 = 0.046311, recall@20 = 0.086877, pre@20 = 0.010739, mrr@20 = 0.050976, map@20 = 0.048644.
+Using BPR Loss.
+epoch 581, train_loss = 0.075407.
+Using BPR Loss.
+epoch 582, train_loss = 0.075130.
+Using BPR Loss.
+epoch 583, train_loss = 0.074883.
+Using BPR Loss.
+epoch 584, train_loss = 0.075096.
+Using BPR Loss.
+epoch 585, train_loss = 0.074477.
+Using BPR Loss.
+epoch 586, train_loss = 0.075126.
+Using BPR Loss.
+epoch 587, train_loss = 0.075251.
+Using BPR Loss.
+epoch 588, train_loss = 0.074929.
+Using BPR Loss.
+epoch 589, train_loss = 0.074822.
+Using BPR Loss.
+epoch 590, train_loss = 0.074975.
+[590/2000] Valid Result: ndcg@20 = 0.046496, recall@20 = 0.087827, pre@20 = 0.010805, mrr@20 = 0.050898, map@20 = 0.048418.
+Using BPR Loss.
+epoch 591, train_loss = 0.074877.
+Using BPR Loss.
+epoch 592, train_loss = 0.074765.
+Using BPR Loss.
+epoch 593, train_loss = 0.074836.
+Using BPR Loss.
+epoch 594, train_loss = 0.074639.
+Using BPR Loss.
+epoch 595, train_loss = 0.074603.
+Using BPR Loss.
+epoch 596, train_loss = 0.074889.
+Using BPR Loss.
+epoch 597, train_loss = 0.075173.
+Using BPR Loss.
+epoch 598, train_loss = 0.074769.
+Using BPR Loss.
+epoch 599, train_loss = 0.075200.
+Using BPR Loss.
+epoch 600, train_loss = 0.074608.
+[600/2000] Valid Result: ndcg@20 = 0.046426, recall@20 = 0.087806, pre@20 = 0.010743, mrr@20 = 0.051062, map@20 = 0.048615.
+Using BPR Loss.
+epoch 601, train_loss = 0.074624.
+Using BPR Loss.
+epoch 602, train_loss = 0.074940.
+Using BPR Loss.
+epoch 603, train_loss = 0.074990.
+Using BPR Loss.
+epoch 604, train_loss = 0.074900.
+Using BPR Loss.
+epoch 605, train_loss = 0.074881.
+Using BPR Loss.
+epoch 606, train_loss = 0.075001.
+Using BPR Loss.
+epoch 607, train_loss = 0.074716.
+Using BPR Loss.
+epoch 608, train_loss = 0.074876.
+Using BPR Loss.
+epoch 609, train_loss = 0.075096.
+Using BPR Loss.
+epoch 610, train_loss = 0.074618.
+[610/2000] Valid Result: ndcg@20 = 0.046718, recall@20 = 0.088657, pre@20 = 0.010830, mrr@20 = 0.051208, map@20 = 0.048743.
+######## new best ############
+===== Test Result(at 610 epoch) =====
+ndcg@20 = 0.054454, recall@20 = 0.088680, pre@20 = 0.017437, mrr@20 = 0.077086, map@20 = 0.070387.
+Using BPR Loss.
+epoch 611, train_loss = 0.074864.
+Using BPR Loss.
+epoch 612, train_loss = 0.074936.
+Using BPR Loss.
+epoch 613, train_loss = 0.074744.
+Using BPR Loss.
+epoch 614, train_loss = 0.074656.
+Using BPR Loss.
+epoch 615, train_loss = 0.075057.
+Using BPR Loss.
+epoch 616, train_loss = 0.074512.
+Using BPR Loss.
+epoch 617, train_loss = 0.074688.
+Using BPR Loss.
+epoch 618, train_loss = 0.074913.
+Using BPR Loss.
+epoch 619, train_loss = 0.074767.
+Using BPR Loss.
+epoch 620, train_loss = 0.074775.
+[620/2000] Valid Result: ndcg@20 = 0.046630, recall@20 = 0.088183, pre@20 = 0.010830, mrr@20 = 0.051051, map@20 = 0.048600.
+Using BPR Loss.
+epoch 621, train_loss = 0.074626.
+Using BPR Loss.
+epoch 622, train_loss = 0.074745.
+Using BPR Loss.
+epoch 623, train_loss = 0.074945.
+Using BPR Loss.
+epoch 624, train_loss = 0.074883.
+Using BPR Loss.
+epoch 625, train_loss = 0.074689.
+Using BPR Loss.
+epoch 626, train_loss = 0.074383.
+Using BPR Loss.
+epoch 627, train_loss = 0.074583.
+Using BPR Loss.
+epoch 628, train_loss = 0.075150.
+Using BPR Loss.
+epoch 629, train_loss = 0.074534.
+Using BPR Loss.
+epoch 630, train_loss = 0.074407.
+[630/2000] Valid Result: ndcg@20 = 0.046654, recall@20 = 0.088438, pre@20 = 0.010830, mrr@20 = 0.050850, map@20 = 0.048562.
+Using BPR Loss.
+epoch 631, train_loss = 0.074645.
+Using BPR Loss.
+epoch 632, train_loss = 0.074761.
+Using BPR Loss.
+epoch 633, train_loss = 0.074963.
+Using BPR Loss.
+epoch 634, train_loss = 0.074840.
+Using BPR Loss.
+epoch 635, train_loss = 0.074542.
+Using BPR Loss.
+epoch 636, train_loss = 0.074261.
+Using BPR Loss.
+epoch 637, train_loss = 0.074417.
+Using BPR Loss.
+epoch 638, train_loss = 0.074305.
+Using BPR Loss.
+epoch 639, train_loss = 0.074690.
+Using BPR Loss.
+epoch 640, train_loss = 0.074221.
+[640/2000] Valid Result: ndcg@20 = 0.047061, recall@20 = 0.089422, pre@20 = 0.010942, mrr@20 = 0.051325, map@20 = 0.048783.
+######## new best ############
+===== Test Result(at 640 epoch) =====
+ndcg@20 = 0.054508, recall@20 = 0.089140, pre@20 = 0.017476, mrr@20 = 0.077288, map@20 = 0.070437.
+Using BPR Loss.
+epoch 641, train_loss = 0.075111.
+Using BPR Loss.
+epoch 642, train_loss = 0.074666.
+Using BPR Loss.
+epoch 643, train_loss = 0.074708.
+Using BPR Loss.
+epoch 644, train_loss = 0.074890.
+Using BPR Loss.
+epoch 645, train_loss = 0.074536.
+Using BPR Loss.
+epoch 646, train_loss = 0.074229.
+Using BPR Loss.
+epoch 647, train_loss = 0.074687.
+Using BPR Loss.
+epoch 648, train_loss = 0.074992.
+Using BPR Loss.
+epoch 649, train_loss = 0.074532.
+Using BPR Loss.
+epoch 650, train_loss = 0.074756.
+[650/2000] Valid Result: ndcg@20 = 0.046802, recall@20 = 0.088342, pre@20 = 0.010805, mrr@20 = 0.051490, map@20 = 0.049098.
+Using BPR Loss.
+epoch 651, train_loss = 0.075081.
+Using BPR Loss.
+epoch 652, train_loss = 0.074810.
+Using BPR Loss.
+epoch 653, train_loss = 0.074532.
+Using BPR Loss.
+epoch 654, train_loss = 0.074789.
+Using BPR Loss.
+epoch 655, train_loss = 0.074520.
+Using BPR Loss.
+epoch 656, train_loss = 0.074460.
+Using BPR Loss.
+epoch 657, train_loss = 0.074547.
+Using BPR Loss.
+epoch 658, train_loss = 0.074414.
+Using BPR Loss.
+epoch 659, train_loss = 0.074786.
+Using BPR Loss.
+epoch 660, train_loss = 0.074614.
+[660/2000] Valid Result: ndcg@20 = 0.046693, recall@20 = 0.087973, pre@20 = 0.010851, mrr@20 = 0.051465, map@20 = 0.049054.
+Using BPR Loss.
+epoch 661, train_loss = 0.074802.
+Using BPR Loss.
+epoch 662, train_loss = 0.074723.
+Using BPR Loss.
+epoch 663, train_loss = 0.074161.
+Using BPR Loss.
+epoch 664, train_loss = 0.074439.
+Using BPR Loss.
+epoch 665, train_loss = 0.074577.
+Using BPR Loss.
+epoch 666, train_loss = 0.074646.
+Using BPR Loss.
+epoch 667, train_loss = 0.074228.
+Using BPR Loss.
+epoch 668, train_loss = 0.074456.
+Using BPR Loss.
+epoch 669, train_loss = 0.074643.
+Using BPR Loss.
+epoch 670, train_loss = 0.074243.
+[670/2000] Valid Result: ndcg@20 = 0.046913, recall@20 = 0.088302, pre@20 = 0.010884, mrr@20 = 0.051851, map@20 = 0.049293.
+Using BPR Loss.
+epoch 671, train_loss = 0.074227.
+Using BPR Loss.
+epoch 672, train_loss = 0.074257.
+Using BPR Loss.
+epoch 673, train_loss = 0.074369.
+Using BPR Loss.
+epoch 674, train_loss = 0.074416.
+Using BPR Loss.
+epoch 675, train_loss = 0.074782.
+Using BPR Loss.
+epoch 676, train_loss = 0.074474.
+Using BPR Loss.
+epoch 677, train_loss = 0.074542.
+Using BPR Loss.
+epoch 678, train_loss = 0.074410.
+Using BPR Loss.
+epoch 679, train_loss = 0.074918.
+Using BPR Loss.
+epoch 680, train_loss = 0.074618.
+[680/2000] Valid Result: ndcg@20 = 0.046730, recall@20 = 0.087769, pre@20 = 0.010830, mrr@20 = 0.051654, map@20 = 0.049055.
+Using BPR Loss.
+epoch 681, train_loss = 0.075090.
+Using BPR Loss.
+epoch 682, train_loss = 0.074570.
+Using BPR Loss.
+epoch 683, train_loss = 0.074319.
+Using BPR Loss.
+epoch 684, train_loss = 0.074510.
+Using BPR Loss.
+epoch 685, train_loss = 0.074624.
+Using BPR Loss.
+epoch 686, train_loss = 0.074642.
+Using BPR Loss.
+epoch 687, train_loss = 0.074484.
+Using BPR Loss.
+epoch 688, train_loss = 0.074535.
+Using BPR Loss.
+epoch 689, train_loss = 0.074543.
+Using BPR Loss.
+epoch 690, train_loss = 0.074315.
+[690/2000] Valid Result: ndcg@20 = 0.047000, recall@20 = 0.088678, pre@20 = 0.010888, mrr@20 = 0.051927, map@20 = 0.049137.
+Using BPR Loss.
+epoch 691, train_loss = 0.074562.
+Using BPR Loss.
+epoch 692, train_loss = 0.074502.
+Using BPR Loss.
+epoch 693, train_loss = 0.074360.
+Using BPR Loss.
+epoch 694, train_loss = 0.074492.
+Using BPR Loss.
+epoch 695, train_loss = 0.074528.
+Using BPR Loss.
+epoch 696, train_loss = 0.074126.
+Using BPR Loss.
+epoch 697, train_loss = 0.074250.
+Using BPR Loss.
+epoch 698, train_loss = 0.074098.
+Using BPR Loss.
+epoch 699, train_loss = 0.074184.
+Using BPR Loss.
+epoch 700, train_loss = 0.074100.
+[700/2000] Valid Result: ndcg@20 = 0.047036, recall@20 = 0.088678, pre@20 = 0.010855, mrr@20 = 0.052087, map@20 = 0.049406.
+Using BPR Loss.
+epoch 701, train_loss = 0.074466.
+Using BPR Loss.
+epoch 702, train_loss = 0.074069.
+Using BPR Loss.
+epoch 703, train_loss = 0.074370.
+Using BPR Loss.
+epoch 704, train_loss = 0.074762.
+Using BPR Loss.
+epoch 705, train_loss = 0.074407.
+Using BPR Loss.
+epoch 706, train_loss = 0.074045.
+Using BPR Loss.
+epoch 707, train_loss = 0.074285.
+Using BPR Loss.
+epoch 708, train_loss = 0.074575.
+Using BPR Loss.
+epoch 709, train_loss = 0.074224.
+Using BPR Loss.
+epoch 710, train_loss = 0.074312.
+[710/2000] Valid Result: ndcg@20 = 0.046928, recall@20 = 0.088531, pre@20 = 0.010838, mrr@20 = 0.051843, map@20 = 0.049245.
+Using BPR Loss.
+epoch 711, train_loss = 0.074366.
+Using BPR Loss.
+epoch 712, train_loss = 0.074079.
+Using BPR Loss.
+epoch 713, train_loss = 0.074018.
+Using BPR Loss.
+epoch 714, train_loss = 0.074485.
+Using BPR Loss.
+epoch 715, train_loss = 0.074652.
+Using BPR Loss.
+epoch 716, train_loss = 0.074319.
+Using BPR Loss.
+epoch 717, train_loss = 0.074137.
+Using BPR Loss.
+epoch 718, train_loss = 0.074582.
+Using BPR Loss.
+epoch 719, train_loss = 0.074610.
+Using BPR Loss.
+epoch 720, train_loss = 0.074395.
+[720/2000] Valid Result: ndcg@20 = 0.047179, recall@20 = 0.088798, pre@20 = 0.010872, mrr@20 = 0.051972, map@20 = 0.049434.
+######## new best ############
+===== Test Result(at 720 epoch) =====
+ndcg@20 = 0.054818, recall@20 = 0.089505, pre@20 = 0.017493, mrr@20 = 0.077406, map@20 = 0.070467.
+Using BPR Loss.
+epoch 721, train_loss = 0.074348.
+Using BPR Loss.
+epoch 722, train_loss = 0.074163.
+Using BPR Loss.
+epoch 723, train_loss = 0.074126.
+Using BPR Loss.
+epoch 724, train_loss = 0.074472.
+Using BPR Loss.
+epoch 725, train_loss = 0.074712.
+Using BPR Loss.
+epoch 726, train_loss = 0.074415.
+Using BPR Loss.
+epoch 727, train_loss = 0.073744.
+Using BPR Loss.
+epoch 728, train_loss = 0.074589.
+Using BPR Loss.
+epoch 729, train_loss = 0.074423.
+Using BPR Loss.
+epoch 730, train_loss = 0.074269.
+[730/2000] Valid Result: ndcg@20 = 0.047202, recall@20 = 0.088623, pre@20 = 0.010843, mrr@20 = 0.052317, map@20 = 0.049788.
+######## new best ############
+===== Test Result(at 730 epoch) =====
+ndcg@20 = 0.054634, recall@20 = 0.089202, pre@20 = 0.017388, mrr@20 = 0.077007, map@20 = 0.070286.
+Using BPR Loss.
+epoch 731, train_loss = 0.074358.
+Using BPR Loss.
+epoch 732, train_loss = 0.074636.
+Using BPR Loss.
+epoch 733, train_loss = 0.074262.
+Using BPR Loss.
+epoch 734, train_loss = 0.074166.
+Using BPR Loss.
+epoch 735, train_loss = 0.073909.
+Using BPR Loss.
+epoch 736, train_loss = 0.074564.
+Using BPR Loss.
+epoch 737, train_loss = 0.074034.
+Using BPR Loss.
+epoch 738, train_loss = 0.074394.
+Using BPR Loss.
+epoch 739, train_loss = 0.074010.
+Using BPR Loss.
+epoch 740, train_loss = 0.073851.
+[740/2000] Valid Result: ndcg@20 = 0.047282, recall@20 = 0.088884, pre@20 = 0.010872, mrr@20 = 0.052304, map@20 = 0.049702.
+######## new best ############
+===== Test Result(at 740 epoch) =====
+ndcg@20 = 0.054549, recall@20 = 0.088623, pre@20 = 0.017378, mrr@20 = 0.076853, map@20 = 0.070223.
+Using BPR Loss.
+epoch 741, train_loss = 0.074530.
+Using BPR Loss.
+epoch 742, train_loss = 0.074125.
+Using BPR Loss.
+epoch 743, train_loss = 0.073878.
+Using BPR Loss.
+epoch 744, train_loss = 0.074257.
+Using BPR Loss.
+epoch 745, train_loss = 0.074412.
+Using BPR Loss.
+epoch 746, train_loss = 0.074042.
+Using BPR Loss.
+epoch 747, train_loss = 0.074401.
+Using BPR Loss.
+epoch 748, train_loss = 0.074100.
+Using BPR Loss.
+epoch 749, train_loss = 0.074465.
+Using BPR Loss.
+epoch 750, train_loss = 0.074192.
+[750/2000] Valid Result: ndcg@20 = 0.047382, recall@20 = 0.088855, pre@20 = 0.010901, mrr@20 = 0.052404, map@20 = 0.049700.
+######## new best ############
+===== Test Result(at 750 epoch) =====
+ndcg@20 = 0.054588, recall@20 = 0.088714, pre@20 = 0.017414, mrr@20 = 0.077101, map@20 = 0.070287.
+Using BPR Loss.
+epoch 751, train_loss = 0.074044.
+Using BPR Loss.
+epoch 752, train_loss = 0.074108.
+Using BPR Loss.
+epoch 753, train_loss = 0.074204.
+Using BPR Loss.
+epoch 754, train_loss = 0.074293.
+Using BPR Loss.
+epoch 755, train_loss = 0.074298.
+Using BPR Loss.
+epoch 756, train_loss = 0.074068.
+Using BPR Loss.
+epoch 757, train_loss = 0.074171.
+Using BPR Loss.
+epoch 758, train_loss = 0.074065.
+Using BPR Loss.
+epoch 759, train_loss = 0.074316.
+Using BPR Loss.
+epoch 760, train_loss = 0.074168.
+[760/2000] Valid Result: ndcg@20 = 0.047146, recall@20 = 0.089252, pre@20 = 0.010896, mrr@20 = 0.051923, map@20 = 0.049300.
+Using BPR Loss.
+epoch 761, train_loss = 0.074385.
+Using BPR Loss.
+epoch 762, train_loss = 0.074351.
+Using BPR Loss.
+epoch 763, train_loss = 0.074027.
+Using BPR Loss.
+epoch 764, train_loss = 0.074020.
+Using BPR Loss.
+epoch 765, train_loss = 0.074194.
+Using BPR Loss.
+epoch 766, train_loss = 0.074106.
+Using BPR Loss.
+epoch 767, train_loss = 0.074466.
+Using BPR Loss.
+epoch 768, train_loss = 0.073877.
+Using BPR Loss.
+epoch 769, train_loss = 0.074124.
+Using BPR Loss.
+epoch 770, train_loss = 0.073927.
+[770/2000] Valid Result: ndcg@20 = 0.046803, recall@20 = 0.088521, pre@20 = 0.010847, mrr@20 = 0.051617, map@20 = 0.049171.
+Using BPR Loss.
+epoch 771, train_loss = 0.074184.
+Using BPR Loss.
+epoch 772, train_loss = 0.073973.
+Using BPR Loss.
+epoch 773, train_loss = 0.074133.
+Using BPR Loss.
+epoch 774, train_loss = 0.074277.
+Using BPR Loss.
+epoch 775, train_loss = 0.073905.
+Using BPR Loss.
+epoch 776, train_loss = 0.073997.
+Using BPR Loss.
+epoch 777, train_loss = 0.074240.
+Using BPR Loss.
+epoch 778, train_loss = 0.074415.
+Using BPR Loss.
+epoch 779, train_loss = 0.074401.
+Using BPR Loss.
+epoch 780, train_loss = 0.073658.
+[780/2000] Valid Result: ndcg@20 = 0.046976, recall@20 = 0.089301, pre@20 = 0.010905, mrr@20 = 0.051674, map@20 = 0.049179.
+Using BPR Loss.
+epoch 781, train_loss = 0.074097.
+Using BPR Loss.
+epoch 782, train_loss = 0.074053.
+Using BPR Loss.
+epoch 783, train_loss = 0.073883.
+Using BPR Loss.
+epoch 784, train_loss = 0.074399.
+Using BPR Loss.
+epoch 785, train_loss = 0.073871.
+Using BPR Loss.
+epoch 786, train_loss = 0.074069.
+Using BPR Loss.
+epoch 787, train_loss = 0.074033.
+Using BPR Loss.
+epoch 788, train_loss = 0.074373.
+Using BPR Loss.
+epoch 789, train_loss = 0.074027.
+Using BPR Loss.
+epoch 790, train_loss = 0.073689.
+[790/2000] Valid Result: ndcg@20 = 0.047287, recall@20 = 0.089278, pre@20 = 0.010872, mrr@20 = 0.052273, map@20 = 0.049747.
+Using BPR Loss.
+epoch 791, train_loss = 0.073667.
+Using BPR Loss.
+epoch 792, train_loss = 0.073535.
+Using BPR Loss.
+epoch 793, train_loss = 0.074093.
+Using BPR Loss.
+epoch 794, train_loss = 0.073524.
+Using BPR Loss.
+epoch 795, train_loss = 0.073930.
+Using BPR Loss.
+epoch 796, train_loss = 0.073908.
+Using BPR Loss.
+epoch 797, train_loss = 0.074207.
+Using BPR Loss.
+epoch 798, train_loss = 0.074043.
+Using BPR Loss.
+epoch 799, train_loss = 0.073837.
+Using BPR Loss.
+epoch 800, train_loss = 0.073912.
+[800/2000] Valid Result: ndcg@20 = 0.047051, recall@20 = 0.088740, pre@20 = 0.010781, mrr@20 = 0.052109, map@20 = 0.049504.
+Using BPR Loss.
+epoch 801, train_loss = 0.074267.
+Using BPR Loss.
+epoch 802, train_loss = 0.073993.
+Using BPR Loss.
+epoch 803, train_loss = 0.074418.
+Using BPR Loss.
+epoch 804, train_loss = 0.073938.
+Using BPR Loss.
+epoch 805, train_loss = 0.073802.
+Using BPR Loss.
+epoch 806, train_loss = 0.073596.
+Using BPR Loss.
+epoch 807, train_loss = 0.074113.
+Using BPR Loss.
+epoch 808, train_loss = 0.074014.
+Using BPR Loss.
+epoch 809, train_loss = 0.074249.
+Using BPR Loss.
+epoch 810, train_loss = 0.073749.
+[810/2000] Valid Result: ndcg@20 = 0.047125, recall@20 = 0.088834, pre@20 = 0.010872, mrr@20 = 0.052080, map@20 = 0.049478.
+Using BPR Loss.
+epoch 811, train_loss = 0.074000.
+Using BPR Loss.
+epoch 812, train_loss = 0.073501.
+Using BPR Loss.
+epoch 813, train_loss = 0.074162.
+Using BPR Loss.
+epoch 814, train_loss = 0.073563.
+Using BPR Loss.
+epoch 815, train_loss = 0.074021.
+Using BPR Loss.
+epoch 816, train_loss = 0.074067.
+Using BPR Loss.
+epoch 817, train_loss = 0.073995.
+Using BPR Loss.
+epoch 818, train_loss = 0.074096.
+Using BPR Loss.
+epoch 819, train_loss = 0.074176.
+Using BPR Loss.
+epoch 820, train_loss = 0.073581.
+[820/2000] Valid Result: ndcg@20 = 0.047315, recall@20 = 0.089403, pre@20 = 0.010905, mrr@20 = 0.052155, map@20 = 0.049677.
+Using BPR Loss.
+epoch 821, train_loss = 0.073757.
+Using BPR Loss.
+epoch 822, train_loss = 0.073736.
+Using BPR Loss.
+epoch 823, train_loss = 0.073954.
+Using BPR Loss.
+epoch 824, train_loss = 0.074072.
+Using BPR Loss.
+epoch 825, train_loss = 0.074311.
+Using BPR Loss.
+epoch 826, train_loss = 0.073891.
+Using BPR Loss.
+epoch 827, train_loss = 0.074074.
+Using BPR Loss.
+epoch 828, train_loss = 0.073968.
+Using BPR Loss.
+epoch 829, train_loss = 0.074025.
+Using BPR Loss.
+epoch 830, train_loss = 0.074121.
+[830/2000] Valid Result: ndcg@20 = 0.047292, recall@20 = 0.089068, pre@20 = 0.010884, mrr@20 = 0.052448, map@20 = 0.049818.
+Using BPR Loss.
+epoch 831, train_loss = 0.073834.
+Using BPR Loss.
+epoch 832, train_loss = 0.073702.
+Using BPR Loss.
+epoch 833, train_loss = 0.073945.
+Using BPR Loss.
+epoch 834, train_loss = 0.073930.
+Using BPR Loss.
+epoch 835, train_loss = 0.073400.
+Using BPR Loss.
+epoch 836, train_loss = 0.074124.
+Using BPR Loss.
+epoch 837, train_loss = 0.073824.
+Using BPR Loss.
+epoch 838, train_loss = 0.073962.
+Using BPR Loss.
+epoch 839, train_loss = 0.073820.
+Using BPR Loss.
+epoch 840, train_loss = 0.074074.
+[840/2000] Valid Result: ndcg@20 = 0.047405, recall@20 = 0.089155, pre@20 = 0.010917, mrr@20 = 0.052296, map@20 = 0.049697.
+######## new best ############
+===== Test Result(at 840 epoch) =====
+ndcg@20 = 0.055059, recall@20 = 0.089686, pre@20 = 0.017542, mrr@20 = 0.078398, map@20 = 0.070927.
+Using BPR Loss.
+epoch 841, train_loss = 0.073335.
+Using BPR Loss.
+epoch 842, train_loss = 0.073595.
+Using BPR Loss.
+epoch 843, train_loss = 0.073996.
+Using BPR Loss.
+epoch 844, train_loss = 0.074181.
+Using BPR Loss.
+epoch 845, train_loss = 0.073662.
+Using BPR Loss.
+epoch 846, train_loss = 0.073725.
+Using BPR Loss.
+epoch 847, train_loss = 0.074171.
+Using BPR Loss.
+epoch 848, train_loss = 0.074183.
+Using BPR Loss.
+epoch 849, train_loss = 0.073787.
+Using BPR Loss.
+epoch 850, train_loss = 0.074209.
+[850/2000] Valid Result: ndcg@20 = 0.047056, recall@20 = 0.088163, pre@20 = 0.010884, mrr@20 = 0.052068, map@20 = 0.049330.
+Using BPR Loss.
+epoch 851, train_loss = 0.073768.
+Using BPR Loss.
+epoch 852, train_loss = 0.074085.
+Using BPR Loss.
+epoch 853, train_loss = 0.073975.
+Using BPR Loss.
+epoch 854, train_loss = 0.074025.
+Using BPR Loss.
+epoch 855, train_loss = 0.073744.
+Using BPR Loss.
+epoch 856, train_loss = 0.073915.
+Using BPR Loss.
+epoch 857, train_loss = 0.073574.
+Using BPR Loss.
+epoch 858, train_loss = 0.073636.
+Using BPR Loss.
+epoch 859, train_loss = 0.073570.
+Using BPR Loss.
+epoch 860, train_loss = 0.073705.
+[860/2000] Valid Result: ndcg@20 = 0.047364, recall@20 = 0.088572, pre@20 = 0.010888, mrr@20 = 0.052570, map@20 = 0.049835.
+Using BPR Loss.
+epoch 861, train_loss = 0.074218.
+Using BPR Loss.
+epoch 862, train_loss = 0.073298.
+Using BPR Loss.
+epoch 863, train_loss = 0.073586.
+Using BPR Loss.
+epoch 864, train_loss = 0.074095.
+Using BPR Loss.
+epoch 865, train_loss = 0.073751.
+Using BPR Loss.
+epoch 866, train_loss = 0.074436.
+Using BPR Loss.
+epoch 867, train_loss = 0.073619.
+Using BPR Loss.
+epoch 868, train_loss = 0.073806.
+Using BPR Loss.
+epoch 869, train_loss = 0.073644.
+Using BPR Loss.
+epoch 870, train_loss = 0.074046.
+[870/2000] Valid Result: ndcg@20 = 0.047450, recall@20 = 0.089116, pre@20 = 0.010921, mrr@20 = 0.052573, map@20 = 0.049865.
+######## new best ############
+===== Test Result(at 870 epoch) =====
+ndcg@20 = 0.054921, recall@20 = 0.089168, pre@20 = 0.017453, mrr@20 = 0.078431, map@20 = 0.071245.
+Using BPR Loss.
+epoch 871, train_loss = 0.073840.
+Using BPR Loss.
+epoch 872, train_loss = 0.074029.
+Using BPR Loss.
+epoch 873, train_loss = 0.073655.
+Using BPR Loss.
+epoch 874, train_loss = 0.073445.
+Using BPR Loss.
+epoch 875, train_loss = 0.074060.
+Using BPR Loss.
+epoch 876, train_loss = 0.073862.
+Using BPR Loss.
+epoch 877, train_loss = 0.073612.
+Using BPR Loss.
+epoch 878, train_loss = 0.073500.
+Using BPR Loss.
+epoch 879, train_loss = 0.073767.
+Using BPR Loss.
+epoch 880, train_loss = 0.073680.
+[880/2000] Valid Result: ndcg@20 = 0.047488, recall@20 = 0.089358, pre@20 = 0.010896, mrr@20 = 0.052716, map@20 = 0.050026.
+######## new best ############
+===== Test Result(at 880 epoch) =====
+ndcg@20 = 0.054819, recall@20 = 0.088766, pre@20 = 0.017473, mrr@20 = 0.078304, map@20 = 0.071042.
+Using BPR Loss.
+epoch 881, train_loss = 0.074191.
+Using BPR Loss.
+epoch 882, train_loss = 0.073774.
+Using BPR Loss.
+epoch 883, train_loss = 0.073791.
+Using BPR Loss.
+epoch 884, train_loss = 0.074121.
+Using BPR Loss.
+epoch 885, train_loss = 0.073858.
+Using BPR Loss.
+epoch 886, train_loss = 0.073718.
+Using BPR Loss.
+epoch 887, train_loss = 0.073552.
+Using BPR Loss.
+epoch 888, train_loss = 0.074060.
+Using BPR Loss.
+epoch 889, train_loss = 0.074150.
+Using BPR Loss.
+epoch 890, train_loss = 0.073925.
+[890/2000] Valid Result: ndcg@20 = 0.047099, recall@20 = 0.088673, pre@20 = 0.010867, mrr@20 = 0.052107, map@20 = 0.049421.
+Using BPR Loss.
+epoch 891, train_loss = 0.073993.
+Using BPR Loss.
+epoch 892, train_loss = 0.073631.
+Using BPR Loss.
+epoch 893, train_loss = 0.073517.
+Using BPR Loss.
+epoch 894, train_loss = 0.073788.
+Using BPR Loss.
+epoch 895, train_loss = 0.074074.
+Using BPR Loss.
+epoch 896, train_loss = 0.073914.
+Using BPR Loss.
+epoch 897, train_loss = 0.073965.
+Using BPR Loss.
+epoch 898, train_loss = 0.073743.
+Using BPR Loss.
+epoch 899, train_loss = 0.073539.
+Using BPR Loss.
+epoch 900, train_loss = 0.073629.
+[900/2000] Valid Result: ndcg@20 = 0.047172, recall@20 = 0.088713, pre@20 = 0.010838, mrr@20 = 0.052359, map@20 = 0.049782.
+Using BPR Loss.
+epoch 901, train_loss = 0.073787.
+Using BPR Loss.
+epoch 902, train_loss = 0.073988.
+Using BPR Loss.
+epoch 903, train_loss = 0.073754.
+Using BPR Loss.
+epoch 904, train_loss = 0.073797.
+Using BPR Loss.
+epoch 905, train_loss = 0.073702.
+Using BPR Loss.
+epoch 906, train_loss = 0.073600.
+Using BPR Loss.
+epoch 907, train_loss = 0.073753.
+Using BPR Loss.
+epoch 908, train_loss = 0.073815.
+Using BPR Loss.
+epoch 909, train_loss = 0.073434.
+Using BPR Loss.
+epoch 910, train_loss = 0.073691.
+[910/2000] Valid Result: ndcg@20 = 0.047092, recall@20 = 0.088536, pre@20 = 0.010867, mrr@20 = 0.052335, map@20 = 0.049656.
+Using BPR Loss.
+epoch 911, train_loss = 0.074080.
+Using BPR Loss.
+epoch 912, train_loss = 0.073715.
+Using BPR Loss.
+epoch 913, train_loss = 0.073611.
+Using BPR Loss.
+epoch 914, train_loss = 0.073751.
+Using BPR Loss.
+epoch 915, train_loss = 0.073665.
+Using BPR Loss.
+epoch 916, train_loss = 0.073695.
+Using BPR Loss.
+epoch 917, train_loss = 0.073841.
+Using BPR Loss.
+epoch 918, train_loss = 0.073576.
+Using BPR Loss.
+epoch 919, train_loss = 0.073653.
+Using BPR Loss.
+epoch 920, train_loss = 0.073813.
+[920/2000] Valid Result: ndcg@20 = 0.047216, recall@20 = 0.088792, pre@20 = 0.010884, mrr@20 = 0.052640, map@20 = 0.049789.
+Using BPR Loss.
+epoch 921, train_loss = 0.074171.
+Using BPR Loss.
+epoch 922, train_loss = 0.073735.
+Using BPR Loss.
+epoch 923, train_loss = 0.073539.
+Using BPR Loss.
+epoch 924, train_loss = 0.073387.
+Using BPR Loss.
+epoch 925, train_loss = 0.073839.
+Using BPR Loss.
+epoch 926, train_loss = 0.073977.
+Using BPR Loss.
+epoch 927, train_loss = 0.073701.
+Using BPR Loss.
+epoch 928, train_loss = 0.073482.
+Using BPR Loss.
+epoch 929, train_loss = 0.073912.
+Using BPR Loss.
+epoch 930, train_loss = 0.073523.
+[930/2000] Valid Result: ndcg@20 = 0.047291, recall@20 = 0.088831, pre@20 = 0.010876, mrr@20 = 0.052812, map@20 = 0.049932.
+Using BPR Loss.
+epoch 931, train_loss = 0.073916.
+Using BPR Loss.
+epoch 932, train_loss = 0.074045.
+Using BPR Loss.
+epoch 933, train_loss = 0.073892.
+Using BPR Loss.
+epoch 934, train_loss = 0.073273.
+Using BPR Loss.
+epoch 935, train_loss = 0.073785.
+Using BPR Loss.
+epoch 936, train_loss = 0.073852.
+Using BPR Loss.
+epoch 937, train_loss = 0.073564.
+Using BPR Loss.
+epoch 938, train_loss = 0.073912.
+Using BPR Loss.
+epoch 939, train_loss = 0.073772.
+Using BPR Loss.
+epoch 940, train_loss = 0.073392.
+[940/2000] Valid Result: ndcg@20 = 0.047266, recall@20 = 0.089186, pre@20 = 0.010859, mrr@20 = 0.052685, map@20 = 0.049791.
+Using BPR Loss.
+epoch 941, train_loss = 0.073682.
+Using BPR Loss.
+epoch 942, train_loss = 0.074147.
+Using BPR Loss.
+epoch 943, train_loss = 0.073670.
+Using BPR Loss.
+epoch 944, train_loss = 0.073786.
+Using BPR Loss.
+epoch 945, train_loss = 0.073735.
+Using BPR Loss.
+epoch 946, train_loss = 0.073982.
+Using BPR Loss.
+epoch 947, train_loss = 0.073530.
+Using BPR Loss.
+epoch 948, train_loss = 0.073844.
+Using BPR Loss.
+epoch 949, train_loss = 0.074019.
+Using BPR Loss.
+epoch 950, train_loss = 0.073762.
+[950/2000] Valid Result: ndcg@20 = 0.047239, recall@20 = 0.089159, pre@20 = 0.010826, mrr@20 = 0.052776, map@20 = 0.049905.
+Using BPR Loss.
+epoch 951, train_loss = 0.073205.
+Using BPR Loss.
+epoch 952, train_loss = 0.073610.
+Using BPR Loss.
+epoch 953, train_loss = 0.073223.
+Using BPR Loss.
+epoch 954, train_loss = 0.073732.
+Using BPR Loss.
+epoch 955, train_loss = 0.073717.
+Using BPR Loss.
+epoch 956, train_loss = 0.073999.
+Using BPR Loss.
+epoch 957, train_loss = 0.074003.
+Using BPR Loss.
+epoch 958, train_loss = 0.073747.
+Using BPR Loss.
+epoch 959, train_loss = 0.073510.
+Using BPR Loss.
+epoch 960, train_loss = 0.073461.
+[960/2000] Valid Result: ndcg@20 = 0.047457, recall@20 = 0.089502, pre@20 = 0.010942, mrr@20 = 0.052655, map@20 = 0.049882.
+Using BPR Loss.
+epoch 961, train_loss = 0.073736.
+Using BPR Loss.
+epoch 962, train_loss = 0.073473.
+Using BPR Loss.
+epoch 963, train_loss = 0.073503.
+Using BPR Loss.
+epoch 964, train_loss = 0.073600.
+Using BPR Loss.
+epoch 965, train_loss = 0.073334.
+Using BPR Loss.
+epoch 966, train_loss = 0.073518.
+Using BPR Loss.
+epoch 967, train_loss = 0.073802.
+Using BPR Loss.
+epoch 968, train_loss = 0.073676.
+Using BPR Loss.
+epoch 969, train_loss = 0.073903.
+Using BPR Loss.
+epoch 970, train_loss = 0.073457.
+[970/2000] Valid Result: ndcg@20 = 0.047048, recall@20 = 0.088566, pre@20 = 0.010855, mrr@20 = 0.052185, map@20 = 0.049541.
+Using BPR Loss.
+epoch 971, train_loss = 0.073530.
+Using BPR Loss.
+epoch 972, train_loss = 0.073383.
+Using BPR Loss.
+epoch 973, train_loss = 0.073466.
+Using BPR Loss.
+epoch 974, train_loss = 0.073539.
+Using BPR Loss.
+epoch 975, train_loss = 0.073716.
+Using BPR Loss.
+epoch 976, train_loss = 0.073255.
+Using BPR Loss.
+epoch 977, train_loss = 0.073607.
+Using BPR Loss.
+epoch 978, train_loss = 0.073590.
+Using BPR Loss.
+epoch 979, train_loss = 0.073525.
+Using BPR Loss.
+epoch 980, train_loss = 0.073420.
+[980/2000] Valid Result: ndcg@20 = 0.047244, recall@20 = 0.089165, pre@20 = 0.010929, mrr@20 = 0.052152, map@20 = 0.049600.
+Using BPR Loss.
+epoch 981, train_loss = 0.073694.
+Using BPR Loss.
+epoch 982, train_loss = 0.073654.
+Using BPR Loss.
+epoch 983, train_loss = 0.073731.
+Using BPR Loss.
+epoch 984, train_loss = 0.073343.
+Using BPR Loss.
+epoch 985, train_loss = 0.073534.
+Using BPR Loss.
+epoch 986, train_loss = 0.073619.
+Using BPR Loss.
+epoch 987, train_loss = 0.073511.
+Using BPR Loss.
+epoch 988, train_loss = 0.073379.
+Using BPR Loss.
+epoch 989, train_loss = 0.073266.
+Using BPR Loss.
+epoch 990, train_loss = 0.073231.
+[990/2000] Valid Result: ndcg@20 = 0.047042, recall@20 = 0.088642, pre@20 = 0.010859, mrr@20 = 0.052050, map@20 = 0.049610.
+Using BPR Loss.
+epoch 991, train_loss = 0.073460.
+Using BPR Loss.
+epoch 992, train_loss = 0.073758.
+Using BPR Loss.
+epoch 993, train_loss = 0.073357.
+Using BPR Loss.
+epoch 994, train_loss = 0.073318.
+Using BPR Loss.
+epoch 995, train_loss = 0.073681.
+Using BPR Loss.
+epoch 996, train_loss = 0.073214.
+Using BPR Loss.
+epoch 997, train_loss = 0.073535.
+Using BPR Loss.
+epoch 998, train_loss = 0.073442.
+Using BPR Loss.
+epoch 999, train_loss = 0.073616.
+Using BPR Loss.
+epoch 1000, train_loss = 0.074039.
+[1000/2000] Valid Result: ndcg@20 = 0.046924, recall@20 = 0.088252, pre@20 = 0.010818, mrr@20 = 0.051943, map@20 = 0.049437.
+Using BPR Loss.
+epoch 1001, train_loss = 0.073368.
+Using BPR Loss.
+epoch 1002, train_loss = 0.073237.
+Using BPR Loss.
+epoch 1003, train_loss = 0.073255.
+Using BPR Loss.
+epoch 1004, train_loss = 0.073162.
+Using BPR Loss.
+epoch 1005, train_loss = 0.073707.
+Using BPR Loss.
+epoch 1006, train_loss = 0.073221.
+Using BPR Loss.
+epoch 1007, train_loss = 0.073415.
+Using BPR Loss.
+epoch 1008, train_loss = 0.073712.
+Using BPR Loss.
+epoch 1009, train_loss = 0.073831.
+Using BPR Loss.
+epoch 1010, train_loss = 0.072971.
+[1010/2000] Valid Result: ndcg@20 = 0.046997, recall@20 = 0.087738, pre@20 = 0.010764, mrr@20 = 0.052327, map@20 = 0.049853.
+Using BPR Loss.
+epoch 1011, train_loss = 0.073723.
+Using BPR Loss.
+epoch 1012, train_loss = 0.073534.
+Using BPR Loss.
+epoch 1013, train_loss = 0.073298.
+Using BPR Loss.
+epoch 1014, train_loss = 0.073790.
+Using BPR Loss.
+epoch 1015, train_loss = 0.073703.
+Using BPR Loss.
+epoch 1016, train_loss = 0.073828.
+Using BPR Loss.
+epoch 1017, train_loss = 0.073530.
+Using BPR Loss.
+epoch 1018, train_loss = 0.073492.
+Using BPR Loss.
+epoch 1019, train_loss = 0.073679.
+Using BPR Loss.
+epoch 1020, train_loss = 0.073563.
+[1020/2000] Valid Result: ndcg@20 = 0.046857, recall@20 = 0.087048, pre@20 = 0.010723, mrr@20 = 0.052448, map@20 = 0.049924.
+Using BPR Loss.
+epoch 1021, train_loss = 0.073685.
+Using BPR Loss.
+epoch 1022, train_loss = 0.073626.
+Using BPR Loss.
+epoch 1023, train_loss = 0.073639.
+Using BPR Loss.
+epoch 1024, train_loss = 0.073541.
+Using BPR Loss.
+epoch 1025, train_loss = 0.073226.
+Using BPR Loss.
+epoch 1026, train_loss = 0.073606.
+Using BPR Loss.
+epoch 1027, train_loss = 0.073617.
+Using BPR Loss.
+epoch 1028, train_loss = 0.073590.
+Using BPR Loss.
+epoch 1029, train_loss = 0.073674.
+Using BPR Loss.
+epoch 1030, train_loss = 0.073181.
+[1030/2000] Valid Result: ndcg@20 = 0.046967, recall@20 = 0.086900, pre@20 = 0.010702, mrr@20 = 0.052831, map@20 = 0.050178.
+Using BPR Loss.
+epoch 1031, train_loss = 0.073346.
+Using BPR Loss.
+epoch 1032, train_loss = 0.073304.
+Using BPR Loss.
+epoch 1033, train_loss = 0.073640.
+Using BPR Loss.
+epoch 1034, train_loss = 0.073730.
+Using BPR Loss.
+epoch 1035, train_loss = 0.073411.
+Using BPR Loss.
+epoch 1036, train_loss = 0.073533.
+Using BPR Loss.
+epoch 1037, train_loss = 0.073700.
+Using BPR Loss.
+epoch 1038, train_loss = 0.073841.
+Using BPR Loss.
+epoch 1039, train_loss = 0.073281.
+Using BPR Loss.
+epoch 1040, train_loss = 0.073053.
+[1040/2000] Valid Result: ndcg@20 = 0.047244, recall@20 = 0.087982, pre@20 = 0.010776, mrr@20 = 0.052947, map@20 = 0.050263.
+Using BPR Loss.
+epoch 1041, train_loss = 0.073631.
+Using BPR Loss.
+epoch 1042, train_loss = 0.073446.
+Using BPR Loss.
+epoch 1043, train_loss = 0.073298.
+Using BPR Loss.
+epoch 1044, train_loss = 0.073842.
+Using BPR Loss.
+epoch 1045, train_loss = 0.073421.
+Using BPR Loss.
+epoch 1046, train_loss = 0.073448.
+Using BPR Loss.
+epoch 1047, train_loss = 0.073666.
+Using BPR Loss.
+epoch 1048, train_loss = 0.073595.
+Using BPR Loss.
+epoch 1049, train_loss = 0.073524.
+Using BPR Loss.
+epoch 1050, train_loss = 0.073434.
+[1050/2000] Valid Result: ndcg@20 = 0.047365, recall@20 = 0.088471, pre@20 = 0.010814, mrr@20 = 0.052827, map@20 = 0.050140.
+Using BPR Loss.
+epoch 1051, train_loss = 0.073077.
+Using BPR Loss.
+epoch 1052, train_loss = 0.073722.
+Using BPR Loss.
+epoch 1053, train_loss = 0.073559.
+Using BPR Loss.
+epoch 1054, train_loss = 0.073532.
+Using BPR Loss.
+epoch 1055, train_loss = 0.073480.
+Using BPR Loss.
+epoch 1056, train_loss = 0.073166.
+Using BPR Loss.
+epoch 1057, train_loss = 0.073529.
+Using BPR Loss.
+epoch 1058, train_loss = 0.073444.
+Using BPR Loss.
+epoch 1059, train_loss = 0.073391.
+Using BPR Loss.
+epoch 1060, train_loss = 0.074018.
+[1060/2000] Valid Result: ndcg@20 = 0.047040, recall@20 = 0.087877, pre@20 = 0.010801, mrr@20 = 0.052686, map@20 = 0.050075.
+Using BPR Loss.
+epoch 1061, train_loss = 0.073264.
+Using BPR Loss.
+epoch 1062, train_loss = 0.073459.
+Using BPR Loss.
+epoch 1063, train_loss = 0.073269.
+Using BPR Loss.
+epoch 1064, train_loss = 0.073509.
+Using BPR Loss.
+epoch 1065, train_loss = 0.073464.
+Using BPR Loss.
+epoch 1066, train_loss = 0.073828.
+Using BPR Loss.
+epoch 1067, train_loss = 0.073469.
+Using BPR Loss.
+epoch 1068, train_loss = 0.073418.
+Using BPR Loss.
+epoch 1069, train_loss = 0.073529.
+Using BPR Loss.
+epoch 1070, train_loss = 0.073433.
+[1070/2000] Valid Result: ndcg@20 = 0.047055, recall@20 = 0.087788, pre@20 = 0.010809, mrr@20 = 0.052548, map@20 = 0.049938.
+Using BPR Loss.
+epoch 1071, train_loss = 0.073608.
+Using BPR Loss.
+epoch 1072, train_loss = 0.073116.
+Using BPR Loss.
+epoch 1073, train_loss = 0.074136.
+Using BPR Loss.
+epoch 1074, train_loss = 0.073661.
+Using BPR Loss.
+epoch 1075, train_loss = 0.073510.
+Using BPR Loss.
+epoch 1076, train_loss = 0.073819.
+Using BPR Loss.
+epoch 1077, train_loss = 0.073428.
+Using BPR Loss.
+epoch 1078, train_loss = 0.073646.
+Using BPR Loss.
+epoch 1079, train_loss = 0.073726.
+Using BPR Loss.
+epoch 1080, train_loss = 0.073440.
+[1080/2000] Valid Result: ndcg@20 = 0.046923, recall@20 = 0.087605, pre@20 = 0.010809, mrr@20 = 0.052356, map@20 = 0.049818.
+---------------------------
+done.
+===== Test Result(at 880 epoch) =====
+ndcg@20 = 0.054819, recall@20 = 0.088766, pre@20 = 0.017473, mrr@20 = 0.078304, map@20 = 0.071042.
